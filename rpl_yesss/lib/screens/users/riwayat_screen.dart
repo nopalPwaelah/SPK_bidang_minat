@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../services/api_service.dart';
+import '../sidebar/user_sidebar.dart';
 
 class RiwayatScreen extends StatefulWidget {
   const RiwayatScreen({super.key});
@@ -49,6 +50,8 @@ class _RiwayatScreenState extends State<RiwayatScreen> {
                 );
               },
             ),
+      drawer: const UserSidebar(),
+      
     );
   }
 }

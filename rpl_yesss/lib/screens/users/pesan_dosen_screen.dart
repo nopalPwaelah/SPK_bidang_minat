@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../sidebar/user_sidebar.dart';
 
 class PesanDosenScreen extends StatefulWidget {
   const PesanDosenScreen({super.key});
@@ -21,6 +22,7 @@ class _PesanDosenScreenState extends State<PesanDosenScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Pesan Dosen")),
+      drawer: const UserSidebar(),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(

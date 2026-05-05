@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../services/api_service.dart';
+import '../sidebar/admin_sidebar.dart';
 
 class KelolaUserScreen extends StatefulWidget {
   const KelolaUserScreen({super.key});
@@ -121,6 +122,7 @@ class _KelolaUserScreenState extends State<KelolaUserScreen> {
           )
         ],
       ),
+      drawer: const AdminSidebar(),
       floatingActionButton: FloatingActionButton(
         onPressed: showAddDialog,
         child: const Icon(Icons.add),

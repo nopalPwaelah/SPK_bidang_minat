@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../sidebar/user_sidebar.dart';
 
 class HasilScreen extends StatelessWidget {
   final Map? data;
@@ -9,6 +10,7 @@ class HasilScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Hasil Rekomendasi")),
+      drawer: const UserSidebar(),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(

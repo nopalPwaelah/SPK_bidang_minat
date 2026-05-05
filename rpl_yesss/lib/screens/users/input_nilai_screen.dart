@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import '../../services/api_service.dart';
+import '../sidebar/user_sidebar.dart';
 import '../users/hasil_screen.dart';
+import '../sidebar/user_sidebar.dart';
+
 
 class InputNilaiScreen extends StatefulWidget {
   const InputNilaiScreen({super.key});
@@ -57,6 +60,7 @@ class _InputNilaiScreenState extends State<InputNilaiScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Input Nilai Mahasiswa")),
+      drawer: const UserSidebar(),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(

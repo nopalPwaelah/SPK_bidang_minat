@@ -5,6 +5,9 @@ import 'data_training_screen.dart';
 import 'kelola_user_screen.dart';
 import 'set_k_screen.dart';
 import 'statistic_screen.dart';
+import '../sidebar/admin_sidebar.dart';
+import '../../services/api_service.dart';
+import '../auth/login_screen.dart';
 
 class AdminDashboard extends StatelessWidget {
   const AdminDashboard({super.key});
@@ -19,16 +22,22 @@ class AdminDashboard extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.logout),
             onPressed: () {
-              // 🔥 balik ke login + clear stack
-              Navigator.pushNamedAndRemoveUntil(
+              // 🔥 HAPUS TOKEN
+              ApiService.token = null;
+
+              // 🔥 KEMBALI KE LOGIN (CLEAR STACK)
+              Navigator.pushAndRemoveUntil(
                 context,
-                '/',
+                MaterialPageRoute(builder: (_) => const LoginScreen()),
                 (route) => false,
               );
             },
           )
         ],
       ),
+
+      // 🔥 SIDEBAR
+      drawer: const AdminSidebar(),
 
       body: Padding(
         padding: const EdgeInsets.all(16),
@@ -38,7 +47,6 @@ class AdminDashboard extends StatelessWidget {
           mainAxisSpacing: 12,
           children: [
 
-            // 🔥 DATA TRAINING
             _menuBox(
               context,
               title: "Data Training",
@@ -47,7 +55,6 @@ class AdminDashboard extends StatelessWidget {
               screen: const DataTrainingScreen(),
             ),
 
-            // 🔥 KELOLA USER
             _menuBox(
               context,
               title: "Kelola User",
@@ -56,7 +63,6 @@ class AdminDashboard extends StatelessWidget {
               screen: const KelolaUserScreen(),
             ),
 
-            // 🔥 SET K
             _menuBox(
               context,
               title: "Set Nilai K",
@@ -65,7 +71,6 @@ class AdminDashboard extends StatelessWidget {
               screen: const SetKScreen(),
             ),
 
-            // 🔥 STATISTIK
             _menuBox(
               context,
               title: "Statistik",
@@ -79,7 +84,7 @@ class AdminDashboard extends StatelessWidget {
     );
   }
 
-  // 🔥 REUSABLE MENU BOX
+  // 🔥 MENU BOX (FIX NAVIGASI)
   Widget _menuBox(
     BuildContext context, {
     required String title,
@@ -90,7 +95,8 @@ class AdminDashboard extends StatelessWidget {
     return InkWell(
       borderRadius: BorderRadius.circular(16),
       onTap: () {
-        Navigator.push(
+        // 🔥 PAKAI INI BIAR TIDAK NUMPUK
+        Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (_) => screen),
         );
@@ -99,7 +105,7 @@ class AdminDashboard extends StatelessWidget {
         decoration: BoxDecoration(
           color: color,
           borderRadius: BorderRadius.circular(16),
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               color: Colors.black26,
               blurRadius: 5,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../services/api_service.dart';
+import '../sidebar/admin_sidebar.dart';
 
 class StatisticScreen extends StatefulWidget {
   const StatisticScreen({super.key});
@@ -80,6 +81,7 @@ class _StatisticScreenState extends State<StatisticScreen> {
           )
         ],
       ),
+      drawer: const AdminSidebar(),
       body: isLoading
           ? const Center(child: CircularProgressIndicator())
           : Padding(

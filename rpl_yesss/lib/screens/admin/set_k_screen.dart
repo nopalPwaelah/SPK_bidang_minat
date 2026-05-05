@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../services/api_service.dart';
+import '../sidebar/admin_sidebar.dart';
 
 class SetKScreen extends StatefulWidget {
   const SetKScreen({super.key});
@@ -83,6 +84,7 @@ class _SetKScreenState extends State<SetKScreen> {
       appBar: AppBar(
         title: const Text("Set Nilai K"),
       ),
+      drawer: const AdminSidebar(),
       body: isLoading
           ? const Center(child: CircularProgressIndicator())
           : Padding(

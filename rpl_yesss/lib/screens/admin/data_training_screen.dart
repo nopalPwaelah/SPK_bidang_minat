@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../services/api_service.dart';
+import '../sidebar/admin_sidebar.dart';
 
 class DataTrainingScreen extends StatefulWidget {
   const DataTrainingScreen({super.key});
@@ -117,6 +118,8 @@ void deleteData(int id) async {
           )
         ],
       ),
+
+      drawer: const AdminSidebar(),
 
       body: isLoading
           ? const Center(child: CircularProgressIndicator())
