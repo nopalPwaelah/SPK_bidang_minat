@@ -5,7 +5,8 @@ from app.database import Base, engine
 from app.routers import (
     auth_router,
     user_router,
-    rekomendasi_router
+    rekomendasi_router,
+    training_router
 )
 
 app = FastAPI(
@@ -25,6 +26,7 @@ app.add_middleware(
 
 app.include_router(auth_router, prefix="/auth", tags=["Auth"])
 app.include_router(user_router, prefix="/user", tags=["Users"])
+app.include_router(training_router, prefix="/training", tags=["Training"])
 app.include_router(rekomendasi_router, prefix="/knn", tags=["KNN"])
 
 @app.get("/")

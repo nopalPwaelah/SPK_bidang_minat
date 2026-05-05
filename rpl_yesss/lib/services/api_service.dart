@@ -80,7 +80,7 @@ class ApiService {
   // ================= USERS =================
   static Future<List> getUsers() async {
     final res = await safeRequest(
-      http.get(Uri.parse("$baseUrl/users"), headers: headers),
+      http.get(Uri.parse("$baseUrl/user"), headers: headers),
     );
 
     return handleResponse(res);
@@ -90,7 +90,7 @@ class ApiService {
       String username, String email, String password, String role) async {
     final res = await safeRequest(
       http.post(
-        Uri.parse("$baseUrl/users"),
+        Uri.parse("$baseUrl/user"),
         headers: headers,
         body: jsonEncode({
           "username": username,

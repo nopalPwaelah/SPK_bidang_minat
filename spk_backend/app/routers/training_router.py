@@ -1,0 +1,97 @@
+from fastapi import APIRouter, Depends
+from sqlalchemy.orm import Session
+from pydantic import BaseModel
+from app.database import SessionLocal
+from app.models import TrainingData
+
+router = APIRouter()
+
+class TrainingRequest(BaseModel):
+    nama: str
+    ipk: float
+    bidang_minat: str
+
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+# ================= GET ALL TRAINING DATA =================
+@router.get("/")
+def get_all_training(db: Session = Depends(get_db)):
+    """Ambil semua data training dari database"""
+    training = db.query(TrainingData).all()
+    return training
+
+# ================= GET SINGLE TRAINING DATA =================
+@router.get("/{training_id}")
+def get_training_by_id(training_id: int, db: Session = Depends(get_db)):
+    """Ambil satu data training berdasarkan ID"""
+    training = db.query(TrainingData).filter(TrainingData.id == training_id).first()
+    if not training:
+        return {"error": "Training data tidak ditemukan"}
+    return training
+
+# ================= ADD NEW TRAINING DATA =================
+@router.post("/")
+def add_training(data: TrainingRequest, db: Session = Depends(get_db)):
+    """Tambah data training baru ke database"""
+    new_training = TrainingData(
+        nama=data.nama,
+        ipk=data.ipk,
+        bidang_minat=data.bidang_minat
+    )
+    db.add(new_training)
+    db.commit()
+    db.refresh(new_training)
+    return {
+        "message": "Data training berhasil ditambahkan",
+        "data": {
+            "id": new_training.id,
+            "nama": new_training.nama,
+            "ipk": new_training.ipk,
+            "bidang_minat": new_training.bidang_minat
+        }
+    }
+
+# ================= UPDATE TRAINING DATA =================
+@router.put("/{training_id}")
+def update_training(training_id: int, data: TrainingRequest, db: Session = Depends(get_db)):
+    """Update data training berdasarkan ID"""
+    training = db.query(TrainingData).filter(TrainingData.id == training_id).first()
+    
+    if not training:
+        return {"error": "Training data tidak ditemukan"}
+    
+    training.nama = data.nama
+    training.ipk = data.ipk
+    training.bidang_minat = data.bidang_minat
+    
+    db.commit()
+    db.refresh(training)
+    
+    return {
+        "message": "Data training berhasil diupdate",
+        "data": {
+            "id": training.id,
+            "nama": training.nama,
+            "ipk": training.ipk,
+            "bidang_minat": training.bidang_minat
+        }
+    }
+
+# ================= DELETE TRAINING DATA =================
+@router.delete("/{training_id}")
+def delete_training(training_id: int, db: Session = Depends(get_db)):
+    """Hapus data training berdasarkan ID"""
+    training = db.query(TrainingData).filter(TrainingData.id == training_id).first()
+    
+    if not training:
+        return {"error": "Training data tidak ditemukan"}
+    
+    db.delete(training)
+    db.commit()
+    
+    return {"message": "Data training berhasil dihapus"}
