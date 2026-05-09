@@ -14,8 +14,8 @@ class _StatisticScreenState extends State<StatisticScreen> {
 
   int total = 0;
   int rpl = 0;
-  int jaringan = 0;
-  int iot = 0;
+  int ai_engineering = 0;
+  int cyber_security = 0;
   int kValue = 3;
 
   Map<int, Map<String, int>> yearlyStats = {};
@@ -36,8 +36,8 @@ class _StatisticScreenState extends State<StatisticScreen> {
       setState(() {
         total = stats["total"] ?? 0;
         rpl = stats["RPL"] ?? 0;
-        jaringan = stats["Jaringan"] ?? 0;
-        iot = stats["IoT"] ?? 0;
+        ai_engineering = stats["AI Engineering"] ?? 0;
+        cyber_security = stats["Cyber Security"] ?? 0;
         kValue = k["k"] ?? 3;
 
         // Convert yearly stats
@@ -45,8 +45,8 @@ class _StatisticScreenState extends State<StatisticScreen> {
           int year = int.tryParse(key.toString()) ?? 2022;
           yearlyStats[year] = {
             "RPL": (value["RPL"] as num?)?.toInt() ?? 0,
-            "Jaringan": (value["Jaringan"] as num?)?.toInt() ?? 0,
-            "IoT": (value["IoT"] as num?)?.toInt() ?? 0,
+            "AI Engineering": (value["AI Engineering"] as num?)?.toInt() ?? 0,
+            "Cyber Security": (value["Cyber Security"] as num?)?.toInt() ?? 0,
           };
         });
 
@@ -153,8 +153,8 @@ class _StatisticScreenState extends State<StatisticScreen> {
       mainAxisSpacing: 12,
       children: [
         _buildBidangCard("RPL", rpl.toString(), Colors.green),
-        _buildBidangCard("Jaringan", jaringan.toString(), Colors.orange),
-        _buildBidangCard("IoT", iot.toString(), Colors.purple),
+        _buildBidangCard("AI Engineering", ai_engineering.toString(), Colors.orange),
+        _buildBidangCard("Cyber Security", cyber_security.toString(), Colors.red),
       ],
     );
   }
@@ -258,10 +258,10 @@ class _StatisticScreenState extends State<StatisticScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: years.map((year) {
                 int rplCount = yearlyStats[year]?["RPL"] ?? 0;
-                int jaringanCount = yearlyStats[year]?["Jaringan"] ?? 0;
-                int iotCount = yearlyStats[year]?["IoT"] ?? 0;
+                int ai_engineeringCount = yearlyStats[year]?["AI Engineering"] ?? 0;
+                int cyber_securityCount = yearlyStats[year]?["Cyber Security"] ?? 0;
 
-                int maxHeight = [rplCount, jaringanCount, iotCount]
+                int maxHeight = [rplCount, ai_engineeringCount, cyber_securityCount]
                     .reduce((a, b) => a > b ? a : b)
                     .clamp(1, 100);
 
@@ -277,18 +277,18 @@ class _StatisticScreenState extends State<StatisticScreen> {
                       color: Colors.blue,
                       margin: const EdgeInsets.only(bottom: 4),
                     ),
-                    // Jaringan Bar (Orange)
+                    // AI Engineering Bar (Orange)
                     Container(
                       width: 25,
-                      height: (jaringanCount / maxHeight * 160).toDouble(),
+                      height: (ai_engineeringCount / maxHeight * 160).toDouble(),
                       color: Colors.orange,
                       margin: const EdgeInsets.only(bottom: 4),
                     ),
-                    // IoT Bar (Grey)
+                    // Cyber Security Bar (Red)
                     Container(
                       width: 25,
-                      height: (iotCount / maxHeight * 160).toDouble(),
-                      color: Colors.grey,
+                      height: (cyber_securityCount / maxHeight * 160).toDouble(),
+                      color: Colors.red,
                     ),
                   ],
                 );

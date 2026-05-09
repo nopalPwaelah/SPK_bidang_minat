@@ -128,10 +128,10 @@ class _DataTrainingScreenState extends State<DataTrainingScreen> {
     switch (bidang) {
       case "RPL":
         return Colors.blue;
-      case "Jaringan":
-        return Colors.green;
-      case "IoT":
-        return Colors.purple;
+      case "AI Engineering":
+        return Colors.orange;
+      case "Cyber Security":
+        return Colors.red;
       default:
         return Colors.grey;
     }
@@ -225,7 +225,7 @@ class _DataTrainingScreenState extends State<DataTrainingScreen> {
                           vertical: 12,
                         ),
                       ),
-                      items: ["RPL", "Jaringan", "IoT"]
+                      items: ["RPL", "AI Engineering", "Cyber Security"]
                           .map((e) => DropdownMenuItem(
                                 value: e,
                                 child: Text(e),

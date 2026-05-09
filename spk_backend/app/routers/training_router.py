@@ -102,14 +102,14 @@ def get_statistics(db: Session = Depends(get_db)):
     """Ambil statistik total training data"""
     total = db.query(TrainingData).count()
     rpl = db.query(TrainingData).filter(TrainingData.bidang_minat == "RPL").count()
-    jaringan = db.query(TrainingData).filter(TrainingData.bidang_minat == "Jaringan").count()
-    iot = db.query(TrainingData).filter(TrainingData.bidang_minat == "IoT").count()
+    ai_engineering = db.query(TrainingData).filter(TrainingData.bidang_minat == "AI Engineering").count()
+    cyber_security = db.query(TrainingData).filter(TrainingData.bidang_minat == "Cyber Security").count()
     
     return {
         "total": total,
         "RPL": rpl,
-        "Jaringan": jaringan,
-        "IoT": iot
+        "AI Engineering": ai_engineering,
+        "Cyber Security": cyber_security
     }
 
 # ================= GET YEARLY STATISTICS =================
@@ -122,10 +122,10 @@ def get_yearly_statistics(db: Session = Depends(get_db)):
     
     # Initialize years 2022-2025
     yearly_stats = {
-        2022: {"RPL": 0, "Jaringan": 0, "IoT": 0},
-        2023: {"RPL": 0, "Jaringan": 0, "IoT": 0},
-        2024: {"RPL": 0, "Jaringan": 0, "IoT": 0},
-        2025: {"RPL": 0, "Jaringan": 0, "IoT": 0},
+        2022: {"RPL": 0, "AI Engineering": 0, "Cyber Security": 0},
+        2023: {"RPL": 0, "AI Engineering": 0, "Cyber Security": 0},
+        2024: {"RPL": 0, "AI Engineering": 0, "Cyber Security": 0},
+        2025: {"RPL": 0, "AI Engineering": 0, "Cyber Security": 0},
     }
     
     # Count by year and bidang
@@ -138,7 +138,7 @@ def get_yearly_statistics(db: Session = Depends(get_db)):
         
         # Ensure year in yearly_stats
         if year not in yearly_stats:
-            yearly_stats[year] = {"RPL": 0, "Jaringan": 0, "IoT": 0}
+            yearly_stats[year] = {"RPL": 0, "AI Engineering": 0, "Cyber Security": 0}
         
         # Count by bidang_minat
         bidang = data.bidang_minat if data.bidang_minat else "RPL"
