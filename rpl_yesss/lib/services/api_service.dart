@@ -106,7 +106,7 @@ class ApiService {
 
   static Future deleteUser(int id) async {
     final res = await safeRequest(
-      http.delete(Uri.parse("$baseUrl/users/$id"), headers: headers),
+      http.delete(Uri.parse("$baseUrl/user/$id"), headers: headers),
     );
 
     return handleResponse(res);
@@ -146,10 +146,47 @@ class ApiService {
     return handleResponse(res);
   }
 
+  // ================= KNN CONFIGURATION =================
+  static Future getKNNConfiguration() async {
+    final res = await safeRequest(
+      http.get(Uri.parse("$baseUrl/knn-settings/configuration"), headers: headers),
+    );
+
+    return handleResponse(res);
+  }
+
+  static Future updateKNNConfiguration(Map<String, dynamic> config) async {
+    final res = await safeRequest(
+      http.put(
+        Uri.parse("$baseUrl/knn-settings/configuration"),
+        headers: headers,
+        body: jsonEncode(config),
+      ),
+    );
+
+    return handleResponse(res);
+  }
+
+  static Future getKNNMetrics() async {
+    final res = await safeRequest(
+      http.get(Uri.parse("$baseUrl/knn-settings/metrics"), headers: headers),
+    );
+
+    return handleResponse(res);
+  }
+
   // ================= STATISTIK =================
   static Future getStatistics() async {
     final res = await safeRequest(
-      http.get(Uri.parse("$baseUrl/statistics"), headers: headers),
+      http.get(Uri.parse("$baseUrl/training/stats/summary"), headers: headers),
+    );
+
+    return handleResponse(res);
+  }
+
+  static Future getYearlyStatistics() async {
+    final res = await safeRequest(
+      http.get(Uri.parse("$baseUrl/training/stats/yearly"), headers: headers),
     );
 
     return handleResponse(res);

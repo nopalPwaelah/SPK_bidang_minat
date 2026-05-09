@@ -95,3 +95,54 @@ def delete_training(training_id: int, db: Session = Depends(get_db)):
     db.commit()
     
     return {"message": "Data training berhasil dihapus"}
+
+# ================= GET STATISTICS =================
+@router.get("/stats/summary")
+def get_statistics(db: Session = Depends(get_db)):
+    """Ambil statistik total training data"""
+    total = db.query(TrainingData).count()
+    rpl = db.query(TrainingData).filter(TrainingData.bidang_minat == "RPL").count()
+    jaringan = db.query(TrainingData).filter(TrainingData.bidang_minat == "Jaringan").count()
+    iot = db.query(TrainingData).filter(TrainingData.bidang_minat == "IoT").count()
+    
+    return {
+        "total": total,
+        "RPL": rpl,
+        "Jaringan": jaringan,
+        "IoT": iot
+    }
+
+# ================= GET YEARLY STATISTICS =================
+@router.get("/stats/yearly")
+def get_yearly_statistics(db: Session = Depends(get_db)):
+    """Ambil statistik training data per tahun"""
+    from datetime import datetime
+    
+    training_data = db.query(TrainingData).all()
+    
+    # Initialize years 2022-2025
+    yearly_stats = {
+        2022: {"RPL": 0, "Jaringan": 0, "IoT": 0},
+        2023: {"RPL": 0, "Jaringan": 0, "IoT": 0},
+        2024: {"RPL": 0, "Jaringan": 0, "IoT": 0},
+        2025: {"RPL": 0, "Jaringan": 0, "IoT": 0},
+    }
+    
+    # Count by year and bidang
+    for data in training_data:
+        # Assign ke tahun berdasarkan created_at atau default 2025
+        if hasattr(data, 'created_at') and data.created_at:
+            year = data.created_at.year
+        else:
+            year = 2025
+        
+        # Ensure year in yearly_stats
+        if year not in yearly_stats:
+            yearly_stats[year] = {"RPL": 0, "Jaringan": 0, "IoT": 0}
+        
+        # Count by bidang_minat
+        bidang = data.bidang_minat if data.bidang_minat else "RPL"
+        if bidang in yearly_stats[year]:
+            yearly_stats[year][bidang] += 1
+    
+    return yearly_stats

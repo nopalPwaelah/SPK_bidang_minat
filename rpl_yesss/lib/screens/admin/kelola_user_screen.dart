@@ -50,60 +50,83 @@ class _KelolaUserScreenState extends State<KelolaUserScreen> {
     showDialog(
       context: context,
       builder: (_) {
-        return AlertDialog(
-          title: const Text("Tambah User"),
-          content: SingleChildScrollView(
-            child: Column(
-              children: [
-                TextField(
-                  controller: username,
-                  decoration: const InputDecoration(labelText: "Username"),
+        return StatefulBuilder(
+          builder: (context, setState) {
+            return AlertDialog(
+              title: const Text("Tambah User"),
+              content: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    TextField(
+                      controller: username,
+                      decoration: const InputDecoration(labelText: "Username"),
+                    ),
+                    TextField(
+                      controller: email,
+                      decoration: const InputDecoration(labelText: "Email"),
+                    ),
+                    TextField(
+                      controller: password,
+                      obscureText: true,
+                      decoration: const InputDecoration(labelText: "Password"),
+                    ),
+                    const SizedBox(height: 10),
+                    DropdownButton<String>(
+                      value: role,
+                      isExpanded: true,
+                      items: ["admin", "mahasiswa"]
+                          .map((e) => DropdownMenuItem(
+                                value: e,
+                                child: Text(e),
+                              ))
+                          .toList(),
+                      onChanged: (val) {
+                        if (val != null) {
+                          setState(() {
+                            role = val;
+                          });
+                        }
+                      },
+                    ),
+                  ],
                 ),
-                TextField(
-                  controller: email,
-                  decoration: const InputDecoration(labelText: "Email"),
+              ),
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.pop(context),
+                  child: const Text("Batal"),
                 ),
-                TextField(
-                  controller: password,
-                  obscureText: true,
-                  decoration: const InputDecoration(labelText: "Password"),
-                ),
-                const SizedBox(height: 10),
-                DropdownButton<String>(
-                  value: role,
-                  isExpanded: true,
-                  items: ["admin", "mahasiswa"]
-                      .map((e) => DropdownMenuItem(
-                            value: e,
-                            child: Text(e),
-                          ))
-                      .toList(),
-                  onChanged: (val) {
-                    role = val!;
+                ElevatedButton(
+                  onPressed: () async {
+                    if (username.text.isEmpty ||
+                        email.text.isEmpty ||
+                        password.text.isEmpty) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(content: Text("Semua field wajib diisi")),
+                      );
+                      return;
+                    }
+
+                    try {
+                      await ApiService.addUser(
+                        username.text,
+                        email.text,
+                        password.text,
+                        role,
+                      );
+                      Navigator.pop(context);
+                      fetchUsers();
+                    } catch (e) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text("Gagal tambah user: $e")),
+                      );
+                    }
                   },
-                ),
+                  child: const Text("Simpan"),
+                )
               ],
-            ),
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: const Text("Batal"),
-            ),
-            ElevatedButton(
-              onPressed: () async {
-                await ApiService.addUser(
-                  username.text,
-                  email.text,
-                  password.text,
-                  role,
-                );
-                Navigator.pop(context);
-                fetchUsers();
-              },
-              child: const Text("Simpan"),
-            )
-          ],
+            );
+          },
         );
       },
     );

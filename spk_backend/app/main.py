@@ -6,7 +6,8 @@ from app.routers import (
     auth_router,
     user_router,
     rekomendasi_router,
-    training_router
+    training_router,
+    knn_settings_router
 )
 
 app = FastAPI(
@@ -28,6 +29,7 @@ app.include_router(auth_router, prefix="/auth", tags=["Auth"])
 app.include_router(user_router, prefix="/user", tags=["Users"])
 app.include_router(training_router, prefix="/training", tags=["Training"])
 app.include_router(rekomendasi_router, prefix="/knn", tags=["KNN"])
+app.include_router(knn_settings_router, prefix="/knn-settings", tags=["KNN Settings"])
 
 @app.get("/")
 def root():
