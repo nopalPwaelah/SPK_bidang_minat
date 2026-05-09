@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../services/api_service.dart';
-import '../auth/login_screen.dart';
 import '../sidebar/user_sidebar.dart';
 import 'input_nilai_screen.dart';
 import 'hasil_screen.dart';
@@ -8,66 +6,284 @@ import 'hasil_screen.dart';
 class UserDashboard extends StatelessWidget {
   const UserDashboard({super.key});
 
+  static const _monthNames = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'Mei',
+    'Jun',
+    'Jul',
+    'Agu',
+    'Sep',
+    'Okt',
+    'Nov',
+    'Des',
+  ];
+
+  String _formattedDate(DateTime now) {
+    final month = _monthNames[now.month - 1];
+    return '$month ${now.day}, ${now.year}';
+  }
+
+  String _formattedTime(DateTime now) {
+    final hour = now.hour % 12 == 0 ? 12 : now.hour % 12;
+    final minute = now.minute.toString().padLeft(2, '0');
+    final period = now.hour < 12 ? 'AM' : 'PM';
+    return '$hour:$minute $period';
+  }
+
   @override
   Widget build(BuildContext context) {
+    final now = DateTime.now();
+    final scaffoldKey = GlobalKey<ScaffoldState>();
+
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Dashboard Mahasiswa"),
-        centerTitle: true,
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.logout),
-            onPressed: () {
-              // 🔥 HAPUS TOKEN
-              ApiService.token = null;
-
-              // 🔥 KEMBALI KE LOGIN (CLEAR SEMUA STACK)
-              Navigator.pushAndRemoveUntil(
-                context,
-                MaterialPageRoute(builder: (_) => const LoginScreen()),
-                (route) => false,
-              );
-            },
-          )
-        ],
-      ),
-
-      // 🔥 SIDEBAR
+      key: scaffoldKey,
       drawer: const UserSidebar(),
-
-      body: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          children: [
-
-            const Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                "Menu Utama",
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  IconButton(
+                    onPressed: () => scaffoldKey.currentState?.openDrawer(),
+                    icon: const Icon(Icons.menu, size: 28),
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Text(
+                        _formattedDate(now),
+                        style: const TextStyle(
+                          color: Colors.black54,
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        _formattedTime(now),
+                        style: const TextStyle(
+                          color: Colors.black54,
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
-            ),
-
-            const SizedBox(height: 16),
-
-            _menuCard(
-              context,
-              title: "Input Nilai",
-              icon: Icons.edit,
-              color: Colors.blue,
-              screen: const InputNilaiScreen(),
-            ),
-
-            const SizedBox(height: 12),
-
-            _menuCard(
-              context,
-              title: "Hasil Rekomendasi",
-              icon: Icons.analytics,
-              color: Colors.green,
-              screen: const HasilScreen(),
-            ),
-          ],
+              const SizedBox(height: 8),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text(
+                    'Dashboard',
+                    style: TextStyle(
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFE8ECFF),
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: Row(
+                      children: const [
+                        CircleAvatar(
+                          radius: 16,
+                          backgroundColor: Color(0xFF2D60FF),
+                          child: Text(
+                            'NA',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        SizedBox(width: 8),
+                        Text(
+                          'Naufal Akbar',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+              const SizedBox(height: 24),
+              Container(
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: const Color(0xFF5F8CFF),
+                  borderRadius: BorderRadius.circular(24),
+                ),
+                padding: const EdgeInsets.all(20),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 88,
+                      height: 88,
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFB6C8FF),
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Center(
+                        child: Icon(
+                          Icons.person,
+                          color: Colors.white,
+                          size: 44,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 18),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const [
+                          Text(
+                            'Selamat Datang!',
+                            style: TextStyle(
+                              color: Colors.white70,
+                              fontSize: 16,
+                            ),
+                          ),
+                          SizedBox(height: 8),
+                          Text(
+                            'Naufal Akbar Putra',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 22,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                          Text(
+                            'NIM:250512....',
+                            style: TextStyle(
+                              color: Colors.white70,
+                              fontSize: 14,
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              const SizedBox(height: 24),
+              Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFF8F0B5),
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const [
+                          Text(
+                            'Status Rekomendasi',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
+                          SizedBox(height: 16),
+                          Chip(
+                            label: Text(
+                              'Belum ada Hasil',
+                              style: TextStyle(
+                                color: Color(0xFFB67A08),
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            backgroundColor: Color(0xFFF2E19F),
+                          ),
+                          SizedBox(height: 12),
+                          Text(
+                            'Silahkan input data untuk mendapatkan rekomendasi bidang minat',
+                            style: TextStyle(
+                              color: Colors.black54,
+                              height: 1.5,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 16),
+                  Expanded(
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.05),
+                            blurRadius: 10,
+                            offset: Offset(0, 4),
+                          ),
+                        ],
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            'Aksi Cepat',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
+                          const SizedBox(height: 24),
+                          SizedBox(
+                            width: double.infinity,
+                            child: ElevatedButton(
+                              onPressed: () {
+                                Navigator.pushReplacement(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (_) => const InputNilaiScreen(),
+                                  ),
+                                );
+                              },
+                              style: ElevatedButton.styleFrom(
+                                padding:
+                                    const EdgeInsets.symmetric(vertical: 14),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(14),
+                                ),
+                                backgroundColor: const Color(0xFF2D60FF),
+                              ),
+                              child: const Text(
+                                'Mulai Input Data',
+                                style: TextStyle(fontSize: 16),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 24),
+            ],
+          ),
         ),
       ),
     );
