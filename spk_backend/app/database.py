@@ -4,6 +4,10 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 DATABASE_URL = "mysql+pymysql://root:@localhost:3306/spk_knn"
 
 engine = create_engine(DATABASE_URL)
-SessionLocal = sessionmaker(bind=engine)
+SessionLocal = sessionmaker(
+    autocommit=False,
+    autoflush=False,
+    bind=engine
+)
 
 Base = declarative_base()

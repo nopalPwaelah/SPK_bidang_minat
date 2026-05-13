@@ -1,129 +1,333 @@
 import 'package:flutter/material.dart';
+
 import '../../services/api_service.dart';
+
 import '../sidebar/admin_sidebar.dart';
 
-class KelolaUserScreen extends StatefulWidget {
-  const KelolaUserScreen({super.key});
+class KelolaUserScreen
+    extends StatefulWidget {
+
+  const KelolaUserScreen({
+    super.key
+  });
 
   @override
-  State<KelolaUserScreen> createState() => _KelolaUserScreenState();
+  State<KelolaUserScreen>
+  createState() =>
+      _KelolaUserScreenState();
 }
 
-class _KelolaUserScreenState extends State<KelolaUserScreen> {
+class _KelolaUserScreenState
+    extends State<KelolaUserScreen> {
+
   List users = [];
+
   bool isLoading = true;
+
+  // =====================================
+  // INIT
+  // =====================================
 
   @override
   void initState() {
+
     super.initState();
+
     fetchUsers();
   }
 
-  // 🔥 GET USERS
+  // =====================================
+  // GET USERS
+  // =====================================
+
   void fetchUsers() async {
-    setState(() => isLoading = true);
+
+    setState(() {
+      isLoading = true;
+    });
 
     try {
-      final res = await ApiService.getUsers();
+
+      final res =
+          await ApiService
+              .getUsers();
+
       setState(() {
+
         users = res;
+
         isLoading = false;
       });
+
     } catch (e) {
-      setState(() => isLoading = false);
+
+      setState(() {
+        isLoading = false;
+      });
+
+      ScaffoldMessenger.of(
+          context).showSnackBar(
+
+        SnackBar(
+          content:
+              Text("Error: $e"),
+        ),
+      );
     }
   }
 
-  // 🔥 DELETE USER
-  void deleteUser(int id) async {
-    await ApiService.deleteUser(id);
-    fetchUsers();
+  // =====================================
+  // DELETE USER
+  // =====================================
+
+  void deleteUser(
+      int id
+  ) async {
+
+    try {
+
+      await ApiService
+          .deleteUser(id);
+
+      fetchUsers();
+
+    } catch (e) {
+
+      ScaffoldMessenger.of(
+          context).showSnackBar(
+
+        SnackBar(
+          content:
+              Text("Gagal hapus user"),
+        ),
+      );
+    }
   }
 
-  // 🔥 ADD USER
+  // =====================================
+  // ADD USER DIALOG
+  // =====================================
+
   void showAddDialog() {
-    final username = TextEditingController();
-    final email = TextEditingController();
-    final password = TextEditingController();
+
+    final usernameController =
+        TextEditingController();
+
+    final emailController =
+        TextEditingController();
+
+    final passwordController =
+        TextEditingController();
+
     String role = "mahasiswa";
 
     showDialog(
+
       context: context,
+
       builder: (_) {
+
         return StatefulBuilder(
-          builder: (context, setState) {
+
+          builder:
+              (context, setStateDialog) {
+
             return AlertDialog(
-              title: const Text("Tambah User"),
-              content: SingleChildScrollView(
+
+              title:
+                  const Text(
+                      "Tambah User"),
+
+              content:
+                  SingleChildScrollView(
+
                 child: Column(
+
+                  mainAxisSize:
+                      MainAxisSize.min,
+
                   children: [
+
                     TextField(
-                      controller: username,
-                      decoration: const InputDecoration(labelText: "Username"),
+
+                      controller:
+                          usernameController,
+
+                      decoration:
+                          const InputDecoration(
+                        labelText:
+                            "Username",
+                      ),
                     ),
+
+                    const SizedBox(
+                        height: 12),
+
                     TextField(
-                      controller: email,
-                      decoration: const InputDecoration(labelText: "Email"),
+
+                      controller:
+                          emailController,
+
+                      decoration:
+                          const InputDecoration(
+                        labelText:
+                            "Email",
+                      ),
                     ),
+
+                    const SizedBox(
+                        height: 12),
+
                     TextField(
-                      controller: password,
+
+                      controller:
+                          passwordController,
+
                       obscureText: true,
-                      decoration: const InputDecoration(labelText: "Password"),
+
+                      decoration:
+                          const InputDecoration(
+                        labelText:
+                            "Password",
+                      ),
                     ),
-                    const SizedBox(height: 10),
-                    DropdownButton<String>(
+
+                    const SizedBox(
+                        height: 16),
+
+                    DropdownButtonFormField<
+                        String>(
+
                       value: role,
-                      isExpanded: true,
-                      items: ["admin", "mahasiswa"]
-                          .map((e) => DropdownMenuItem(
-                                value: e,
-                                child: Text(e),
-                              ))
-                          .toList(),
-                      onChanged: (val) {
-                        if (val != null) {
-                          setState(() {
-                            role = val;
-                          });
-                        }
+
+                      decoration:
+                          const InputDecoration(
+                        labelText:
+                            "Role",
+                      ),
+
+                      items: [
+
+                        "admin",
+
+                        "mahasiswa"
+
+                      ].map((e) {
+
+                        return DropdownMenuItem(
+
+                          value: e,
+
+                          child: Text(e),
+                        );
+
+                      }).toList(),
+
+                      onChanged: (v) {
+
+                        setStateDialog(() {
+
+                          role = v!;
+                        });
                       },
                     ),
                   ],
                 ),
               ),
+
               actions: [
+
                 TextButton(
-                  onPressed: () => Navigator.pop(context),
-                  child: const Text("Batal"),
+
+                  onPressed: () {
+
+                    Navigator.pop(
+                        context);
+                  },
+
+                  child:
+                      const Text(
+                          "Batal"),
                 ),
+
                 ElevatedButton(
+
                   onPressed: () async {
-                    if (username.text.isEmpty ||
-                        email.text.isEmpty ||
-                        password.text.isEmpty) {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(content: Text("Semua field wajib diisi")),
+
+                    if (
+
+                      usernameController
+                          .text
+                          .isEmpty ||
+
+                      emailController
+                          .text
+                          .isEmpty ||
+
+                      passwordController
+                          .text
+                          .isEmpty
+
+                    ) {
+
+                      ScaffoldMessenger.of(
+                              context)
+                          .showSnackBar(
+
+                        const SnackBar(
+
+                          content: Text(
+                              "Semua field wajib diisi"),
+                        ),
                       );
+
                       return;
                     }
 
                     try {
-                      await ApiService.addUser(
-                        username.text,
-                        email.text,
-                        password.text,
+
+                      await ApiService
+                          .addUser(
+
+                        usernameController
+                            .text,
+
+                        emailController
+                            .text,
+
+                        passwordController
+                            .text,
+
                         role,
                       );
-                      Navigator.pop(context);
+
+                      if (mounted) {
+
+                        Navigator.pop(
+                            context);
+                      }
+
                       fetchUsers();
+
                     } catch (e) {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(content: Text("Gagal tambah user: $e")),
+
+                      ScaffoldMessenger.of(
+                              context)
+                          .showSnackBar(
+
+                        SnackBar(
+
+                          content: Text(
+                              "Error: $e"),
+                        ),
                       );
                     }
                   },
-                  child: const Text("Simpan"),
-                )
+
+                  child:
+                      const Text(
+                          "Simpan"),
+                ),
               ],
             );
           },
@@ -132,47 +336,139 @@ class _KelolaUserScreenState extends State<KelolaUserScreen> {
     );
   }
 
+  // =====================================
   // UI
+  // =====================================
+
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
+
       appBar: AppBar(
-        title: const Text("Kelola User"),
+
+        title:
+            const Text(
+                "Kelola User"),
+
         actions: [
+
           IconButton(
-            icon: const Icon(Icons.refresh),
-            onPressed: fetchUsers,
-          )
+
+            onPressed:
+                fetchUsers,
+
+            icon: const Icon(
+                Icons.refresh),
+          ),
         ],
       ),
-      drawer: const AdminSidebar(),
-      floatingActionButton: FloatingActionButton(
-        onPressed: showAddDialog,
-        child: const Icon(Icons.add),
+
+      drawer:
+          const AdminSidebar(),
+
+      floatingActionButton:
+          FloatingActionButton(
+
+        onPressed:
+            showAddDialog,
+
+        child:
+            const Icon(Icons.add),
       ),
+
       body: isLoading
-          ? const Center(child: CircularProgressIndicator())
+
+          ? const Center(
+              child:
+                  CircularProgressIndicator(),
+            )
+
           : users.isEmpty
-              ? const Center(child: Text("Tidak ada user"))
+
+              ? const Center(
+                  child: Text(
+                      "Tidak ada user"),
+                )
+
               : ListView.builder(
-                  itemCount: users.length,
-                  itemBuilder: (context, index) {
-                    final u = users[index];
+
+                  itemCount:
+                      users.length,
+
+                  itemBuilder:
+                      (context, index) {
+
+                    final u =
+                        users[index];
+
+                    final username =
+                        u["username"] ??
+                            "-";
+
+                    final email =
+                        u["email"] ??
+                            "-";
+
+                    final role =
+                        u["role"] ??
+                            "mahasiswa";
 
                     return Card(
-                      margin: const EdgeInsets.all(8),
+
+                      margin:
+                          const EdgeInsets
+                              .symmetric(
+
+                        horizontal: 12,
+
+                        vertical: 6,
+                      ),
+
                       child: ListTile(
-                        leading: CircleAvatar(
-                          child: Text(u["username"][0].toUpperCase()),
+
+                        leading:
+                            CircleAvatar(
+
+                          child: Text(
+
+                            username
+                                    .isNotEmpty
+
+                                ? username[0]
+                                    .toUpperCase()
+
+                                : "?",
+                          ),
                         ),
-                        title: Text(u["username"]),
-                        subtitle: Text(
-                          "${u["email"]}\nRole: ${u["role"]}",
+
+                        title:
+                            Text(username),
+
+                        subtitle:
+                            Text(
+
+                          "$email\nRole: $role",
                         ),
+
                         isThreeLine: true,
-                        trailing: IconButton(
-                          icon: const Icon(Icons.delete, color: Colors.red),
-                          onPressed: () => deleteUser(u["id"]),
+
+                        trailing:
+                            IconButton(
+
+                          icon: const Icon(
+
+                            Icons.delete,
+
+                            color:
+                                Colors.red,
+                          ),
+
+                          onPressed: () {
+
+                            deleteUser(
+                                u["id"]);
+                          },
                         ),
                       ),
                     );

@@ -1,187 +1,453 @@
-from fastapi import APIRouter, Depends
+from fastapi import (
+    APIRouter,
+    Depends,
+    HTTPException
+)
+
 from sqlalchemy.orm import Session
-from pydantic import BaseModel
-from app.database import SessionLocal
-from app.models import KNNConfiguration, TrainingData, TrainingNilai
-from app.schemas import KNNConfigurationRequest, KNNConfigurationResponse
+
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score
+
+from sklearn.preprocessing import (
+    MinMaxScaler,
+    LabelEncoder
+)
+
+from sklearn.metrics import (
+    precision_score,
+    recall_score,
+    f1_score,
+    accuracy_score
+)
+
+import pandas as pd
 import numpy as np
+
+from app.database import SessionLocal
+
+from app.models import (
+    KNNConfiguration,
+    TrainingData
+)
+
+from app.schemas import (
+    KNNConfigurationRequest,
+    KNNConfigurationResponse,
+    SettingKSchema
+)
 
 router = APIRouter()
 
+
+# =========================================
+# DATABASE SESSION
+# =========================================
+
 def get_db():
+
     db = SessionLocal()
+
     try:
         yield db
+
     finally:
         db.close()
 
-def _get_or_create_config(db: Session):
-    """Ambil atau buat konfigurasi default"""
-    config = db.query(KNNConfiguration).first()
+
+# =========================================
+# GET OR CREATE CONFIG
+# =========================================
+
+def get_or_create_config(
+    db: Session
+):
+
+    config = db.query(
+        KNNConfiguration
+    ).first()
+
     if not config:
+
         config = KNNConfiguration()
+
         db.add(config)
+
         db.commit()
+
         db.refresh(config)
+
     return config
 
-def _calculate_model_metrics(db: Session, k_value: int):
-    """Hitung akurasi dan metrics model berdasarkan K"""
-    training_data = db.query(TrainingData).all()
-    
-    if len(training_data) < k_value:
+
+# =========================================
+# CALCULATE KNN METRICS
+# =========================================
+
+def calculate_metrics(
+    db: Session,
+    k_value: int
+):
+
+    training_data = db.query(
+        TrainingData
+    ).all()
+
+    if len(training_data) < 2:
+
         return {
-            "accuracy": 0.0,
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0
-        }
-    
-    # Prepare data for KNN
-    X = []
-    y = []
-    
-    for training in training_data:
-        nilai_list = db.query(TrainingNilai).filter_by(training_id=training.id).all()
-        if nilai_list:
-            features = [n.nilai for n in nilai_list]
-            X.append(features)
-            y.append(training.bidang_minat)
-    
-    if len(X) < k_value or len(X) < 2:
-        return {
-            "accuracy": 0.0,
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0
-        }
-    
-    try:
-        # Normalize data
-        scaler = MinMaxScaler()
-        X_normalized = scaler.fit_transform(X)
-        
-        # Train KNN
-        knn = KNeighborsClassifier(n_neighbors=k_value)
-        knn.fit(X_normalized, y)
-        
-        # Predict
-        y_pred = knn.predict(X_normalized)
-        
-        # Calculate metrics
-        accuracy = accuracy_score(y, y_pred)
-        
-        # Handle multilabel classification
-        if len(np.unique(y)) > 2:
-            precision = precision_score(y, y_pred, average='weighted', zero_division=0)
-            recall = recall_score(y, y_pred, average='weighted', zero_division=0)
-            f1 = f1_score(y, y_pred, average='weighted', zero_division=0)
-        else:
-            precision = precision_score(y, y_pred, zero_division=0)
-            recall = recall_score(y, y_pred, zero_division=0)
-            f1 = f1_score(y, y_pred, zero_division=0)
-        
-        return {
-            "accuracy": float(accuracy),
-            "precision": float(precision),
-            "recall": float(recall),
-            "f1": float(f1)
-        }
-    except Exception as e:
-        print(f"Error calculating metrics: {e}")
-        return {
-            "accuracy": 0.0,
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0
+            "accuracy": 0,
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "samples": 0
         }
 
-# ================= GET KNN CONFIGURATION =================
-@router.get("/configuration", response_model=KNNConfigurationResponse)
-def get_configuration(db: Session = Depends(get_db)):
-    """Ambil konfigurasi KNN saat ini"""
-    config = _get_or_create_config(db)
-    return config
+    dataset = []
 
-# ================= UPDATE KNN CONFIGURATION =================
-@router.put("/configuration", response_model=KNNConfigurationResponse)
-def update_configuration(req: KNNConfigurationRequest, db: Session = Depends(get_db)):
-    """Update konfigurasi KNN dan hitung metrics"""
-    config = _get_or_create_config(db)
-    
-    # Update configuration
-    config.k_value = req.k_value
-    config.algorithm = req.algorithm
-    config.distance_metric = req.distance_metric
-    config.normalization = req.normalization
-    
-    # Count training samples
-    training_count = db.query(TrainingData).count()
-    config.training_samples = training_count
-    
-    # Calculate metrics
-    metrics = _calculate_model_metrics(db, req.k_value)
-    config.model_accuracy = metrics["accuracy"] * 100  # Convert to percentage
-    config.precision = metrics["precision"] * 100
-    config.recall = metrics["recall"] * 100
-    config.f1_score = metrics["f1"] * 100
-    
-    db.commit()
-    db.refresh(config)
-    
-    return config
+    for item in training_data:
 
-# ================= GET K VALUE ONLY =================
-@router.get("/k")
-def get_k(db: Session = Depends(get_db)):
-    """Ambil nilai K saja"""
-    config = _get_or_create_config(db)
-    return {"k": config.k_value}
+        dataset.append({
 
-# ================= SET K VALUE =================
-@router.post("/k")
-def set_k(data: dict, db: Session = Depends(get_db)):
-    """Update hanya nilai K"""
-    config = _get_or_create_config(db)
-    k_value = data.get("k", 3)
-    
-    config.k_value = k_value
-    
-    # Count training samples
-    training_count = db.query(TrainingData).count()
-    config.training_samples = training_count
-    
-    # Calculate metrics
-    metrics = _calculate_model_metrics(db, k_value)
-    config.model_accuracy = metrics["accuracy"] * 100
-    config.precision = metrics["precision"] * 100
-    config.recall = metrics["recall"] * 100
-    config.f1_score = metrics["f1"] * 100
-    
-    db.commit()
-    db.refresh(config)
-    
+            "matematika":
+                item.matematika,
+
+            "pemrograman_dasar":
+                item.pemrograman_dasar,
+
+            "basis_data":
+                item.basis_data,
+
+            "jaringan_komputer":
+                item.jaringan_komputer,
+
+            "kecerdasan_buatan":
+                item.kecerdasan_buatan,
+
+            "struktur_data":
+                item.struktur_data,
+
+            "statistika":
+                item.statistika,
+
+            "sistem_operasi":
+                item.sistem_operasi,
+
+            "pbo":
+                item.pbo,
+
+            "minat_jurusan":
+                item.minat_jurusan
+        })
+
+    df = pd.DataFrame(dataset)
+
+    features = [
+
+        "matematika",
+        "pemrograman_dasar",
+        "basis_data",
+        "jaringan_komputer",
+        "kecerdasan_buatan",
+        "struktur_data",
+        "statistika",
+        "sistem_operasi",
+        "pbo"
+    ]
+
+    X = df[features]
+
+    y = df["minat_jurusan"]
+
+    # =========================
+    # LABEL ENCODER
+    # =========================
+
+    encoder = LabelEncoder()
+
+    y_encoded = encoder.fit_transform(y)
+
+    # =========================
+    # NORMALIZATION
+    # =========================
+
+    scaler = MinMaxScaler()
+
+    X_scaled = scaler.fit_transform(X)
+
+    # =========================
+    # VALIDASI K
+    # =========================
+
+    if k_value >= len(X_scaled):
+
+        k_value = max(
+            1,
+            len(X_scaled) - 1
+        )
+
+    # =========================
+    # TRAIN MODEL
+    # =========================
+
+    model = KNeighborsClassifier(
+        n_neighbors=k_value
+    )
+
+    model.fit(
+        X_scaled,
+        y_encoded
+    )
+
+    # =========================
+    # PREDICT TRAINING
+    # =========================
+
+    y_pred = model.predict(
+        X_scaled
+    )
+
+    # =========================
+    # METRICS
+    # =========================
+
+    accuracy = accuracy_score(
+        y_encoded,
+        y_pred
+    )
+
+    precision = precision_score(
+        y_encoded,
+        y_pred,
+        average='weighted',
+        zero_division=0
+    )
+
+    recall = recall_score(
+        y_encoded,
+        y_pred,
+        average='weighted',
+        zero_division=0
+    )
+
+    f1 = f1_score(
+        y_encoded,
+        y_pred,
+        average='weighted',
+        zero_division=0
+    )
+
     return {
-        "message": "Nilai K berhasil diupdate",
-        "k": config.k_value,
-        "accuracy": config.model_accuracy
+
+        "accuracy":
+            float(accuracy * 100),
+
+        "precision":
+            float(precision * 100),
+
+        "recall":
+            float(recall * 100),
+
+        "f1":
+            float(f1 * 100),
+
+        "samples":
+            len(training_data)
     }
 
-# ================= GET METRICS =================
-@router.get("/metrics")
-def get_metrics(db: Session = Depends(get_db)):
-    """Ambil metrics KNN"""
-    config = _get_or_create_config(db)
+
+# =========================================
+# GET CONFIGURATION
+# =========================================
+
+@router.get(
+    "/configuration",
+    response_model=
+        KNNConfigurationResponse
+)
+def get_configuration(
+    db: Session = Depends(get_db)
+):
+
+    config = get_or_create_config(
+        db
+    )
+
+    return config
+
+
+# =========================================
+# UPDATE CONFIGURATION
+# =========================================
+
+@router.put(
+    "/configuration",
+    response_model=
+        KNNConfigurationResponse
+)
+def update_configuration(
+    req: KNNConfigurationRequest,
+    db: Session = Depends(get_db)
+):
+
+    config = get_or_create_config(
+        db
+    )
+
+    metrics = calculate_metrics(
+        db,
+        req.k_value
+    )
+
+    config.k_value = req.k_value
+
+    config.algorithm = req.algorithm
+
+    config.distance_metric = (
+        req.distance_metric
+    )
+
+    config.normalization = (
+        req.normalization
+    )
+
+    config.training_samples = (
+        metrics["samples"]
+    )
+
+    config.model_accuracy = (
+        metrics["accuracy"]
+    )
+
+    config.precision = (
+        metrics["precision"]
+    )
+
+    config.recall = (
+        metrics["recall"]
+    )
+
+    config.f1_score = (
+        metrics["f1"]
+    )
+
+    db.commit()
+
+    db.refresh(config)
+
+    return config
+
+
+# =========================================
+# GET K VALUE
+# =========================================
+
+@router.get("/k")
+def get_k(
+    db: Session = Depends(get_db)
+):
+
+    config = get_or_create_config(
+        db
+    )
+
     return {
-        "training_samples": config.training_samples,
-        "model_accuracy": config.model_accuracy,
-        "precision": config.precision,
-        "recall": config.recall,
-        "f1_score": config.f1_score,
-        "algorithm": config.algorithm,
-        "distance_metric": config.distance_metric,
-        "normalization": config.normalization
+        "k": config.k_value
+    }
+
+
+# =========================================
+# UPDATE K VALUE
+# =========================================
+
+@router.put("/k")
+def set_k(
+    data: SettingKSchema,
+    db: Session = Depends(get_db)
+):
+
+    config = get_or_create_config(
+        db
+    )
+
+    metrics = calculate_metrics(
+        db,
+        data.nilai_k
+    )
+
+    config.k_value = data.nilai_k
+
+    config.training_samples = (
+        metrics["samples"]
+    )
+
+    config.model_accuracy = (
+        metrics["accuracy"]
+    )
+
+    config.precision = (
+        metrics["precision"]
+    )
+
+    config.recall = (
+        metrics["recall"]
+    )
+
+    config.f1_score = (
+        metrics["f1"]
+    )
+
+    db.commit()
+
+    db.refresh(config)
+
+    return {
+
+        "message":
+            "Nilai K berhasil diupdate",
+
+        "k": config.k_value,
+
+        "accuracy":
+            config.model_accuracy
+    }
+
+
+# =========================================
+# GET METRICS
+# =========================================
+
+@router.get("/metrics")
+def get_metrics(
+    db: Session = Depends(get_db)
+):
+
+    config = get_or_create_config(
+        db
+    )
+
+    return {
+
+        "training_samples":
+            config.training_samples,
+
+        "model_accuracy":
+            config.model_accuracy,
+
+        "precision":
+            config.precision,
+
+        "recall":
+            config.recall,
+
+        "f1_score":
+            config.f1_score,
+
+        "algorithm":
+            config.algorithm,
+
+        "distance_metric":
+            config.distance_metric,
+
+        "normalization":
+            config.normalization
     }
