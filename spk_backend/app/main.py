@@ -39,6 +39,10 @@ from app.routers.knn_settings_router import (
     router as knn_settings_router
 )
 
+from app.routers.user_input_router import (
+    router as user_input_router
+)
+
 # =========================================
 # FASTAPI APP
 # =========================================
@@ -111,6 +115,15 @@ app.include_router(
     prefix="/training",
 
     tags=["Training Data"]
+)
+
+app.include_router(
+
+    user_input_router,
+
+    prefix="/user-input",
+
+    tags=["User Input"]
 )
 
 app.include_router(

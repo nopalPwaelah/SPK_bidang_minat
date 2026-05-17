@@ -1,0 +1,1001 @@
+nama,tahun_data,matematika,pemrograman_dasar,basis_data,jaringan_komputer,kecerdasan_buatan,struktur_data,statistika,sistem_operasi,pbo,minat_jurusan
+Iwan Lestari,2022,3.0,2.7,1.0,1.0,3.7,2.0,3.7,3.7,2.0,AI Engineering
+Euis Hidayat,2022,4.0,2.0,3.7,4.0,3.0,2.0,3.3,2.3,2.3,AI Engineering
+Euis Chaniago,2022,2.0,3.3,4.0,2.7,2.3,3.0,2.0,3.7,4.0,RPL
+Tania Pohan,2022,3.0,3.3,4.0,3.0,3.3,3.3,3.3,3.3,3.0,AI Engineering
+Iwan Al-Faris,2022,3.3,3.7,3.7,4.0,3.0,1.0,2.0,4.0,4.0,Cyber Security
+Aris Fitriani,2022,3.0,2.0,4.0,4.0,3.7,1.0,2.7,3.7,3.7,Cyber Security
+Rizky Ramadhan,2022,3.7,3.0,3.3,3.0,3.7,3.0,4.0,3.3,2.7,AI Engineering
+Zaki Lubis,2022,1.0,3.0,3.3,1.0,3.0,4.0,2.0,3.3,3.7,RPL
+Vina Aminah,2022,3.0,2.3,3.7,3.3,2.7,2.0,2.7,4.0,3.7,Cyber Security
+Joko Hardi,2022,1.0,4.0,4.0,1.0,3.7,4.0,3.3,4.0,3.3,RPL
+Rosa Sitepu,2022,3.3,3.0,3.3,2.3,4.0,1.0,3.0,2.0,3.3,AI Engineering
+Iwan Ramadhan,2022,3.0,2.3,2.3,3.7,2.3,2.0,2.7,4.0,1.0,Cyber Security
+Doni Rahayu,2022,2.7,3.3,3.0,2.3,2.3,3.0,3.3,3.7,3.3,RPL
+Dedi Zulkarnain,2022,4.0,1.0,4.0,2.0,3.7,2.3,3.3,4.0,2.3,AI Engineering
+Putu Lestari,2022,3.0,4.0,3.0,1.0,2.3,4.0,2.0,2.3,4.0,RPL
+Indah Harahap,2022,3.3,2.3,3.7,2.0,3.7,1.0,3.0,3.7,2.0,AI Engineering
+Laila Mahendra,2022,3.7,2.0,2.3,3.7,4.0,4.0,3.3,3.3,3.3,AI Engineering
+Iwan Barus,2022,3.7,2.0,2.7,3.3,3.3,3.0,3.0,3.3,2.0,AI Engineering
+Andi Susanto,2022,3.3,3.7,4.0,3.0,3.7,4.0,3.3,2.0,3.3,RPL
+Citra Saputra,2022,2.7,3.7,2.0,4.0,2.0,4.0,4.0,4.0,4.0,Cyber Security
+Citra Ginting,2022,4.0,1.0,2.3,3.7,2.7,3.3,1.0,3.0,1.0,Cyber Security
+Vina Setiawan,2022,2.0,4.0,1.0,4.0,1.0,1.0,3.0,3.0,3.3,Cyber Security
+Indah Hidayat,2022,3.7,3.0,1.0,2.0,3.7,2.0,3.7,2.3,4.0,AI Engineering
+Joko Chaniago,2022,3.3,4.0,2.0,2.3,4.0,2.0,3.7,1.0,1.0,AI Engineering
+Putu Siregar,2022,3.0,4.0,3.0,3.3,3.0,3.3,2.3,4.0,3.0,RPL
+Rosa Barus,2022,2.0,2.3,4.0,3.0,3.7,2.3,2.3,3.7,2.3,Cyber Security
+Gani Susanto,2022,2.0,4.0,3.3,2.0,3.7,4.0,2.3,2.3,3.3,RPL
+Aris Utami,2022,2.0,3.0,3.3,2.7,3.3,4.0,3.3,3.3,4.0,RPL
+Laila Pohan,2022,3.0,1.0,2.7,3.0,3.3,4.0,3.3,4.0,2.3,AI Engineering
+Dewi Saputra,2022,3.0,3.7,4.0,3.3,2.7,3.3,4.0,2.3,4.0,RPL
+Gani Siregar,2022,3.3,1.0,3.3,3.0,3.3,2.3,3.3,1.0,3.0,AI Engineering
+Euis Hardi,2022,4.0,2.7,2.3,3.0,2.3,4.0,3.7,3.3,1.0,Cyber Security
+Euis Pratama,2022,1.0,3.3,3.7,4.0,2.3,2.0,4.0,3.0,2.7,Cyber Security
+Made Mulyono,2022,3.3,3.7,3.0,3.3,3.3,3.7,1.0,3.7,3.0,RPL
+Indah Wulandari,2022,3.3,3.3,2.0,2.0,3.0,2.0,3.7,3.3,1.0,AI Engineering
+Bambang Fitriani,2022,3.3,3.0,2.3,4.0,4.0,2.3,4.0,2.7,4.0,AI Engineering
+Euis Harahap,2022,3.3,2.0,2.3,3.7,3.7,1.0,3.0,2.0,2.3,AI Engineering
+Dedi Hasibuan,2022,2.7,2.0,3.7,3.3,2.7,3.3,3.0,3.0,2.3,Cyber Security
+Agus Lubis,2022,4.0,2.3,4.0,4.0,2.7,3.7,2.7,3.0,3.0,Cyber Security
+Vina Wulandari,2022,3.0,1.0,3.7,2.3,3.0,2.7,4.0,3.7,3.7,AI Engineering
+Farhan Fitriani,2022,1.0,1.0,4.0,4.0,1.0,3.7,3.7,3.7,4.0,Cyber Security
+Fajar Sari,2022,3.0,3.3,1.0,2.3,3.7,2.3,3.3,2.3,2.7,AI Engineering
+Joko Barus,2022,4.0,3.0,2.0,3.0,2.7,4.0,2.3,3.3,2.0,Cyber Security
+Hendra Saputra,2022,2.7,4.0,3.7,3.0,2.7,2.7,1.0,3.3,2.0,Cyber Security
+Maya Lubis,2022,2.0,3.0,4.0,3.3,1.0,3.7,2.3,1.0,4.0,RPL
+Eko Lestari,2022,4.0,1.0,2.3,3.3,3.3,2.0,2.3,3.0,3.0,Cyber Security
+Euis Simanjuntak,2022,3.3,2.0,3.0,1.0,4.0,2.7,3.7,3.3,1.0,AI Engineering
+Citra Pasaribu,2022,3.3,4.0,3.3,2.3,2.7,3.0,3.7,2.7,3.0,RPL
+Lani Utami,2022,3.0,3.3,3.3,3.3,2.0,3.7,2.7,3.0,3.7,RPL
+Zaki Pratama,2022,1.0,3.7,4.0,2.0,1.0,4.0,1.0,3.7,4.0,RPL
+Budi Utami,2022,2.7,3.0,4.0,2.7,1.0,4.0,3.3,3.0,3.0,RPL
+Tania Ginting,2022,3.3,3.0,3.7,2.0,4.0,2.0,3.3,3.7,3.3,AI Engineering
+Ayu Manurung,2022,2.7,3.7,3.0,3.3,2.7,3.0,3.7,3.3,4.0,RPL
+Agus Santoso,2022,3.0,2.3,2.7,2.3,4.0,4.0,3.7,3.7,3.3,AI Engineering
+Dedi Ramadhan,2022,3.3,3.7,2.7,2.7,3.3,3.0,3.7,3.7,2.0,AI Engineering
+Ayu Siahaan,2022,4.0,3.7,3.3,2.0,3.3,4.0,2.7,4.0,3.3,RPL
+Rosa Simanjuntak,2022,2.3,2.0,1.0,3.7,4.0,3.0,3.7,3.3,4.0,Cyber Security
+Doni Sitepu,2022,1.0,3.0,3.0,1.0,1.0,3.0,3.7,1.0,4.0,RPL
+Euis Siregar,2022,2.3,1.0,1.0,4.0,2.3,3.7,3.0,3.0,2.7,Cyber Security
+Eko Barus,2022,3.7,2.7,1.0,3.7,3.7,3.7,4.0,2.3,2.7,AI Engineering
+Lani Siregar,2022,3.7,3.3,3.7,1.0,3.7,3.0,1.0,3.0,3.7,RPL
+Zaki Siahaan,2022,2.0,4.0,3.3,4.0,1.0,3.0,3.3,4.0,4.0,RPL
+Farhan Pratama,2022,2.0,1.0,2.7,3.3,2.3,2.3,3.0,3.7,4.0,Cyber Security
+Lani Fitriani,2022,2.3,1.0,3.7,3.0,2.7,2.7,3.7,3.7,3.0,Cyber Security
+Siska Hardi,2022,3.3,3.7,3.0,2.3,3.3,1.0,4.0,2.3,3.3,AI Engineering
+Rizky Barus,2022,2.0,3.7,3.3,4.0,2.0,1.0,3.7,3.7,4.0,Cyber Security
+Fajar Al-Faris,2022,3.7,2.0,3.3,2.3,3.0,2.7,4.0,2.7,3.0,AI Engineering
+Dadan Tanjung,2022,2.3,3.7,3.7,2.0,1.0,3.0,2.0,3.0,3.3,RPL
+Dadan Ginting,2022,4.0,3.3,2.7,1.0,3.7,4.0,3.7,3.0,2.3,AI Engineering
+Nina Rahayu,2022,3.3,2.3,4.0,4.0,2.3,3.7,3.0,3.0,4.0,Cyber Security
+Bagas Zulkarnain,2022,3.0,2.3,3.3,4.0,4.0,3.0,1.0,3.7,2.3,Cyber Security
+Zaki Pohan,2022,4.0,1.0,3.7,3.7,3.3,2.3,4.0,2.7,3.0,AI Engineering
+Putu Mahendra,2022,3.0,2.3,3.3,2.3,3.7,3.3,4.0,3.0,3.0,AI Engineering
+Rizky Simanjuntak,2022,3.0,2.3,1.0,3.3,3.3,3.0,2.3,3.0,1.0,Cyber Security
+Farhan Chaniago,2022,2.3,1.0,3.7,3.3,1.0,4.0,2.3,3.3,3.7,Cyber Security
+Indah Lestari,2022,3.7,2.0,2.0,3.7,4.0,3.0,4.0,3.7,3.0,AI Engineering
+Dedi Sembiring,2022,3.0,4.0,2.7,3.7,3.3,3.0,1.0,3.0,4.0,Cyber Security
+Aris Barus,2022,3.3,3.7,3.3,2.7,3.3,3.7,4.0,2.3,3.7,RPL
+Dewi Chaniago,2022,2.3,3.3,3.3,2.7,4.0,3.7,3.0,3.0,3.0,RPL
+Citra Barus,2022,3.0,1.0,2.3,3.3,3.3,1.0,3.3,2.0,3.0,AI Engineering
+Siska Situmorang,2022,3.3,3.0,3.0,2.7,3.3,3.0,2.0,3.3,3.0,RPL
+Dewi Manurung,2022,2.7,3.7,4.0,1.0,3.0,3.7,3.0,3.7,3.0,RPL
+Dedi Saputra,2022,4.0,3.7,3.0,4.0,3.7,4.0,4.0,4.0,4.0,AI Engineering
+Agus Simanjuntak,2022,4.0,3.3,1.0,3.7,3.3,3.0,3.0,1.0,2.0,AI Engineering
+Bambang Puspita,2022,2.0,3.3,3.0,2.3,3.7,4.0,2.7,2.7,4.0,RPL
+Dadan Wijaya,2022,3.7,2.7,3.7,3.3,3.7,4.0,3.7,2.7,3.0,AI Engineering
+Citra Harahap,2022,2.7,4.0,3.7,4.0,3.7,3.7,3.7,3.3,3.0,RPL
+Rina Puspita,2022,2.0,4.0,4.0,2.7,1.0,3.7,3.0,1.0,3.0,RPL
+Ayu Fitriani,2022,3.3,3.3,2.0,2.0,3.7,4.0,3.3,1.0,2.7,AI Engineering
+Tania Barus,2022,3.7,3.0,3.3,1.0,2.7,3.0,3.3,3.7,4.0,RPL
+Lani Tanjung,2022,3.3,4.0,3.7,3.7,3.3,2.7,3.7,3.0,3.0,AI Engineering
+Hendra Ramadhan,2022,3.7,4.0,4.0,2.3,3.7,3.7,3.7,2.3,1.0,AI Engineering
+Bagas Susanto,2022,3.3,2.0,3.7,3.0,3.3,2.3,4.0,2.7,2.3,AI Engineering
+Bambang Lestari,2022,4.0,4.0,3.7,4.0,4.0,3.0,1.0,2.3,3.3,RPL
+Dadan Harahap,2022,1.0,3.0,3.3,3.3,3.3,3.0,2.0,2.3,4.0,RPL
+Siti Mulyono,2022,2.0,3.7,2.3,3.3,2.0,3.7,1.0,3.0,3.0,Cyber Security
+Gita Puspita,2022,4.0,2.7,3.0,2.0,3.0,3.3,4.0,2.0,3.3,AI Engineering
+Dewi Kusuma,2022,2.0,3.7,3.3,2.0,1.0,3.3,2.3,1.0,4.0,RPL
+Rosa Siregar,2022,3.0,4.0,3.3,3.0,2.3,4.0,2.0,3.3,4.0,RPL
+Hendra Harahap,2022,4.0,3.0,4.0,2.3,3.3,2.7,3.3,2.3,4.0,AI Engineering
+Citra Situmorang,2022,3.3,4.0,2.3,4.0,4.0,3.7,2.7,4.0,2.7,Cyber Security
+Maya Kurniawan,2022,3.7,2.0,3.7,3.0,3.0,1.0,2.3,3.0,3.0,Cyber Security
+Rizky Sitepu,2022,4.0,4.0,3.7,2.7,3.7,2.3,3.3,3.0,3.3,AI Engineering
+Aris Susanto,2022,3.7,3.7,3.7,1.0,4.0,3.0,2.0,3.3,3.0,RPL
+Nina Wulandari,2022,3.7,2.0,2.7,2.3,4.0,3.0,3.0,2.3,3.7,AI Engineering
+Lani Barus,2022,3.3,2.7,3.3,2.7,3.7,1.0,3.7,2.3,3.7,AI Engineering
+Gani Al-Faris,2022,3.3,2.3,2.0,4.0,4.0,3.3,4.0,3.3,3.3,AI Engineering
+Bambang Wijaya,2022,2.0,2.7,4.0,4.0,2.3,3.0,4.0,3.3,2.7,Cyber Security
+Bambang Harahap,2022,4.0,3.7,1.0,4.0,3.7,3.0,3.3,4.0,2.0,AI Engineering
+Nyoman Simanjuntak,2022,1.0,3.7,3.7,2.0,2.7,4.0,3.3,2.3,4.0,RPL
+Putu Pohan,2022,3.7,2.0,3.7,2.0,3.0,3.0,3.3,4.0,3.3,AI Engineering
+Siska Harahap,2022,4.0,2.3,3.0,4.0,3.7,3.7,3.7,3.3,3.3,AI Engineering
+Taufik Susanto,2022,3.0,3.0,3.7,3.7,2.0,3.3,3.0,2.0,3.3,RPL
+Citra Siahaan,2022,3.7,3.3,4.0,2.0,3.0,2.0,3.0,1.0,1.0,AI Engineering
+Ayu Manurung,2022,3.7,3.7,2.0,2.7,3.3,1.0,3.3,2.3,2.3,AI Engineering
+Tania Tanjung,2022,3.7,4.0,2.7,2.0,3.7,3.0,3.3,3.3,2.0,AI Engineering
+Euis Pasaribu,2022,4.0,3.7,4.0,2.0,1.0,4.0,2.7,4.0,3.0,RPL
+Nyoman Setiawan,2022,3.7,1.0,3.3,3.7,3.3,2.3,3.0,3.7,4.0,AI Engineering
+Ayu Wijaya,2022,3.0,3.3,3.3,3.7,3.7,3.7,3.3,3.0,2.7,Cyber Security
+Gita Nasution,2022,3.7,2.0,3.7,1.0,3.7,1.0,4.0,2.0,2.3,AI Engineering
+Fajar Pohan,2022,2.3,3.3,3.7,1.0,1.0,3.0,1.0,3.3,3.7,RPL
+Nina Barus,2022,2.7,3.3,3.3,3.0,3.7,3.3,3.3,1.0,4.0,RPL
+Hana Kurniawan,2022,3.3,2.7,2.3,3.3,2.0,2.0,4.0,3.3,2.7,Cyber Security
+Fajar Manurung,2022,3.0,2.7,3.7,3.3,3.0,4.0,3.0,3.3,3.3,AI Engineering
+Gita Wijaya,2022,2.7,3.3,3.3,2.3,2.3,3.3,4.0,3.7,3.3,RPL
+Nyoman Kurniawan,2022,3.7,3.3,3.3,3.0,3.7,2.0,2.3,3.7,3.0,Cyber Security
+Dedi Setiawan,2022,3.0,3.7,3.7,2.7,3.3,1.0,3.7,2.7,4.0,AI Engineering
+Vina Rahayu,2022,3.0,3.3,2.0,3.7,3.0,3.7,3.7,4.0,2.7,Cyber Security
+Eko Fitriani,2022,3.7,3.3,3.3,4.0,1.0,3.0,1.0,3.7,3.3,RPL
+Aris Wijaya,2022,3.3,4.0,3.0,1.0,2.7,3.0,2.0,1.0,3.7,RPL
+Eko Saputra,2022,4.0,3.3,3.7,3.7,3.0,3.0,4.0,3.7,4.0,RPL
+Indah Fitriani,2022,2.3,3.7,3.3,2.3,1.0,4.0,3.3,2.3,3.7,RPL
+Dewi Barus,2022,2.0,4.0,3.3,3.7,1.0,3.0,2.7,3.0,3.3,RPL
+Lani Sitepu,2022,1.0,2.3,2.3,3.0,1.0,2.0,2.7,3.3,1.0,Cyber Security
+Putri Susanto,2022,2.7,3.3,3.3,2.7,4.0,3.3,2.0,3.3,4.0,RPL
+Joko Siregar,2022,3.3,3.7,2.3,3.3,3.3,3.0,2.0,3.7,3.7,Cyber Security
+Taufik Mahendra,2022,4.0,3.7,2.3,4.0,3.0,1.0,4.0,3.7,2.0,AI Engineering
+Bagas Utami,2022,4.0,2.3,3.7,3.0,4.0,4.0,3.0,1.0,2.0,AI Engineering
+Dadan Pasaribu,2022,2.0,4.0,2.3,4.0,4.0,2.0,3.3,3.0,2.0,Cyber Security
+Farhan Saputra,2022,4.0,3.3,3.0,2.3,1.0,3.0,2.0,3.0,3.0,RPL
+Hendra Ginting,2022,2.0,4.0,4.0,2.3,3.0,3.0,2.3,3.7,3.0,RPL
+Nyoman Santoso,2022,2.0,3.0,3.7,1.0,1.0,3.7,2.7,2.7,4.0,RPL
+Zaki Wijaya,2022,2.7,3.0,3.0,1.0,2.3,3.0,2.3,3.7,4.0,RPL
+Aris Hardi,2022,2.7,2.0,2.7,4.0,3.0,2.3,4.0,3.0,2.7,Cyber Security
+Doni Manurung,2022,3.0,3.0,3.7,2.3,2.3,3.7,3.7,1.0,4.0,RPL
+Dewi Lestari,2022,3.3,3.7,2.0,4.0,3.3,2.0,3.7,2.0,2.7,AI Engineering
+Citra Fitriani,2022,4.0,3.3,3.7,3.3,2.0,3.3,2.3,3.7,3.0,RPL
+Dedi Rahayu,2022,2.7,3.7,3.0,2.7,2.7,3.7,3.3,4.0,4.0,RPL
+Gani Hidayat,2022,3.3,3.3,2.7,3.0,3.0,3.0,3.3,1.0,3.3,AI Engineering
+Hana Santoso,2022,3.7,4.0,2.7,1.0,3.3,2.7,4.0,3.7,3.3,AI Engineering
+Doni Al-Faris,2022,4.0,3.0,2.3,4.0,3.7,3.0,4.0,2.7,4.0,AI Engineering
+Dadan Santoso,2022,2.3,3.0,3.3,1.0,3.7,4.0,4.0,2.0,3.3,RPL
+Eko Simanjuntak,2022,2.7,3.3,3.3,3.3,1.0,4.0,4.0,4.0,3.0,RPL
+Gita Nasution,2022,4.0,3.7,3.0,3.3,2.0,4.0,3.0,3.7,3.3,RPL
+Siti Siregar,2022,2.3,4.0,3.3,3.0,1.0,3.7,1.0,3.3,3.0,RPL
+Rosa Ramadhan,2022,2.7,3.3,3.7,3.0,2.7,3.3,4.0,2.7,3.0,RPL
+Taufik Hidayat,2022,3.3,3.3,2.3,4.0,3.0,1.0,2.3,3.3,2.0,Cyber Security
+Rina Ramadhan,2022,3.0,3.7,3.0,2.7,3.0,4.0,4.0,4.0,2.0,AI Engineering
+Budi Puspita,2022,3.0,3.3,3.0,3.3,3.7,3.3,2.0,3.7,3.3,RPL
+Putri Hardi,2022,3.0,4.0,4.0,3.7,4.0,4.0,3.3,2.0,3.3,AI Engineering
+Aris Puspita,2022,2.0,3.7,2.7,3.7,3.7,3.3,4.0,4.0,3.7,Cyber Security
+Agus Ginting,2022,3.7,2.3,3.7,3.7,4.0,2.3,2.3,3.3,2.3,Cyber Security
+Aris Pasaribu,2022,3.0,2.3,2.3,3.0,4.0,2.3,4.0,3.7,2.3,AI Engineering
+Gani Kusuma,2022,2.3,2.3,3.3,4.0,3.3,2.0,2.7,3.7,3.3,Cyber Security
+Laila Barus,2022,3.0,2.0,2.3,4.0,2.0,4.0,2.0,3.7,2.7,Cyber Security
+Putri Aminah,2022,2.7,2.3,3.0,4.0,2.3,4.0,1.0,3.3,1.0,Cyber Security
+Joko Ginting,2022,3.3,3.0,4.0,3.7,1.0,3.7,3.7,3.7,3.7,RPL
+Dedi Hidayat,2022,3.0,3.7,1.0,3.7,3.3,4.0,4.0,3.3,3.3,AI Engineering
+Dedi Hidayat,2022,3.3,3.0,2.0,2.7,3.3,1.0,3.3,3.7,2.3,AI Engineering
+Gani Mahendra,2022,2.3,3.0,3.3,4.0,4.0,2.0,3.3,3.3,2.0,Cyber Security
+Dewi Kurniawan,2022,1.0,1.0,2.3,3.0,3.3,1.0,3.3,3.7,2.0,Cyber Security
+Nyoman Barus,2022,1.0,3.0,3.7,1.0,3.0,3.7,2.3,2.0,3.3,RPL
+Aris Pasaribu,2022,1.0,2.0,1.0,4.0,2.3,1.0,1.0,3.7,2.0,Cyber Security
+Bambang Wijaya,2022,3.3,3.0,3.3,3.3,2.0,1.0,3.3,3.7,4.0,Cyber Security
+Farhan Sitepu,2022,4.0,2.3,2.0,2.3,3.7,3.7,4.0,3.7,1.0,AI Engineering
+Andi Wulandari,2022,2.0,3.7,3.0,4.0,2.7,3.3,3.3,3.7,3.7,RPL
+Siska Barus,2022,4.0,3.0,4.0,2.3,4.0,4.0,2.0,1.0,3.7,RPL
+Farhan Wijaya,2022,2.0,3.3,3.3,2.0,3.0,3.0,2.7,4.0,4.0,RPL
+Doni Mahendra,2022,4.0,4.0,4.0,3.0,4.0,3.0,3.3,2.0,3.0,RPL
+Rizky Mulyono,2022,2.0,4.0,4.0,4.0,3.3,4.0,3.3,3.3,3.3,RPL
+Nyoman Hidayat,2022,3.0,4.0,4.0,3.0,2.7,3.7,3.0,3.3,4.0,RPL
+Andi Kurniawan,2022,3.0,2.7,4.0,3.0,3.3,4.0,4.0,1.0,2.3,AI Engineering
+Rina Siahaan,2022,3.3,4.0,3.7,3.0,2.7,3.3,2.0,1.0,3.3,RPL
+Laila Susanto,2022,2.3,3.3,3.7,3.3,2.0,3.3,2.3,3.3,3.0,RPL
+Putri Kusuma,2022,3.0,2.0,2.7,2.3,3.0,3.7,3.7,3.0,3.3,AI Engineering
+Made Puspita,2022,4.0,3.0,4.0,3.3,3.3,1.0,3.7,1.0,2.3,AI Engineering
+Putu Chaniago,2022,3.0,2.3,3.3,4.0,2.7,3.7,3.3,3.3,3.0,Cyber Security
+Rina Lubis,2022,3.0,1.0,2.7,2.7,3.0,3.7,3.7,2.7,2.0,AI Engineering
+Rina Chaniago,2022,3.3,2.7,2.3,3.7,3.0,3.0,3.0,4.0,3.7,Cyber Security
+Rizky Sitepu,2022,3.0,3.7,1.0,3.7,2.7,2.0,3.0,3.7,2.7,Cyber Security
+Gani Hardi,2022,3.3,3.0,3.0,3.7,4.0,3.3,3.3,3.7,3.3,RPL
+Dadan Ramadhan,2022,2.7,2.0,3.7,3.0,2.3,3.0,1.0,3.7,3.7,Cyber Security
+Zaki Hardi,2022,3.7,2.3,3.0,3.7,3.0,3.0,2.3,3.7,3.3,Cyber Security
+Vina Pohan,2022,2.7,2.7,2.7,3.3,3.3,3.0,2.3,3.7,2.3,Cyber Security
+Andi Simanjuntak,2022,3.0,3.3,2.3,3.0,3.7,3.0,4.0,2.0,3.0,AI Engineering
+Farhan Tanjung,2022,2.7,4.0,4.0,4.0,2.0,4.0,2.7,2.7,3.7,RPL
+Dedi Siahaan,2022,3.0,3.7,3.3,3.0,2.7,2.0,3.7,3.0,2.7,Cyber Security
+Siska Santoso,2022,2.7,3.0,3.0,3.3,3.7,3.7,3.0,3.7,4.0,Cyber Security
+Rosa Harahap,2022,2.3,4.0,3.7,1.0,2.0,3.3,3.7,3.7,3.0,RPL
+Zaki Utami,2022,3.0,3.0,4.0,4.0,4.0,3.7,3.7,4.0,2.3,Cyber Security
+Iwan Siahaan,2023,2.3,2.7,1.0,3.7,3.3,2.0,3.7,3.3,4.0,Cyber Security
+Rina Zulkarnain,2023,3.0,2.3,3.7,4.0,2.7,2.0,1.0,3.3,3.3,Cyber Security
+Dewi Hardi,2023,4.0,3.3,3.7,2.3,3.0,3.0,2.7,2.3,3.0,RPL
+Aris Simanjuntak,2023,2.3,4.0,3.3,3.0,3.7,3.0,3.7,2.7,3.7,RPL
+Budi Siregar,2023,3.3,3.3,3.0,3.3,2.3,4.0,2.0,2.7,4.0,RPL
+Lani Pasaribu,2023,2.0,4.0,2.7,3.3,3.0,2.7,2.0,3.0,1.0,Cyber Security
+Lani Puspita,2023,3.3,3.0,2.7,3.0,3.7,4.0,2.3,4.0,3.3,Cyber Security
+Nyoman Sitepu,2023,4.0,3.0,3.0,2.7,3.3,2.7,3.3,2.7,2.7,AI Engineering
+Hana Siregar,2023,4.0,4.0,3.3,4.0,1.0,3.0,3.7,2.3,3.0,RPL
+Aris Kusuma,2023,2.7,2.3,4.0,3.0,3.7,3.3,2.7,3.7,2.7,Cyber Security
+Laila Saputra,2023,3.7,3.0,3.0,1.0,4.0,2.3,3.3,2.0,4.0,AI Engineering
+Hana Wijaya,2023,3.0,3.0,1.0,4.0,4.0,4.0,3.7,1.0,3.0,AI Engineering
+Putu Ramadhan,2023,3.3,3.3,3.3,3.0,3.3,3.7,2.3,3.7,2.0,Cyber Security
+Eko Al-Faris,2023,2.0,2.7,4.0,3.0,3.0,3.3,3.0,3.7,2.7,Cyber Security
+Tania Wijaya,2023,3.3,3.3,4.0,2.3,4.0,3.7,4.0,3.0,4.0,RPL
+Zaki Siregar,2023,3.7,3.3,3.3,3.3,4.0,4.0,4.0,3.7,2.3,AI Engineering
+Bagas Manurung,2023,2.3,2.3,3.3,3.0,1.0,3.0,4.0,3.0,4.0,Cyber Security
+Maya Hasibuan,2023,3.3,1.0,2.3,3.3,4.0,4.0,4.0,2.7,2.0,AI Engineering
+Citra Sari,2023,4.0,4.0,3.0,4.0,2.3,3.3,1.0,2.3,4.0,RPL
+Budi Mulyono,2023,4.0,3.7,2.0,2.0,3.3,2.7,3.7,2.0,3.0,AI Engineering
+Hendra Susanto,2023,2.0,3.7,3.0,2.7,4.0,3.7,2.3,4.0,4.0,RPL
+Made Ginting,2023,3.7,3.7,1.0,3.3,4.0,2.7,4.0,3.3,3.7,AI Engineering
+Dedi Kusuma,2023,1.0,3.0,3.3,3.3,2.3,3.0,3.0,2.7,3.0,RPL
+Gani Setiawan,2023,3.0,2.3,2.0,3.3,4.0,1.0,3.7,4.0,1.0,Cyber Security
+Indah Sembiring,2023,2.0,1.0,1.0,3.0,2.0,1.0,3.7,3.0,3.0,Cyber Security
+Nyoman Barus,2023,3.7,2.0,2.0,3.0,3.0,1.0,3.3,3.7,3.0,Cyber Security
+Fajar Pasaribu,2023,2.7,4.0,3.7,3.0,3.7,3.3,2.0,3.7,3.0,Cyber Security
+Zaki Susanto,2023,4.0,3.7,1.0,2.3,4.0,2.3,3.0,2.0,3.7,AI Engineering
+Dedi Saputra,2023,3.7,1.0,4.0,3.3,3.0,3.0,4.0,2.0,2.0,AI Engineering
+Rosa Tanjung,2023,4.0,1.0,2.7,4.0,2.0,3.0,2.7,4.0,1.0,Cyber Security
+Putu Pratama,2023,3.7,4.0,3.7,3.0,2.3,2.7,2.7,3.3,3.7,Cyber Security
+Putri Setiawan,2023,2.7,3.3,3.7,3.7,1.0,4.0,1.0,4.0,3.3,RPL
+Gita Lestari,2023,2.3,3.7,3.0,3.3,2.0,3.3,2.7,3.0,3.0,RPL
+Dedi Hasibuan,2023,2.0,3.7,3.3,3.0,3.3,3.7,4.0,4.0,3.7,RPL
+Hendra Lubis,2023,2.7,4.0,3.0,3.3,1.0,4.0,3.3,1.0,3.0,RPL
+Rosa Wijaya,2023,3.7,2.3,4.0,2.7,3.3,3.7,4.0,2.3,2.7,AI Engineering
+Dewi Ramadhan,2023,3.7,4.0,1.0,1.0,3.7,2.3,4.0,4.0,2.7,AI Engineering
+Agus Susanto,2023,3.0,1.0,2.7,1.0,3.3,4.0,3.7,2.7,3.3,AI Engineering
+Fajar Lestari,2023,2.0,3.0,3.0,4.0,1.0,3.0,3.3,3.0,2.0,Cyber Security
+Tania Siahaan,2023,4.0,3.7,4.0,3.7,1.0,3.3,4.0,4.0,3.7,RPL
+Iwan Ramadhan,2023,3.0,1.0,2.0,4.0,3.3,1.0,4.0,3.3,3.0,AI Engineering
+Laila Kurniawan,2023,3.7,3.0,2.0,2.7,3.7,3.7,3.7,3.7,1.0,AI Engineering
+Made Tanjung,2023,4.0,3.7,3.7,3.3,2.0,3.3,2.3,3.0,2.7,Cyber Security
+Taufik Aminah,2023,3.7,3.3,4.0,1.0,3.3,2.7,3.3,3.0,3.3,AI Engineering
+Nina Wijaya,2023,1.0,3.0,3.3,1.0,3.3,3.7,2.7,3.0,3.0,RPL
+Andi Saputra,2023,3.3,2.7,2.3,3.3,2.3,4.0,2.3,3.0,3.0,Cyber Security
+Zaki Fitriani,2023,4.0,4.0,2.7,1.0,3.7,2.7,3.7,3.7,2.0,AI Engineering
+Siti Zulkarnain,2023,3.0,4.0,4.0,2.7,2.3,4.0,3.3,3.0,4.0,RPL
+Nina Zulkarnain,2023,4.0,2.0,3.0,3.7,3.7,2.3,2.3,3.0,4.0,Cyber Security
+Dedi Mulyono,2023,1.0,3.3,4.0,2.7,1.0,3.0,3.0,3.3,4.0,RPL
+Budi Mulyono,2023,1.0,4.0,3.7,2.7,1.0,3.0,4.0,2.3,3.7,RPL
+Gita Nasution,2023,3.0,3.0,3.7,3.7,3.7,3.7,3.0,2.3,2.7,AI Engineering
+Andi Sari,2023,2.7,4.0,3.0,4.0,4.0,4.0,1.0,2.3,4.0,RPL
+Hana Pohan,2023,2.7,4.0,3.0,3.7,3.7,3.0,4.0,1.0,4.0,RPL
+Andi Ginting,2023,3.7,2.7,3.0,2.7,3.7,2.3,3.0,3.0,3.0,AI Engineering
+Siti Hasibuan,2023,2.7,3.0,3.3,2.3,2.0,3.7,3.0,2.3,3.7,RPL
+Gita Saputra,2023,3.0,3.3,4.0,3.7,2.3,3.0,1.0,1.0,3.7,RPL
+Laila Pohan,2023,3.7,2.7,3.3,3.0,3.3,2.0,3.3,2.0,3.0,AI Engineering
+Indah Hasibuan,2023,2.7,3.7,3.3,3.3,2.0,2.7,3.7,3.3,2.7,Cyber Security
+Siska Siahaan,2023,4.0,2.0,4.0,3.0,4.0,4.0,3.7,3.7,4.0,Cyber Security
+Citra Nasution,2023,3.3,2.3,1.0,3.0,3.0,4.0,3.0,3.7,3.7,AI Engineering
+Rizky Siregar,2023,3.3,3.0,4.0,3.7,3.3,4.0,2.0,2.0,4.0,RPL
+Farhan Wulandari,2023,2.3,2.7,2.0,3.3,3.3,1.0,3.3,3.3,3.0,Cyber Security
+Rina Kusuma,2023,4.0,3.0,4.0,2.7,1.0,4.0,3.0,3.7,3.3,RPL
+Dadan Wijaya,2023,3.7,3.3,3.3,2.7,3.0,2.0,4.0,3.3,3.3,AI Engineering
+Laila Pasaribu,2023,4.0,2.3,3.7,3.0,3.0,2.3,3.7,4.0,3.3,Cyber Security
+Made Saputra,2023,3.0,2.0,2.0,4.0,3.0,2.3,2.7,3.7,1.0,Cyber Security
+Dedi Siahaan,2023,3.3,1.0,2.0,3.7,1.0,2.0,3.7,3.7,3.3,Cyber Security
+Bambang Hidayat,2023,3.0,3.3,2.0,3.0,4.0,3.7,3.3,4.0,4.0,AI Engineering
+Ayu Fitriani,2023,2.7,3.0,4.0,3.0,2.0,1.0,1.0,3.3,4.0,Cyber Security
+Budi Tanjung,2023,3.3,3.0,1.0,1.0,3.0,3.7,3.3,2.0,2.3,AI Engineering
+Rizky Chaniago,2023,3.3,4.0,2.7,3.0,4.0,3.3,3.7,2.0,2.3,AI Engineering
+Bagas Utami,2023,2.0,2.3,3.0,3.7,1.0,3.7,3.3,4.0,3.7,Cyber Security
+Ayu Kusuma,2023,3.3,2.0,3.3,3.0,3.3,1.0,2.7,3.7,3.3,Cyber Security
+Dedi Pasaribu,2023,2.3,3.3,2.7,4.0,1.0,2.3,1.0,3.7,2.0,Cyber Security
+Hendra Saputra,2023,4.0,4.0,3.3,2.0,3.0,3.0,4.0,2.0,4.0,RPL
+Putri Al-Faris,2023,4.0,3.3,1.0,1.0,3.3,3.7,3.3,4.0,2.3,AI Engineering
+Joko Siregar,2023,2.0,3.3,4.0,3.0,3.0,3.0,2.3,2.3,3.3,RPL
+Hendra Ginting,2023,2.3,3.0,2.3,3.7,1.0,4.0,3.7,3.0,3.3,Cyber Security
+Rina Pohan,2023,3.0,4.0,2.0,2.3,3.0,3.0,3.7,2.7,3.0,AI Engineering
+Hana Aminah,2023,3.7,2.7,4.0,2.0,3.7,3.7,4.0,2.0,2.0,AI Engineering
+Bagas Wulandari,2023,3.3,3.7,3.7,2.0,4.0,4.0,2.7,1.0,4.0,RPL
+Putu Pasaribu,2023,2.7,4.0,3.0,3.0,2.0,4.0,3.3,2.3,3.0,RPL
+Budi Tanjung,2023,3.7,3.7,3.3,3.7,4.0,2.3,3.7,4.0,2.3,AI Engineering
+Putu Manurung,2023,2.3,3.0,4.0,4.0,2.0,3.3,3.3,2.3,3.3,RPL
+Dewi Mulyono,2023,3.7,2.3,3.7,3.0,3.7,2.7,2.0,3.0,1.0,Cyber Security
+Gita Hasibuan,2023,1.0,4.0,3.7,1.0,2.7,4.0,2.0,3.3,3.7,RPL
+Andi Aminah,2023,3.7,3.7,4.0,4.0,4.0,3.0,2.7,3.0,1.0,Cyber Security
+Made Hardi,2023,4.0,4.0,3.3,2.7,2.0,3.0,3.7,2.7,3.7,RPL
+Doni Setiawan,2023,3.3,2.0,2.7,3.3,2.7,2.7,2.0,3.3,2.0,Cyber Security
+Dadan Harahap,2023,2.7,4.0,3.0,1.0,3.0,4.0,4.0,3.3,3.3,RPL
+Bambang Susanto,2023,2.0,3.3,3.3,3.7,3.7,3.0,4.0,3.0,3.0,RPL
+Siska Manurung,2023,3.3,1.0,2.3,4.0,3.3,3.7,3.7,3.7,3.0,AI Engineering
+Joko Utami,2023,3.0,3.3,3.0,3.0,3.0,4.0,4.0,4.0,2.3,AI Engineering
+Bambang Chaniago,2023,3.7,3.7,1.0,3.0,3.3,3.3,2.3,3.3,3.3,Cyber Security
+Maya Hasibuan,2023,3.7,2.7,3.0,2.0,3.3,2.3,3.0,2.3,3.7,AI Engineering
+Rizky Wijaya,2023,3.7,3.7,3.3,1.0,2.0,3.3,2.7,3.7,3.0,RPL
+Rina Chaniago,2023,2.3,2.7,2.7,3.7,3.7,2.3,2.0,3.7,2.3,Cyber Security
+Dadan Lestari,2023,3.7,3.3,4.0,3.0,3.7,3.7,2.0,2.7,4.0,RPL
+Gani Pratama,2023,3.0,3.7,4.0,3.3,2.3,3.3,3.3,2.3,3.0,RPL
+Joko Kusuma,2023,3.0,3.0,4.0,4.0,2.3,2.7,2.0,3.7,3.7,Cyber Security
+Zaki Puspita,2023,1.0,1.0,2.7,3.3,1.0,2.3,2.0,3.0,4.0,Cyber Security
+Nina Siregar,2023,1.0,2.7,2.0,3.0,3.0,2.3,2.3,4.0,3.7,Cyber Security
+Nina Santoso,2023,4.0,4.0,2.3,3.7,4.0,2.7,2.3,4.0,3.7,Cyber Security
+Ayu Harahap,2023,2.3,3.3,3.0,2.7,3.3,3.7,2.0,4.0,4.0,RPL
+Gita Hasibuan,2023,3.7,2.3,3.0,1.0,4.0,2.0,3.7,2.3,3.3,AI Engineering
+Rosa Sari,2023,2.3,3.3,4.0,2.7,4.0,4.0,2.7,4.0,3.0,RPL
+Bambang Sembiring,2023,3.0,2.0,3.3,3.0,2.3,3.0,1.0,3.3,2.3,Cyber Security
+Agus Wijaya,2023,2.7,4.0,3.0,1.0,3.0,4.0,3.3,2.0,3.3,RPL
+Bambang Wijaya,2023,3.7,4.0,4.0,4.0,3.7,3.0,4.0,2.3,3.7,AI Engineering
+Putri Aminah,2023,4.0,2.3,3.7,2.3,4.0,2.0,4.0,3.7,3.7,AI Engineering
+Nyoman Kusuma,2023,3.0,4.0,2.3,2.0,3.7,3.7,4.0,2.0,2.7,AI Engineering
+Andi Sari,2023,3.7,3.7,4.0,1.0,3.7,1.0,3.0,3.0,3.0,AI Engineering
+Tania Nasution,2023,2.3,3.7,4.0,3.7,3.3,4.0,2.3,2.3,4.0,RPL
+Nina Lubis,2023,2.7,3.7,4.0,3.3,1.0,3.7,3.7,2.7,3.7,RPL
+Nyoman Nasution,2023,3.0,1.0,2.7,3.7,4.0,3.7,3.0,2.0,1.0,AI Engineering
+Rina Kusuma,2023,3.7,4.0,4.0,2.0,4.0,3.7,1.0,2.7,3.7,RPL
+Farhan Barus,2023,1.0,4.0,4.0,3.7,1.0,3.7,3.7,2.7,3.7,RPL
+Iwan Rahayu,2023,3.0,3.7,2.3,3.7,1.0,4.0,2.3,4.0,2.7,Cyber Security
+Laila Puspita,2023,3.3,3.7,3.7,3.0,3.0,3.7,2.3,3.3,4.0,RPL
+Fajar Utami,2023,3.7,1.0,3.0,3.7,4.0,4.0,4.0,3.3,2.0,Cyber Security
+Hana Lubis,2023,3.3,3.0,4.0,2.7,2.7,3.7,2.0,3.3,3.3,RPL
+Fajar Tanjung,2023,2.3,4.0,3.0,3.3,2.0,3.0,2.7,3.0,4.0,RPL
+Dewi Harahap,2023,3.3,3.0,2.7,3.3,2.3,2.3,3.0,3.0,3.7,Cyber Security
+Iwan Zulkarnain,2023,3.3,3.0,4.0,1.0,3.7,3.7,3.0,2.3,3.0,AI Engineering
+Bagas Wijaya,2023,3.0,4.0,1.0,4.0,4.0,2.0,3.7,1.0,2.3,AI Engineering
+Siska Ramadhan,2023,2.7,2.3,3.7,4.0,3.7,1.0,4.0,3.3,3.3,Cyber Security
+Nina Harahap,2023,4.0,4.0,3.0,3.3,2.0,3.0,2.3,2.7,3.3,RPL
+Nyoman Mulyono,2023,2.3,3.3,2.0,3.7,3.0,2.3,3.3,3.7,4.0,Cyber Security
+Fajar Hardi,2023,2.3,4.0,3.3,3.7,2.7,3.3,3.3,3.0,3.7,RPL
+Maya Fitriani,2023,4.0,2.0,4.0,2.0,3.3,2.0,3.3,3.7,1.0,AI Engineering
+Gita Lestari,2023,2.7,3.7,4.0,3.7,2.0,4.0,2.0,3.7,2.0,Cyber Security
+Hana Hidayat,2023,2.0,3.0,4.0,4.0,3.7,3.7,3.7,3.7,3.7,RPL
+Maya Aminah,2023,3.7,3.7,3.7,3.0,3.3,3.3,2.0,4.0,3.7,RPL
+Maya Al-Faris,2023,3.3,3.0,3.3,2.3,3.7,2.0,3.3,4.0,2.3,AI Engineering
+Dewi Ginting,2023,3.7,2.0,2.0,3.3,4.0,2.3,4.0,3.7,4.0,Cyber Security
+Siti Al-Faris,2023,4.0,2.0,3.7,3.0,4.0,1.0,3.3,4.0,2.0,AI Engineering
+Fajar Barus,2023,4.0,2.3,4.0,2.0,4.0,2.7,3.0,2.0,3.3,AI Engineering
+Siska Setiawan,2023,3.7,2.0,2.0,3.7,2.0,3.3,2.3,3.3,3.0,Cyber Security
+Citra Setiawan,2023,1.0,3.0,4.0,4.0,3.0,3.3,3.3,4.0,3.0,Cyber Security
+Indah Situmorang,2023,2.3,3.3,3.7,3.3,3.0,3.0,3.3,3.3,2.0,Cyber Security
+Andi Simanjuntak,2023,2.7,3.0,2.3,4.0,4.0,3.3,2.7,4.0,2.3,Cyber Security
+Bagas Ginting,2023,3.0,3.3,3.0,2.3,4.0,3.3,3.0,2.0,3.3,RPL
+Ayu Tanjung,2023,3.0,3.0,4.0,3.7,4.0,4.0,1.0,3.0,3.3,RPL
+Ayu Manurung,2023,3.3,2.0,2.7,4.0,3.0,2.7,3.3,3.0,4.0,AI Engineering
+Putu Utami,2023,4.0,1.0,3.7,2.7,3.0,2.7,3.7,3.0,2.0,AI Engineering
+Farhan Rahayu,2023,3.0,1.0,2.3,2.0,4.0,2.7,3.0,2.0,3.7,AI Engineering
+Aris Kurniawan,2023,3.0,2.3,2.7,3.7,3.0,2.0,3.3,3.0,2.7,AI Engineering
+Dadan Nasution,2023,3.7,3.7,4.0,2.3,3.7,3.0,2.3,3.3,3.7,RPL
+Bagas Wulandari,2023,2.0,2.0,2.7,3.7,3.7,3.7,4.0,3.7,3.3,Cyber Security
+Gani Lubis,2023,2.3,3.3,3.7,1.0,3.3,3.0,3.7,2.0,3.7,RPL
+Aris Setiawan,2023,2.0,3.7,4.0,3.0,4.0,3.0,2.0,3.3,3.7,Cyber Security
+Made Utami,2023,2.7,2.7,1.0,3.3,2.7,1.0,3.0,3.7,1.0,Cyber Security
+Siti Hasibuan,2023,2.7,3.7,4.0,3.7,3.3,4.0,1.0,3.3,4.0,RPL
+Putu Sitepu,2023,2.7,1.0,2.0,3.7,3.7,2.7,2.0,3.7,4.0,Cyber Security
+Taufik Hardi,2023,3.0,2.0,2.3,3.0,4.0,1.0,2.0,4.0,4.0,Cyber Security
+Citra Puspita,2023,4.0,3.0,2.3,4.0,3.3,3.7,3.3,1.0,3.3,AI Engineering
+Made Santoso,2023,3.7,4.0,3.3,2.0,3.0,1.0,3.3,3.0,4.0,AI Engineering
+Indah Puspita,2023,3.3,3.7,3.0,3.7,1.0,1.0,4.0,4.0,3.0,Cyber Security
+Putu Hardi,2023,2.7,3.7,3.0,3.0,3.7,1.0,1.0,3.7,3.7,Cyber Security
+Joko Ginting,2023,3.3,2.7,3.0,3.3,2.3,1.0,3.7,3.7,3.7,Cyber Security
+Dedi Barus,2023,3.7,2.7,2.7,3.3,2.3,3.3,4.0,3.3,2.7,Cyber Security
+Indah Nasution,2023,3.3,3.0,3.7,3.7,3.0,3.7,2.0,3.0,3.3,RPL
+Made Pohan,2023,3.0,3.0,4.0,2.0,3.7,3.3,2.3,3.3,4.0,RPL
+Zaki Al-Faris,2023,2.7,3.7,3.7,3.0,3.7,2.7,3.3,3.3,4.0,Cyber Security
+Rizky Saputra,2023,3.7,4.0,3.3,2.0,2.0,4.0,4.0,2.0,3.0,RPL
+Lani Kusuma,2023,3.3,4.0,4.0,2.7,3.3,3.3,3.3,3.3,3.7,RPL
+Gita Sembiring,2023,4.0,3.3,4.0,2.7,3.0,2.3,3.7,2.3,2.7,AI Engineering
+Siti Manurung,2023,3.3,2.3,1.0,2.3,3.3,3.3,3.7,3.7,2.3,AI Engineering
+Citra Barus,2023,2.3,3.3,4.0,3.7,4.0,3.3,2.0,2.7,3.3,RPL
+Gita Nasution,2023,3.0,1.0,3.0,2.7,4.0,3.0,3.3,2.3,2.3,AI Engineering
+Taufik Fitriani,2023,3.3,2.7,1.0,4.0,3.7,3.0,3.3,2.3,3.0,AI Engineering
+Gita Kurniawan,2023,3.0,4.0,3.7,3.0,1.0,3.0,2.7,4.0,3.0,RPL
+Nina Siahaan,2023,3.7,2.7,1.0,3.3,3.7,2.7,3.7,2.0,2.7,AI Engineering
+Bagas Lubis,2023,1.0,4.0,4.0,3.3,3.7,1.0,3.3,3.0,3.7,Cyber Security
+Gita Sitepu,2023,3.7,2.3,3.0,3.0,1.0,2.0,3.0,3.0,3.7,Cyber Security
+Fajar Hardi,2023,1.0,2.7,3.0,3.7,3.0,2.3,4.0,3.3,1.0,Cyber Security
+Budi Santoso,2023,2.3,3.3,2.3,3.3,2.7,2.3,2.7,4.0,2.7,Cyber Security
+Eko Zulkarnain,2023,2.3,1.0,3.0,4.0,4.0,3.0,3.0,3.7,3.7,Cyber Security
+Maya Aminah,2023,2.3,2.0,3.7,4.0,1.0,3.3,3.3,3.7,1.0,Cyber Security
+Nina Susanto,2023,3.3,3.0,2.7,2.3,3.7,2.0,3.3,1.0,2.3,AI Engineering
+Made Siregar,2023,3.3,4.0,1.0,4.0,3.3,2.0,3.0,2.7,3.7,AI Engineering
+Indah Susanto,2023,2.3,3.0,3.0,2.3,3.3,3.7,2.7,3.0,4.0,RPL
+Vina Lestari,2023,2.0,3.3,3.3,3.7,2.0,3.0,3.0,4.0,3.3,RPL
+Siska Siregar,2023,4.0,4.0,1.0,3.7,3.7,4.0,3.3,4.0,1.0,AI Engineering
+Laila Siahaan,2023,4.0,2.3,3.3,2.0,4.0,1.0,3.3,3.3,3.7,AI Engineering
+Fajar Wulandari,2023,2.3,3.3,3.7,3.0,2.7,3.3,3.0,3.3,4.0,RPL
+Nina Santoso,2023,3.3,3.3,3.7,3.7,2.0,4.0,1.0,2.3,3.0,RPL
+Agus Zulkarnain,2023,3.3,2.3,3.7,4.0,3.3,3.7,3.3,4.0,2.3,AI Engineering
+Ayu Ginting,2023,4.0,4.0,4.0,2.0,1.0,4.0,3.3,2.7,3.7,RPL
+Rizky Wijaya,2023,3.3,3.0,3.0,1.0,2.7,3.7,2.7,3.7,3.3,RPL
+Joko Chaniago,2023,4.0,3.7,3.0,3.7,4.0,2.7,3.7,3.3,4.0,AI Engineering
+Bagas Sembiring,2023,4.0,3.7,3.3,3.7,3.0,4.0,3.3,2.7,3.7,RPL
+Gita Kusuma,2023,2.7,4.0,4.0,3.0,3.0,3.0,1.0,2.3,3.7,RPL
+Euis Zulkarnain,2023,3.7,3.7,3.7,3.0,2.3,3.7,1.0,2.3,3.3,RPL
+Made Mulyono,2023,3.7,2.7,2.3,3.7,4.0,2.0,4.0,3.7,2.3,Cyber Security
+Taufik Wijaya,2023,4.0,2.7,3.0,3.7,3.7,2.7,1.0,3.3,2.0,Cyber Security
+Eko Hasibuan,2023,3.3,3.3,2.3,3.3,3.3,1.0,3.3,2.7,3.0,AI Engineering
+Rosa Siahaan,2023,3.3,3.7,3.7,1.0,4.0,3.3,2.3,1.0,3.0,RPL
+Farhan Kurniawan,2023,4.0,3.3,2.0,3.0,2.7,3.7,2.7,4.0,2.0,Cyber Security
+Siti Situmorang,2024,1.0,2.7,2.7,3.7,3.7,2.7,4.0,3.0,3.3,Cyber Security
+Hana Santoso,2024,3.3,2.7,3.7,3.7,3.3,1.0,3.0,2.3,2.0,AI Engineering
+Hendra Lestari,2024,2.3,2.7,3.7,4.0,3.7,3.7,2.7,3.0,2.7,Cyber Security
+Siti Pasaribu,2024,1.0,3.0,3.3,1.0,4.0,3.7,3.7,2.7,3.3,RPL
+Gani Hardi,2024,3.3,1.0,2.7,3.7,4.0,2.7,3.0,3.3,2.0,AI Engineering
+Vina Setiawan,2024,3.0,3.0,4.0,2.0,2.0,4.0,3.3,2.0,3.0,RPL
+Andi Hidayat,2024,1.0,3.7,4.0,4.0,2.3,3.0,4.0,4.0,3.3,RPL
+Farhan Fitriani,2024,3.7,4.0,3.0,3.7,4.0,3.7,1.0,2.0,3.7,RPL
+Siska Situmorang,2024,3.7,1.0,3.0,4.0,3.0,1.0,3.0,2.7,3.7,AI Engineering
+Putri Siregar,2024,1.0,2.7,2.3,3.7,3.0,3.7,2.0,3.7,4.0,Cyber Security
+Taufik Aminah,2024,3.7,3.7,3.7,3.0,2.7,3.0,3.3,2.0,3.3,RPL
+Dadan Kurniawan,2024,3.7,2.0,1.0,3.7,3.3,4.0,3.0,3.3,1.0,Cyber Security
+Andi Santoso,2024,2.0,3.7,2.7,4.0,1.0,3.3,3.0,3.3,2.0,Cyber Security
+Gita Saputra,2024,2.3,3.0,2.7,4.0,4.0,3.7,3.7,3.7,4.0,Cyber Security
+Hana Simanjuntak,2024,3.3,2.7,3.3,3.3,4.0,3.3,3.3,3.7,2.3,Cyber Security
+Nyoman Sembiring,2024,3.3,3.0,4.0,3.0,4.0,4.0,4.0,3.0,3.7,AI Engineering
+Doni Saputra,2024,3.7,3.3,4.0,2.7,2.7,3.7,4.0,4.0,3.3,RPL
+Tania Situmorang,2024,2.7,3.0,3.3,2.0,1.0,4.0,3.0,3.7,4.0,RPL
+Ayu Chaniago,2024,2.3,3.0,4.0,4.0,2.0,3.0,3.3,2.3,4.0,RPL
+Aris Hasibuan,2024,4.0,1.0,4.0,2.7,3.0,2.7,3.0,2.0,3.3,AI Engineering
+Budi Wulandari,2024,4.0,4.0,3.7,3.3,4.0,4.0,2.0,2.7,3.7,RPL
+Dadan Pratama,2024,1.0,3.7,3.3,3.3,2.3,3.7,2.0,2.3,4.0,RPL
+Citra Hidayat,2024,3.0,1.0,3.7,3.0,1.0,3.7,2.3,3.7,2.3,Cyber Security
+Putu Saputra,2024,4.0,4.0,3.7,3.7,2.0,2.7,3.0,4.0,3.7,Cyber Security
+Iwan Lubis,2024,4.0,3.7,4.0,2.0,3.3,3.0,3.7,2.3,3.7,AI Engineering
+Agus Kusuma,2024,3.0,4.0,1.0,2.3,3.0,3.3,3.7,2.7,1.0,AI Engineering
+Joko Hasibuan,2024,3.3,1.0,2.7,3.0,4.0,4.0,3.7,4.0,2.0,AI Engineering
+Eko Hidayat,2024,2.3,3.3,3.0,3.0,2.3,4.0,3.0,2.3,3.7,RPL
+Nyoman Setiawan,2024,4.0,3.0,3.0,2.3,2.7,4.0,2.0,3.3,3.3,RPL
+Iwan Situmorang,2024,3.3,4.0,2.3,3.7,3.7,2.0,4.0,4.0,2.7,AI Engineering
+Lani Situmorang,2024,4.0,2.3,2.3,3.7,2.3,1.0,2.3,4.0,1.0,Cyber Security
+Eko Lestari,2024,2.3,3.0,4.0,3.3,1.0,3.3,3.7,3.3,4.0,RPL
+Lani Sari,2024,2.0,3.7,4.0,2.0,2.3,4.0,3.7,2.7,3.0,RPL
+Ayu Santoso,2024,3.7,3.0,3.7,3.7,2.7,4.0,3.0,2.7,3.3,RPL
+Hana Fitriani,2024,3.3,4.0,3.7,3.0,2.3,3.0,2.0,2.3,3.0,RPL
+Taufik Lubis,2024,1.0,3.3,3.3,3.7,4.0,2.7,3.3,3.0,2.3,Cyber Security
+Tania Harahap,2024,4.0,3.3,4.0,4.0,3.3,3.3,1.0,3.7,2.3,Cyber Security
+Joko Siregar,2024,1.0,2.3,2.3,3.0,3.7,2.0,4.0,3.7,2.0,Cyber Security
+Farhan Santoso,2024,2.7,3.0,2.0,3.0,3.3,3.0,3.0,3.0,2.0,Cyber Security
+Gani Hidayat,2024,4.0,3.7,3.7,3.3,3.0,3.3,2.0,2.7,3.0,RPL
+Rina Siregar,2024,2.0,4.0,4.0,2.0,3.7,3.7,2.3,4.0,3.7,RPL
+Gani Chaniago,2024,3.7,2.7,4.0,3.3,2.7,2.3,3.7,3.7,1.0,Cyber Security
+Hendra Susanto,2024,4.0,4.0,2.7,3.7,3.3,2.7,3.7,3.3,2.3,AI Engineering
+Budi Tanjung,2024,4.0,2.7,2.3,3.0,2.7,4.0,2.7,3.3,2.0,Cyber Security
+Putu Lestari,2024,3.7,2.7,3.0,3.0,2.0,4.0,4.0,3.7,3.3,Cyber Security
+Eko Situmorang,2024,3.7,1.0,2.0,2.0,4.0,4.0,4.0,2.3,2.3,AI Engineering
+Hana Susanto,2024,3.7,4.0,3.3,2.0,3.7,4.0,3.0,2.0,3.0,AI Engineering
+Maya Sari,2024,2.3,4.0,4.0,1.0,1.0,3.7,3.0,4.0,3.7,RPL
+Vina Sitepu,2024,1.0,4.0,3.3,2.3,2.0,3.7,3.3,3.3,3.7,RPL
+Nyoman Rahayu,2024,3.7,4.0,3.7,2.3,4.0,4.0,2.3,4.0,3.7,RPL
+Putri Wulandari,2024,4.0,2.0,4.0,3.0,3.7,2.7,4.0,3.0,2.0,AI Engineering
+Rosa Manurung,2024,3.3,3.3,2.3,2.7,3.3,3.0,3.3,3.7,2.7,AI Engineering
+Made Kurniawan,2024,3.0,3.3,3.3,2.3,4.0,4.0,3.0,1.0,2.7,AI Engineering
+Hana Siregar,2024,2.7,4.0,3.3,3.3,3.0,1.0,2.0,3.0,3.7,Cyber Security
+Tania Mulyono,2024,4.0,3.3,2.7,3.3,3.7,4.0,1.0,3.3,4.0,Cyber Security
+Putri Harahap,2024,4.0,2.7,2.7,3.0,3.7,2.0,1.0,4.0,3.7,Cyber Security
+Rina Wulandari,2024,1.0,3.7,2.7,3.0,3.3,3.7,2.0,4.0,3.7,Cyber Security
+Rosa Siregar,2024,3.3,3.0,4.0,4.0,2.7,4.0,3.7,4.0,4.0,RPL
+Eko Al-Faris,2024,2.0,4.0,4.0,1.0,1.0,3.7,2.7,2.0,3.7,RPL
+Gita Al-Faris,2024,4.0,2.7,2.3,3.0,2.3,2.3,4.0,4.0,3.7,Cyber Security
+Hana Kurniawan,2024,4.0,1.0,2.3,3.7,4.0,4.0,4.0,4.0,2.3,Cyber Security
+Nina Wijaya,2024,3.7,3.3,3.7,3.0,1.0,3.7,4.0,2.7,4.0,RPL
+Lani Sembiring,2024,3.3,2.3,1.0,3.0,3.7,1.0,3.0,2.0,3.3,AI Engineering
+Taufik Chaniago,2024,3.3,3.3,3.0,4.0,2.3,3.3,2.0,3.7,3.7,RPL
+Dadan Setiawan,2024,3.7,2.0,2.7,4.0,3.0,3.3,4.0,1.0,3.3,AI Engineering
+Eko Simanjuntak,2024,3.3,2.0,1.0,2.0,3.7,4.0,3.3,3.3,3.0,AI Engineering
+Ayu Hardi,2024,2.0,3.0,3.0,2.3,2.3,4.0,4.0,1.0,3.7,RPL
+Hendra Chaniago,2024,2.3,3.3,4.0,3.3,2.3,3.3,2.3,3.0,3.0,RPL
+Taufik Tanjung,2024,4.0,1.0,3.0,4.0,2.0,1.0,1.0,3.7,3.3,Cyber Security
+Citra Setiawan,2024,1.0,3.0,3.7,2.0,3.3,3.7,1.0,2.3,3.7,RPL
+Aris Ramadhan,2024,1.0,3.7,3.0,2.0,3.0,3.0,3.0,3.7,3.7,RPL
+Maya Siahaan,2024,3.7,4.0,3.7,2.3,3.0,4.0,2.7,2.3,3.7,RPL
+Euis Saputra,2024,1.0,3.7,3.0,3.7,1.0,3.0,3.7,3.3,1.0,Cyber Security
+Citra Pratama,2024,3.3,4.0,3.7,1.0,3.3,2.3,3.0,3.0,2.0,AI Engineering
+Putri Ramadhan,2024,1.0,4.0,4.0,1.0,3.0,3.3,4.0,1.0,3.0,RPL
+Siska Siahaan,2024,3.7,2.3,1.0,4.0,2.3,2.7,2.3,3.7,4.0,Cyber Security
+Citra Tanjung,2024,3.3,3.3,3.3,2.0,4.0,3.3,2.3,3.3,4.0,RPL
+Joko Harahap,2024,2.3,4.0,3.3,3.7,2.7,4.0,4.0,2.3,3.3,RPL
+Budi Tanjung,2024,3.3,2.7,1.0,1.0,3.0,3.0,3.3,3.3,4.0,AI Engineering
+Farhan Chaniago,2024,2.7,4.0,2.3,3.0,2.0,3.0,3.3,3.0,2.7,Cyber Security
+Taufik Mahendra,2024,3.0,2.3,3.3,4.0,3.7,2.0,1.0,4.0,2.0,Cyber Security
+Putu Utami,2024,4.0,3.0,2.3,3.3,3.3,3.0,3.0,2.7,4.0,AI Engineering
+Vina Mulyono,2024,4.0,2.7,3.7,3.3,3.3,3.0,3.0,4.0,3.0,AI Engineering
+Fajar Wulandari,2024,4.0,1.0,3.0,3.7,3.0,1.0,3.0,4.0,2.7,AI Engineering
+Rosa Santoso,2024,4.0,3.0,3.3,2.0,3.0,3.3,3.0,2.0,2.0,AI Engineering
+Doni Fitriani,2024,1.0,3.3,4.0,2.7,2.3,4.0,1.0,2.0,4.0,RPL
+Dedi Mulyono,2024,4.0,3.3,1.0,2.0,4.0,3.7,4.0,4.0,3.0,AI Engineering
+Farhan Nasution,2024,4.0,2.7,4.0,3.3,3.7,2.3,3.0,1.0,3.0,AI Engineering
+Euis Lestari,2024,3.3,3.7,3.0,3.3,4.0,3.3,3.7,3.7,2.0,AI Engineering
+Nina Lubis,2024,3.0,2.0,2.0,3.3,3.3,3.7,3.7,3.7,4.0,AI Engineering
+Made Kusuma,2024,2.0,3.3,3.3,3.0,3.7,2.7,2.0,3.0,3.0,Cyber Security
+Citra Setiawan,2024,3.0,3.7,2.0,1.0,3.3,2.3,3.7,4.0,3.3,AI Engineering
+Tania Simanjuntak,2024,3.0,2.0,2.0,3.7,2.7,3.7,3.3,3.0,1.0,Cyber Security
+Gita Siregar,2024,3.7,3.0,4.0,4.0,3.7,3.3,3.7,2.3,3.0,AI Engineering
+Rizky Pasaribu,2024,4.0,3.3,4.0,1.0,3.3,2.0,3.0,1.0,1.0,AI Engineering
+Laila Hardi,2024,3.0,2.3,2.0,2.3,4.0,4.0,4.0,2.0,2.0,AI Engineering
+Siska Utami,2024,4.0,2.3,2.0,2.7,3.0,2.3,4.0,2.7,1.0,AI Engineering
+Rina Sembiring,2024,2.7,3.7,3.7,2.7,3.7,3.7,2.3,3.3,3.0,RPL
+Putu Mulyono,2024,4.0,3.7,2.7,3.7,3.7,4.0,4.0,4.0,3.7,AI Engineering
+Rina Wijaya,2024,2.7,3.3,3.7,2.7,3.7,3.3,4.0,1.0,3.7,RPL
+Rosa Fitriani,2024,4.0,3.0,3.3,4.0,2.7,3.3,2.0,2.7,3.7,RPL
+Aris Wulandari,2024,2.7,3.7,3.3,4.0,2.3,3.7,3.7,4.0,4.0,RPL
+Lani Siahaan,2024,3.0,4.0,4.0,2.0,3.7,3.3,4.0,2.7,3.3,RPL
+Aris Pasaribu,2024,4.0,3.7,3.7,1.0,3.7,3.0,1.0,3.7,4.0,RPL
+Gani Mahendra,2024,3.7,2.0,3.3,3.7,4.0,2.7,3.0,4.0,3.3,AI Engineering
+Euis Simanjuntak,2024,2.7,4.0,4.0,3.0,2.0,3.0,4.0,2.7,3.3,RPL
+Dewi Lubis,2024,3.0,3.3,3.3,2.7,2.3,4.0,2.3,3.7,3.0,RPL
+Laila Puspita,2024,3.3,3.7,3.7,3.3,2.0,1.0,3.3,4.0,3.3,Cyber Security
+Taufik Chaniago,2024,3.3,1.0,3.0,3.3,3.7,4.0,3.3,3.7,1.0,Cyber Security
+Budi Wulandari,2024,4.0,3.7,3.7,4.0,1.0,3.0,2.3,3.7,4.0,RPL
+Rosa Lubis,2024,2.3,3.7,3.0,1.0,1.0,3.0,2.7,2.3,3.0,RPL
+Tania Tanjung,2024,3.3,3.3,2.0,3.7,2.0,2.7,2.3,4.0,4.0,Cyber Security
+Joko Pasaribu,2024,1.0,3.0,3.7,3.0,3.3,3.7,1.0,2.3,3.3,RPL
+Maya Wijaya,2024,2.3,3.0,3.3,2.7,3.7,3.0,3.3,1.0,3.3,RPL
+Rosa Barus,2024,2.3,3.0,3.0,2.0,3.7,3.3,2.0,3.0,3.0,RPL
+Dedi Chaniago,2024,4.0,1.0,3.7,2.3,3.3,4.0,3.7,4.0,4.0,AI Engineering
+Iwan Pohan,2024,1.0,4.0,2.3,4.0,1.0,2.3,4.0,3.7,3.0,Cyber Security
+Nina Hardi,2024,2.0,3.3,3.3,3.0,1.0,1.0,3.3,3.0,3.0,Cyber Security
+Nina Nasution,2024,2.7,2.7,1.0,3.3,3.7,3.3,1.0,3.3,4.0,Cyber Security
+Joko Pasaribu,2024,2.0,4.0,3.0,4.0,4.0,3.3,2.3,2.7,3.7,RPL
+Maya Sitepu,2024,2.0,4.0,1.0,3.7,4.0,1.0,2.3,3.3,3.0,Cyber Security
+Dadan Ramadhan,2024,4.0,3.0,2.3,3.0,2.3,3.7,2.3,4.0,2.0,Cyber Security
+Agus Barus,2024,3.3,3.3,3.0,3.7,4.0,2.7,3.0,3.0,2.3,AI Engineering
+Joko Siregar,2024,4.0,3.7,3.3,2.0,2.3,3.7,2.0,2.0,4.0,RPL
+Citra Kurniawan,2024,4.0,3.0,3.3,3.7,2.7,3.7,2.7,3.3,3.7,RPL
+Dedi Pohan,2024,3.0,3.7,3.3,2.3,3.0,3.7,3.3,2.3,3.0,RPL
+Siti Pratama,2024,2.7,2.3,2.7,3.0,2.3,3.7,3.3,3.0,3.3,Cyber Security
+Hendra Sari,2024,3.3,3.0,3.0,2.7,3.0,1.0,4.0,2.0,2.0,AI Engineering
+Andi Kurniawan,2024,3.7,2.3,3.0,3.3,3.3,2.7,4.0,2.7,2.3,AI Engineering
+Maya Pohan,2024,3.3,3.7,3.0,3.3,3.0,3.3,3.0,2.0,2.3,AI Engineering
+Dadan Fitriani,2024,3.7,3.0,4.0,2.0,4.0,3.0,3.7,3.3,3.7,RPL
+Siti Tanjung,2024,3.3,2.7,2.7,2.0,3.3,2.3,3.3,3.0,2.3,AI Engineering
+Citra Simanjuntak,2024,2.7,4.0,3.7,4.0,1.0,3.3,3.7,4.0,4.0,RPL
+Rizky Siahaan,2024,4.0,2.3,1.0,3.3,3.0,2.0,4.0,3.0,3.0,AI Engineering
+Iwan Harahap,2024,1.0,3.0,3.0,2.0,4.0,3.7,3.0,3.0,4.0,RPL
+Rizky Siregar,2024,4.0,1.0,3.3,1.0,4.0,3.7,3.7,3.0,3.0,AI Engineering
+Tania Susanto,2024,3.7,3.3,2.3,1.0,3.0,3.3,3.7,1.0,2.7,AI Engineering
+Tania Nasution,2024,4.0,2.0,1.0,3.3,2.7,2.0,2.3,3.0,2.0,Cyber Security
+Laila Ginting,2024,3.3,3.3,2.0,3.3,3.0,3.7,3.7,4.0,1.0,Cyber Security
+Farhan Hidayat,2024,2.0,3.0,4.0,3.7,2.7,3.3,3.0,2.3,3.3,RPL
+Dewi Tanjung,2024,2.7,3.0,3.0,3.7,1.0,3.3,3.0,2.0,3.0,RPL
+Vina Chaniago,2024,4.0,4.0,3.0,2.7,2.0,4.0,2.0,2.0,3.7,RPL
+Maya Pratama,2024,4.0,4.0,3.0,3.0,2.3,3.3,2.3,2.3,4.0,RPL
+Aris Simanjuntak,2024,1.0,2.3,2.7,3.7,3.3,3.0,3.7,3.0,3.7,Cyber Security
+Bambang Sembiring,2024,3.0,1.0,3.0,4.0,3.7,3.0,3.0,2.7,2.3,AI Engineering
+Gita Wulandari,2024,3.7,2.3,2.7,3.0,4.0,1.0,3.3,4.0,3.0,Cyber Security
+Dewi Kurniawan,2024,3.7,3.3,1.0,4.0,1.0,2.3,3.3,3.0,2.7,Cyber Security
+Farhan Nasution,2024,2.3,4.0,3.7,1.0,3.3,3.7,2.0,4.0,3.0,RPL
+Fajar Lubis,2024,3.0,1.0,4.0,3.7,1.0,1.0,2.7,4.0,4.0,Cyber Security
+Andi Sari,2024,3.0,3.0,2.0,3.7,4.0,3.3,4.0,4.0,2.3,Cyber Security
+Rosa Nasution,2024,2.3,3.3,3.0,4.0,2.7,3.3,3.3,4.0,3.3,RPL
+Nina Tanjung,2024,3.3,3.3,3.7,4.0,2.7,4.0,3.0,4.0,3.3,RPL
+Dewi Pohan,2024,1.0,1.0,3.0,3.0,2.7,1.0,2.7,3.7,2.3,Cyber Security
+Maya Santoso,2024,3.3,2.7,1.0,3.0,3.0,3.7,3.7,2.0,4.0,AI Engineering
+Nyoman Fitriani,2024,3.3,2.0,2.7,3.0,3.3,2.7,4.0,3.7,2.0,AI Engineering
+Putri Simanjuntak,2024,3.7,2.7,3.7,1.0,3.7,2.7,3.3,2.3,4.0,AI Engineering
+Eko Kurniawan,2024,2.0,2.0,2.7,3.3,1.0,2.0,2.0,3.3,3.0,Cyber Security
+Budi Sari,2024,4.0,3.7,3.0,3.7,3.0,3.7,2.3,2.0,3.3,RPL
+Laila Sembiring,2024,1.0,2.3,2.3,4.0,3.3,2.0,3.7,4.0,2.0,Cyber Security
+Fajar Barus,2024,3.3,2.0,3.3,2.0,4.0,2.7,3.7,2.0,4.0,AI Engineering
+Hana Al-Faris,2024,2.0,2.7,1.0,4.0,2.7,3.3,4.0,4.0,3.0,Cyber Security
+Dadan Situmorang,2024,3.3,2.3,2.7,3.3,2.7,3.0,2.7,4.0,2.7,Cyber Security
+Nyoman Sitepu,2024,2.7,3.3,3.7,3.7,3.0,1.0,1.0,3.0,3.3,Cyber Security
+Dadan Pasaribu,2024,2.3,3.7,4.0,4.0,3.0,3.0,4.0,3.0,3.0,RPL
+Ayu Fitriani,2024,3.7,3.0,3.3,2.3,1.0,3.7,2.7,3.3,3.3,RPL
+Tania Saputra,2024,3.3,3.3,1.0,2.0,3.0,3.7,3.0,3.3,2.7,AI Engineering
+Putri Utami,2024,3.3,2.3,3.0,3.7,3.7,2.3,1.0,3.0,2.7,Cyber Security
+Dewi Hasibuan,2024,3.7,2.3,3.3,3.0,3.3,4.0,4.0,3.0,3.3,Cyber Security
+Rizky Lubis,2024,4.0,2.7,2.0,1.0,3.7,2.3,3.0,3.7,1.0,AI Engineering
+Rizky Pratama,2024,3.7,3.3,2.3,3.7,3.0,3.7,3.3,3.3,2.0,Cyber Security
+Bambang Simanjuntak,2024,1.0,3.7,4.0,3.0,3.7,3.7,3.7,3.0,3.7,RPL
+Dedi Ramadhan,2024,2.3,4.0,3.0,3.7,1.0,3.0,3.3,2.7,4.0,RPL
+Dedi Harahap,2024,3.3,3.0,3.7,3.0,2.3,3.7,3.3,3.0,3.3,RPL
+Made Zulkarnain,2024,3.0,3.3,2.0,3.3,2.0,2.0,4.0,3.7,2.7,Cyber Security
+Gani Siregar,2024,2.3,2.7,1.0,4.0,3.0,2.7,2.3,3.7,2.3,Cyber Security
+Eko Utami,2024,2.0,3.3,3.7,2.0,1.0,3.7,1.0,3.3,3.3,RPL
+Putu Chaniago,2024,3.0,2.7,3.0,1.0,4.0,3.3,3.7,2.3,4.0,AI Engineering
+Bagas Utami,2024,3.0,3.3,4.0,3.3,4.0,4.0,1.0,3.7,3.0,RPL
+Putri Puspita,2024,4.0,4.0,3.0,3.0,3.7,3.3,3.0,3.3,3.3,RPL
+Lani Sembiring,2024,2.0,2.3,2.7,3.7,3.0,3.3,3.7,4.0,2.3,Cyber Security
+Eko Al-Faris,2024,3.7,4.0,3.3,3.0,3.7,2.7,2.3,3.3,3.7,Cyber Security
+Siska Ginting,2024,4.0,3.0,2.7,3.0,3.3,1.0,3.0,2.3,1.0,AI Engineering
+Nina Al-Faris,2024,3.0,3.3,2.7,2.0,3.7,2.3,3.0,3.0,4.0,AI Engineering
+Eko Aminah,2024,3.7,3.0,3.7,3.0,4.0,3.3,1.0,2.0,3.3,RPL
+Rina Utami,2024,3.7,3.3,3.7,2.3,4.0,2.3,3.0,3.7,3.0,AI Engineering
+Nyoman Hidayat,2024,3.0,2.0,3.7,3.0,3.7,3.3,2.0,3.3,3.3,Cyber Security
+Budi Lestari,2024,3.3,4.0,2.0,3.7,4.0,3.7,3.7,4.0,4.0,Cyber Security
+Rina Hasibuan,2024,2.7,2.7,2.0,3.7,3.3,3.3,2.3,4.0,3.7,Cyber Security
+Hana Sembiring,2024,3.3,3.3,2.3,3.7,3.0,1.0,4.0,3.3,2.3,AI Engineering
+Putu Sembiring,2024,3.0,3.3,2.3,1.0,3.7,2.7,4.0,4.0,3.7,AI Engineering
+Aris Wulandari,2024,1.0,3.0,3.3,4.0,3.3,2.7,3.0,3.7,3.3,Cyber Security
+Taufik Wijaya,2024,3.0,2.7,2.7,3.7,4.0,2.3,3.0,3.7,4.0,AI Engineering
+Bagas Sari,2024,3.0,4.0,1.0,2.3,3.3,3.3,4.0,4.0,3.0,AI Engineering
+Dewi Lubis,2024,1.0,3.3,4.0,2.0,4.0,3.7,2.7,4.0,3.0,RPL
+Eko Siregar,2024,3.3,2.7,4.0,3.0,3.0,2.7,2.7,3.7,3.3,Cyber Security
+Iwan Fitriani,2024,2.7,3.0,2.7,3.3,2.0,2.7,4.0,3.0,2.3,Cyber Security
+Made Lubis,2024,2.0,3.3,3.3,4.0,3.3,2.7,3.0,3.3,2.0,Cyber Security
+Hana Situmorang,2024,2.3,3.7,3.7,2.7,3.0,3.0,2.3,2.0,3.7,RPL
+Nyoman Puspita,2024,2.0,2.7,2.0,3.3,2.3,3.0,4.0,3.3,1.0,Cyber Security
+Putu Aminah,2024,4.0,3.0,4.0,3.0,1.0,3.3,2.3,3.3,4.0,RPL
+Laila Hardi,2025,2.0,4.0,4.0,3.3,3.0,3.7,2.0,3.7,4.0,Cyber Security
+Doni Kurniawan,2025,4.0,1.0,2.7,3.7,3.0,2.7,4.0,2.0,4.0,AI Engineering
+Putu Harahap,2025,2.3,1.0,3.0,3.0,3.7,4.0,1.0,3.3,3.3,Cyber Security
+Vina Ginting,2025,3.3,3.3,2.0,2.3,3.7,3.7,4.0,4.0,1.0,AI Engineering
+Siska Ramadhan,2025,4.0,3.7,3.7,3.7,3.0,4.0,4.0,3.0,3.0,RPL
+Fajar Hasibuan,2025,2.7,2.7,2.7,4.0,2.0,4.0,2.0,4.0,2.7,Cyber Security
+Ayu Kurniawan,2025,2.7,3.0,3.0,3.3,3.0,2.7,1.0,4.0,3.3,Cyber Security
+Nina Rahayu,2025,2.0,3.7,4.0,2.7,4.0,3.7,3.3,3.3,3.7,RPL
+Doni Sembiring,2025,1.0,2.0,2.0,3.3,2.3,3.7,2.3,4.0,2.3,Cyber Security
+Nina Kurniawan,2025,3.0,2.3,2.7,3.3,3.7,1.0,3.0,2.3,1.0,AI Engineering
+Ayu Ginting,2025,3.3,3.0,2.3,2.3,3.3,2.3,3.0,3.3,2.0,AI Engineering
+Vina Situmorang,2025,3.3,3.3,4.0,3.0,3.7,3.3,4.0,3.7,2.7,AI Engineering
+Siti Rahayu,2025,3.0,1.0,2.7,3.3,3.0,2.3,3.7,2.3,3.3,AI Engineering
+Siska Mahendra,2025,3.3,2.3,1.0,3.0,3.3,2.7,4.0,3.7,3.7,AI Engineering
+Joko Siahaan,2025,3.0,2.7,3.7,4.0,4.0,2.0,3.7,4.0,3.0,AI Engineering
+Gita Pratama,2025,1.0,3.7,3.7,4.0,4.0,3.7,3.3,2.3,4.0,RPL
+Farhan Aminah,2025,3.7,2.3,2.3,3.7,1.0,3.0,4.0,3.7,3.0,Cyber Security
+Bagas Simanjuntak,2025,2.7,2.7,3.3,4.0,4.0,3.3,3.7,3.0,2.3,Cyber Security
+Putri Utami,2025,3.0,3.7,2.7,2.0,3.3,3.3,3.0,3.3,1.0,AI Engineering
+Joko Siregar,2025,4.0,2.0,1.0,3.3,4.0,1.0,4.0,2.0,2.0,AI Engineering
+Vina Rahayu,2025,2.3,2.3,1.0,3.7,2.7,4.0,3.0,3.0,3.7,Cyber Security
+Made Pasaribu,2025,2.7,2.3,3.7,3.0,3.0,2.7,3.3,3.0,1.0,Cyber Security
+Indah Mahendra,2025,3.0,4.0,2.0,3.7,4.0,3.7,3.0,4.0,3.3,AI Engineering
+Indah Simanjuntak,2025,3.3,1.0,3.7,3.0,1.0,3.7,3.0,3.7,3.7,Cyber Security
+Doni Hasibuan,2025,2.7,3.3,2.0,3.3,1.0,2.3,3.7,3.0,2.0,Cyber Security
+Lani Manurung,2025,1.0,2.0,1.0,3.3,1.0,3.7,2.3,3.0,2.0,Cyber Security
+Lani Puspita,2025,4.0,2.3,2.3,3.3,3.0,2.7,3.0,3.0,2.3,AI Engineering
+Joko Susanto,2025,4.0,2.7,2.7,3.3,3.3,3.0,3.7,3.3,3.7,AI Engineering
+Andi Sembiring,2025,3.3,3.0,4.0,2.3,2.3,4.0,2.0,3.3,3.0,RPL
+Siska Hasibuan,2025,3.3,3.0,3.0,4.0,2.3,3.7,3.0,3.3,3.3,RPL
+Bagas Zulkarnain,2025,3.3,2.7,3.7,3.7,3.3,3.7,2.7,3.3,2.3,Cyber Security
+Ayu Manurung,2025,3.7,4.0,3.0,2.7,4.0,2.0,3.7,3.3,3.3,AI Engineering
+Farhan Santoso,2025,3.0,3.3,3.0,1.0,4.0,4.0,1.0,1.0,3.0,RPL
+Putu Kurniawan,2025,4.0,3.0,3.7,3.3,2.0,3.3,1.0,2.0,3.0,RPL
+Siti Lubis,2025,3.0,1.0,1.0,3.3,4.0,3.7,3.0,3.7,2.3,Cyber Security
+Dewi Simanjuntak,2025,2.0,2.7,3.7,4.0,4.0,2.3,4.0,3.7,2.3,Cyber Security
+Dedi Sitepu,2025,3.0,3.3,2.0,3.3,3.7,2.7,4.0,2.3,4.0,AI Engineering
+Aris Harahap,2025,3.0,3.0,2.3,3.3,2.3,3.3,1.0,4.0,2.7,Cyber Security
+Hendra Ginting,2025,2.7,3.0,2.0,4.0,4.0,3.0,1.0,3.7,2.3,Cyber Security
+Andi Saputra,2025,3.0,2.7,3.3,3.7,3.0,2.3,3.3,4.0,2.0,AI Engineering
+Bambang Siregar,2025,4.0,3.7,3.7,1.0,3.3,2.3,4.0,3.0,2.3,AI Engineering
+Gita Lestari,2025,2.3,3.3,3.7,3.0,2.7,3.3,2.7,3.3,3.7,RPL
+Siti Saputra,2025,4.0,3.3,2.7,4.0,3.7,3.0,3.0,4.0,2.7,AI Engineering
+Agus Fitriani,2025,1.0,4.0,3.7,2.0,4.0,3.0,2.0,3.7,3.0,RPL
+Bagas Setiawan,2025,3.7,3.3,2.0,4.0,4.0,2.3,3.7,4.0,4.0,AI Engineering
+Rina Chaniago,2025,4.0,3.0,3.0,3.7,2.7,2.3,3.3,3.0,4.0,Cyber Security
+Euis Pohan,2025,4.0,2.3,2.0,3.3,3.7,4.0,2.0,3.0,3.7,Cyber Security
+Gani Mulyono,2025,4.0,3.0,2.3,4.0,2.0,2.3,1.0,3.0,2.7,Cyber Security
+Farhan Nasution,2025,3.0,3.3,3.0,3.3,2.3,3.7,4.0,2.7,3.7,RPL
+Agus Mulyono,2025,4.0,3.3,3.7,3.3,3.7,3.0,3.3,2.7,3.3,RPL
+Taufik Susanto,2025,3.0,4.0,3.7,4.0,1.0,4.0,3.3,2.3,3.3,RPL
+Gita Aminah,2025,3.7,1.0,3.7,4.0,3.7,2.7,2.3,4.0,1.0,Cyber Security
+Rina Santoso,2025,4.0,1.0,3.3,2.7,3.7,1.0,4.0,2.7,3.0,AI Engineering
+Nina Hardi,2025,3.3,1.0,2.3,2.7,4.0,4.0,4.0,2.0,3.3,AI Engineering
+Laila Zulkarnain,2025,2.7,2.3,3.0,3.7,2.0,3.7,3.0,3.3,1.0,Cyber Security
+Vina Kusuma,2025,2.0,3.3,2.3,3.0,2.0,2.0,2.0,4.0,2.0,Cyber Security
+Vina Setiawan,2025,1.0,3.0,3.7,3.0,4.0,4.0,3.0,3.7,3.0,RPL
+Indah Kurniawan,2025,3.3,3.7,1.0,3.3,1.0,4.0,3.7,3.0,4.0,Cyber Security
+Dadan Zulkarnain,2025,3.7,3.0,2.7,2.0,3.3,1.0,3.0,3.3,2.3,AI Engineering
+Lani Barus,2025,1.0,4.0,3.7,4.0,3.0,3.0,2.0,2.7,3.0,RPL
+Rizky Rahayu,2025,2.0,4.0,3.7,2.3,1.0,3.0,2.7,2.0,3.0,RPL
+Budi Ginting,2025,3.0,2.0,3.7,1.0,3.3,2.0,3.0,2.0,3.7,AI Engineering
+Iwan Hasibuan,2025,3.0,1.0,3.0,2.7,3.7,3.7,4.0,3.7,3.0,AI Engineering
+Hendra Pasaribu,2025,3.0,4.0,3.3,2.7,1.0,3.3,3.3,2.3,3.0,RPL
+Joko Puspita,2025,3.7,2.7,4.0,2.3,3.3,2.7,3.0,2.0,1.0,AI Engineering
+Indah Mulyono,2025,3.3,2.7,2.7,4.0,3.3,2.3,3.3,1.0,2.0,AI Engineering
+Farhan Hidayat,2025,4.0,1.0,1.0,3.0,3.0,2.7,1.0,4.0,4.0,Cyber Security
+Putu Lubis,2025,2.0,3.0,3.3,3.3,2.3,3.7,3.3,2.7,3.3,RPL
+Made Susanto,2025,3.0,3.3,3.7,1.0,3.0,3.7,3.3,3.0,1.0,AI Engineering
+Aris Sari,2025,2.0,4.0,4.0,2.3,2.3,3.7,1.0,4.0,3.0,RPL
+Budi Sari,2025,4.0,2.7,2.3,3.7,3.0,2.7,3.0,1.0,2.0,AI Engineering
+Fajar Puspita,2025,4.0,2.3,3.3,3.7,3.3,2.7,2.0,3.3,3.3,Cyber Security
+Tania Pohan,2025,3.0,3.7,3.7,2.3,3.7,3.7,4.0,2.3,4.0,AI Engineering
+Putu Sembiring,2025,3.7,3.0,4.0,3.7,3.0,4.0,2.3,1.0,3.3,RPL
+Taufik Hasibuan,2025,2.3,4.0,3.7,3.3,3.3,3.0,3.0,3.0,4.0,Cyber Security
+Dedi Santoso,2025,3.7,3.7,2.0,4.0,2.7,3.7,4.0,4.0,2.0,Cyber Security
+Rina Puspita,2025,4.0,1.0,2.0,2.0,3.3,1.0,3.0,3.3,2.0,AI Engineering
+Dewi Zulkarnain,2025,3.7,4.0,4.0,3.3,3.0,4.0,1.0,3.7,4.0,RPL
+Rosa Sembiring,2025,3.3,2.3,3.3,4.0,3.3,3.3,4.0,3.0,2.3,Cyber Security
+Gani Manurung,2025,3.3,4.0,2.0,2.7,3.7,3.0,3.0,3.3,2.3,AI Engineering
+Indah Sari,2025,3.7,3.0,4.0,3.0,3.3,3.0,4.0,4.0,3.0,RPL
+Hana Kurniawan,2025,3.3,4.0,4.0,1.0,3.3,4.0,3.7,2.3,2.7,AI Engineering
+Citra Utami,2025,4.0,4.0,3.0,3.3,3.3,2.7,3.3,4.0,3.0,AI Engineering
+Hendra Tanjung,2025,4.0,4.0,4.0,2.7,3.7,2.3,3.7,3.3,2.3,AI Engineering
+Hana Wijaya,2025,2.7,2.7,3.0,4.0,2.3,3.7,2.0,3.0,3.7,Cyber Security
+Andi Lubis,2025,1.0,3.7,3.0,2.7,1.0,3.3,4.0,2.0,3.7,RPL
+Agus Wijaya,2025,3.0,2.7,3.3,3.0,3.0,2.7,3.3,4.0,4.0,AI Engineering
+Maya Sari,2025,3.0,2.7,3.7,4.0,3.3,3.0,3.3,3.3,3.7,AI Engineering
+Zaki Sembiring,2025,2.7,3.0,3.3,4.0,2.7,3.7,1.0,3.0,3.7,RPL
+Gita Setiawan,2025,3.3,1.0,2.7,3.3,3.7,4.0,4.0,1.0,1.0,AI Engineering
+Ayu Situmorang,2025,1.0,3.0,3.7,1.0,3.3,3.0,3.7,2.0,3.0,RPL
+Putu Hidayat,2025,4.0,3.7,1.0,3.0,3.0,1.0,2.7,4.0,2.3,Cyber Security
+Siska Zulkarnain,2025,3.3,3.3,2.3,3.7,3.0,2.3,3.0,3.3,2.0,AI Engineering
+Aris Mulyono,2025,4.0,4.0,3.0,2.7,2.7,3.7,2.3,2.7,4.0,RPL
+Budi Barus,2025,1.0,2.3,2.7,3.0,3.3,2.7,1.0,3.3,3.3,Cyber Security
+Maya Lestari,2025,3.0,2.7,2.0,2.3,4.0,2.0,4.0,2.0,4.0,AI Engineering
+Gita Pasaribu,2025,3.7,2.0,1.0,3.7,3.7,3.0,4.0,2.3,3.3,AI Engineering
+Rina Situmorang,2025,3.0,3.3,3.0,4.0,3.0,4.0,4.0,3.0,4.0,RPL
+Hana Barus,2025,2.0,3.0,4.0,3.3,2.0,3.7,3.7,3.0,4.0,RPL
+Made Ramadhan,2025,3.7,2.0,3.7,2.7,3.7,3.0,3.7,2.7,2.0,AI Engineering
+Joko Kusuma,2025,3.0,2.3,2.7,4.0,3.7,2.0,4.0,1.0,4.0,AI Engineering
+Doni Al-Faris,2025,3.3,2.7,3.0,4.0,3.0,3.7,2.7,3.7,3.7,Cyber Security
+Citra Chaniago,2025,4.0,1.0,2.7,3.3,2.7,4.0,2.7,4.0,3.7,Cyber Security
+Fajar Puspita,2025,1.0,1.0,4.0,3.7,3.7,3.0,3.7,4.0,3.3,Cyber Security
+Andi Siahaan,2025,3.0,3.7,3.7,3.7,2.3,2.0,3.0,3.3,2.0,Cyber Security
+Nina Hardi,2025,4.0,3.0,2.3,3.7,3.0,3.0,3.7,1.0,2.0,AI Engineering
+Putu Aminah,2025,3.7,2.0,4.0,1.0,4.0,3.3,4.0,2.3,2.0,AI Engineering
+Farhan Zulkarnain,2025,4.0,1.0,3.3,3.0,4.0,4.0,3.0,1.0,2.7,AI Engineering
+Siti Kusuma,2025,4.0,3.7,2.3,4.0,2.7,4.0,1.0,4.0,3.7,Cyber Security
+Eko Chaniago,2025,2.7,1.0,2.3,4.0,2.0,3.7,1.0,3.0,2.3,Cyber Security
+Maya Kurniawan,2025,3.7,3.0,3.3,3.3,1.0,3.0,4.0,3.7,3.0,RPL
+Putri Utami,2025,3.3,2.7,3.3,3.3,2.7,4.0,3.0,3.3,2.3,Cyber Security
+Maya Lubis,2025,3.3,2.0,3.0,3.3,4.0,3.0,4.0,4.0,2.7,Cyber Security
+Doni Sitepu,2025,4.0,3.7,3.0,2.0,3.0,3.3,2.3,3.7,3.0,RPL
+Doni Pratama,2025,3.7,2.0,2.7,2.7,3.7,3.3,4.0,3.0,2.0,AI Engineering
+Nina Simanjuntak,2025,2.3,1.0,2.0,3.0,3.7,3.0,3.7,3.3,4.0,Cyber Security
+Tania Hasibuan,2025,3.0,4.0,3.7,2.7,1.0,3.3,2.7,3.3,3.0,RPL
+Bambang Mahendra,2025,4.0,2.7,3.7,2.3,3.3,2.0,3.3,2.3,3.0,AI Engineering
+Euis Kurniawan,2025,3.7,4.0,2.7,3.0,2.3,2.7,3.0,3.0,3.3,Cyber Security
+Ayu Hasibuan,2025,2.0,4.0,3.3,4.0,1.0,3.0,3.3,2.7,3.7,RPL
+Gita Pasaribu,2025,2.0,3.7,4.0,2.7,1.0,3.0,2.3,2.3,3.3,RPL
+Joko Harahap,2025,2.7,3.0,2.0,3.3,4.0,3.3,3.0,3.7,1.0,Cyber Security
+Gani Hardi,2025,3.7,1.0,3.7,3.0,3.3,2.3,4.0,3.7,3.7,AI Engineering
+Gita Saputra,2025,4.0,3.7,2.3,1.0,3.7,3.0,3.3,3.3,3.3,AI Engineering
+Budi Barus,2025,3.3,2.3,4.0,3.7,2.0,3.7,3.7,3.3,3.0,Cyber Security
+Budi Zulkarnain,2025,1.0,3.3,3.3,2.3,3.7,3.3,1.0,3.3,3.7,RPL
+Nyoman Hasibuan,2025,3.7,2.7,2.7,3.3,3.0,1.0,4.0,1.0,3.3,AI Engineering
+Ayu Mulyono,2025,2.7,4.0,1.0,3.7,2.7,3.3,2.7,3.7,1.0,Cyber Security
+Gita Sembiring,2025,3.7,3.3,3.0,4.0,4.0,4.0,3.0,3.7,3.7,RPL
+Siti Hidayat,2025,3.0,3.7,2.0,3.7,3.7,2.0,3.3,3.0,3.7,AI Engineering
+Gani Setiawan,2025,1.0,4.0,2.0,4.0,1.0,4.0,4.0,4.0,2.0,Cyber Security
+Andi Utami,2025,3.0,3.3,2.3,3.3,4.0,3.7,2.3,3.3,2.3,Cyber Security
+Joko Rahayu,2025,2.3,2.7,2.7,3.7,2.7,2.7,2.0,4.0,2.3,Cyber Security
+Farhan Hidayat,2025,4.0,1.0,1.0,2.0,4.0,3.7,3.7,4.0,4.0,AI Engineering
+Nyoman Siahaan,2025,2.7,3.3,1.0,4.0,4.0,3.0,1.0,3.7,2.7,Cyber Security
+Gita Sari,2025,3.7,3.7,3.7,2.0,4.0,2.7,4.0,2.7,3.7,AI Engineering
+Maya Siregar,2025,3.0,2.3,3.0,4.0,2.7,2.0,3.3,4.0,3.7,Cyber Security
+Putri Santoso,2025,3.0,3.3,3.3,2.3,2.3,3.7,3.3,2.3,4.0,RPL
+Budi Siahaan,2025,4.0,3.3,3.3,4.0,3.3,1.0,4.0,3.7,3.7,Cyber Security
+Euis Sari,2025,2.0,3.0,4.0,3.7,2.0,4.0,1.0,3.0,4.0,Cyber Security
+Aris Saputra,2025,3.7,4.0,3.7,1.0,3.0,3.0,3.0,2.7,4.0,RPL
+Doni Siahaan,2025,3.3,4.0,2.3,4.0,3.0,2.3,3.3,2.0,1.0,AI Engineering
+Aris Situmorang,2025,3.0,2.0,2.3,3.3,4.0,3.7,2.0,4.0,3.7,Cyber Security
+Hendra Utami,2025,3.3,1.0,2.7,4.0,1.0,2.0,4.0,3.0,3.3,Cyber Security
+Doni Wulandari,2025,4.0,3.0,3.7,1.0,3.0,3.7,3.3,2.3,4.0,RPL
+Indah Manurung,2025,3.7,4.0,3.3,4.0,3.3,2.0,3.7,3.3,2.0,AI Engineering
+Aris Puspita,2025,2.0,2.7,3.3,3.7,3.0,3.3,3.7,3.3,3.7,Cyber Security
+Fajar Wulandari,2025,3.3,1.0,3.3,3.0,3.3,2.0,3.0,2.3,3.3,AI Engineering
+Siska Zulkarnain,2025,1.0,2.3,3.3,3.7,3.7,4.0,1.0,3.7,1.0,Cyber Security
+Zaki Utami,2025,2.3,1.0,2.7,4.0,4.0,2.3,1.0,3.7,2.0,Cyber Security
+Tania Lestari,2025,1.0,3.0,3.7,3.3,2.0,3.7,3.7,2.7,3.3,RPL
+Lani Setiawan,2025,4.0,4.0,3.7,3.7,1.0,4.0,2.7,3.0,3.7,RPL
+Aris Hidayat,2025,3.0,2.0,3.3,2.0,3.7,4.0,4.0,3.3,2.7,AI Engineering
+Putri Simanjuntak,2025,3.0,3.3,3.7,4.0,1.0,3.7,2.7,3.3,3.0,RPL
+Putu Zulkarnain,2025,4.0,3.3,1.0,2.3,3.0,3.3,3.7,3.0,4.0,AI Engineering
+Tania Mahendra,2025,2.3,3.7,3.0,4.0,3.0,4.0,2.3,3.7,3.3,RPL
+Rosa Kurniawan,2025,3.7,3.7,3.3,2.0,2.0,3.7,4.0,1.0,3.0,RPL
+Hendra Hidayat,2025,2.7,1.0,4.0,3.3,2.3,3.0,2.7,3.3,3.3,Cyber Security
+Gita Ramadhan,2025,4.0,2.7,3.3,2.3,4.0,1.0,3.3,2.3,4.0,AI Engineering
+Laila Chaniago,2025,4.0,2.7,2.0,3.3,3.3,4.0,3.0,2.0,3.0,AI Engineering
+Dadan Al-Faris,2025,2.7,3.0,2.0,3.3,2.7,2.7,2.0,3.3,1.0,Cyber Security
+Tania Zulkarnain,2025,2.3,2.7,3.0,3.3,2.3,4.0,2.0,3.0,3.0,Cyber Security
+Maya Santoso,2025,2.0,2.7,2.7,3.7,4.0,2.0,2.7,3.0,3.0,Cyber Security
+Rosa Saputra,2025,1.0,4.0,4.0,3.7,2.3,3.0,1.0,2.0,3.3,RPL
+Iwan Hidayat,2025,2.3,3.0,3.0,3.3,3.3,3.7,3.3,2.7,3.7,RPL
+Rizky Mahendra,2025,3.7,2.0,3.7,2.3,4.0,3.0,4.0,2.0,2.3,AI Engineering
+Eko Mulyono,2025,2.3,3.0,2.0,3.0,3.0,3.7,3.7,3.0,1.0,Cyber Security
+Budi Mulyono,2025,2.3,3.3,3.0,3.7,3.0,3.3,4.0,1.0,4.0,RPL
+Farhan Mahendra,2025,2.7,3.0,4.0,3.0,2.7,4.0,1.0,2.7,3.0,RPL
+Vina Lubis,2025,2.0,3.3,3.7,4.0,2.3,3.0,1.0,3.3,3.7,RPL
+Indah Kurniawan,2025,3.7,2.7,3.0,3.0,4.0,3.0,3.3,3.3,2.0,Cyber Security
+Laila Saputra,2025,2.3,3.3,3.7,3.0,3.3,3.3,3.7,2.3,3.0,RPL
+Bagas Ginting,2025,4.0,3.0,3.7,3.7,3.7,3.7,2.3,3.3,4.0,RPL
+Hana Harahap,2025,3.7,4.0,3.7,2.0,2.3,4.0,2.3,3.7,4.0,RPL
+Siti Chaniago,2025,3.0,4.0,2.7,3.0,3.3,3.7,3.7,2.7,3.0,AI Engineering
+Iwan Wulandari,2025,4.0,3.0,3.3,3.7,3.3,1.0,2.7,3.3,2.0,Cyber Security
+Budi Sembiring,2025,3.3,3.3,4.0,4.0,1.0,4.0,2.7,4.0,3.7,RPL
+Budi Mahendra,2025,3.7,3.0,3.7,2.0,3.0,4.0,3.0,2.3,3.0,AI Engineering
+Doni Lestari,2025,3.3,4.0,1.0,2.0,3.3,3.3,3.7,2.7,2.0,AI Engineering
+Nina Simanjuntak,2025,2.7,3.3,2.7,3.3,2.3,2.7,3.0,4.0,2.0,Cyber Security
+Indah Wulandari,2025,4.0,1.0,2.3,4.0,3.7,3.0,3.7,1.0,2.7,AI Engineering
+Andi Nasution,2025,3.7,3.0,3.3,3.7,4.0,2.3,3.7,1.0,4.0,AI Engineering
+Euis Tanjung,2025,4.0,4.0,2.7,3.3,1.0,2.3,3.7,4.0,2.3,Cyber Security
+Dadan Kusuma,2025,2.3,3.0,3.0,3.0,4.0,4.0,3.0,3.0,2.7,Cyber Security
+Rizky Pratama,2025,3.3,2.3,2.3,3.3,2.3,2.0,1.0,4.0,3.7,Cyber Security
+Putu Puspita,2025,3.0,2.7,4.0,1.0,3.3,2.0,3.0,2.0,3.3,AI Engineering
+Citra Chaniago,2025,3.7,2.7,2.0,2.0,3.7,3.0,3.0,3.0,3.3,AI Engineering
+Andi Saputra,2025,2.7,3.0,4.0,3.0,2.7,4.0,2.3,2.0,4.0,RPL
+Laila Puspita,2025,3.7,4.0,1.0,4.0,3.3,2.0,4.0,2.0,3.0,AI Engineering
+Gani Saputra,2025,4.0,3.0,3.3,3.7,3.3,3.0,1.0,3.7,3.7,Cyber Security
+Eko Lestari,2025,3.3,3.0,2.0,2.3,3.7,1.0,3.3,3.7,3.7,AI Engineering
+Agus Situmorang,2025,2.3,4.0,4.0,1.0,1.0,3.3,4.0,3.3,3.7,RPL
+Laila Susanto,2025,2.7,3.3,3.0,2.0,2.3,3.3,2.7,2.3,3.0,RPL
+Zaki Kurniawan,2025,1.0,3.0,3.0,3.3,1.0,3.0,1.0,2.3,4.0,RPL
+Nyoman Pohan,2025,3.0,4.0,4.0,4.0,2.3,3.0,2.0,3.0,3.7,RPL
+Putu Santoso,2025,3.3,3.7,3.7,3.0,3.3,4.0,2.3,2.0,3.0,RPL
+Rina Susanto,2025,1.0,1.0,3.3,3.0,3.0,3.3,1.0,4.0,4.0,Cyber Security
+Siska Pohan,2025,2.0,4.0,3.0,3.3,4.0,4.0,1.0,3.7,3.7,Cyber Security
+Iwan Manurung,2025,2.0,4.0,3.7,1.0,2.3,4.0,1.0,2.7,3.7,RPL
+Iwan Kusuma,2025,3.7,1.0,2.3,2.7,3.7,3.3,3.0,2.3,2.0,AI Engineering
+Nina Fitriani,2026,3.3,3.7,3.0,2.0,4.0,3.7,1.0,2.3,4.0,RPL
+Joko Setiawan,2026,3.7,3.7,2.0,3.3,3.7,2.3,3.7,3.0,2.3,AI Engineering
+Doni Hasibuan,2026,4.0,3.3,3.7,1.0,3.3,3.7,3.7,2.0,3.0,AI Engineering
+Eko Fitriani,2026,4.0,2.3,2.0,3.3,3.3,3.7,2.3,3.0,2.7,Cyber Security
+Dewi Santoso,2026,2.3,3.0,3.0,2.0,2.3,4.0,2.3,2.0,3.0,RPL
+Vina Mahendra,2026,4.0,4.0,4.0,3.3,2.0,4.0,2.7,3.0,3.3,RPL
+Putu Barus,2026,3.0,2.3,2.7,4.0,3.3,2.7,3.0,2.7,2.0,AI Engineering
+Maya Fitriani,2026,3.3,1.0,2.3,4.0,2.3,3.0,3.0,3.3,3.7,Cyber Security
+Lani Pohan,2026,3.7,2.0,2.0,3.3,3.7,3.3,3.0,3.7,4.0,Cyber Security
+Nina Utami,2026,2.3,3.0,2.0,3.7,2.3,2.3,2.3,3.7,2.3,Cyber Security
+Andi Pratama,2026,3.0,1.0,2.3,3.7,3.7,1.0,3.7,2.7,4.0,AI Engineering
+Gani Pratama,2026,3.0,3.3,3.0,3.7,4.0,2.0,3.7,1.0,2.7,AI Engineering
+Doni Harahap,2026,3.0,2.3,2.3,2.7,3.0,1.0,3.0,2.3,2.7,AI Engineering
+Rina Siregar,2026,4.0,2.3,1.0,4.0,2.7,1.0,1.0,4.0,3.0,Cyber Security
+Taufik Mulyono,2026,3.0,1.0,3.0,4.0,3.7,2.7,3.0,3.7,2.0,Cyber Security
+Maya Wijaya,2026,2.7,2.0,2.0,4.0,2.7,1.0,1.0,4.0,4.0,Cyber Security
+Lani Pasaribu,2026,2.7,4.0,4.0,3.3,2.0,3.7,2.0,1.0,4.0,RPL
+Dedi Ramadhan,2026,4.0,3.7,1.0,2.3,3.7,1.0,3.0,1.0,2.7,AI Engineering
+Hendra Pasaribu,2026,2.3,3.3,3.7,4.0,3.7,4.0,3.3,2.3,3.3,RPL
+Siti Wijaya,2026,4.0,2.0,4.0,3.7,1.0,4.0,4.0,3.3,3.0,Cyber Security
+Dedi Kurniawan,2026,2.7,2.7,2.7,3.7,4.0,2.3,2.0,3.0,2.0,Cyber Security
+Made Siahaan,2026,3.7,3.0,2.7,3.7,3.3,3.3,3.3,2.0,1.0,AI Engineering
+Joko Wijaya,2026,3.3,2.3,2.3,4.0,3.3,4.0,2.7,3.7,2.0,Cyber Security
+Fajar Ginting,2026,3.7,3.0,3.0,1.0,4.0,1.0,4.0,3.3,3.3,AI Engineering
+Dadan Ginting,2026,4.0,3.0,2.0,3.0,3.0,2.3,3.3,3.0,2.7,AI Engineering
+Iwan Puspita,2026,2.7,3.3,4.0,2.0,2.0,4.0,3.3,1.0,3.3,RPL
+Hana Ginting,2026,3.3,1.0,3.0,4.0,2.3,2.3,2.0,3.7,2.3,Cyber Security
+Indah Pratama,2026,2.7,4.0,3.3,3.7,1.0,3.7,3.7,2.3,3.0,RPL
+Gita Simanjuntak,2026,3.7,2.3,3.7,2.3,3.3,3.3,4.0,1.0,1.0,AI Engineering
+Putri Santoso,2026,3.7,3.3,3.0,3.3,3.7,2.3,2.3,3.3,2.7,Cyber Security
+Ayu Utami,2026,1.0,4.0,3.3,1.0,3.3,3.0,2.3,2.3,3.3,RPL
+Bagas Ramadhan,2026,2.3,3.0,3.3,2.0,2.0,3.3,2.0,3.3,4.0,RPL
+Rina Rahayu,2026,3.3,2.3,4.0,3.7,3.0,3.0,3.3,3.3,3.7,AI Engineering
+Hana Harahap,2026,2.0,3.0,3.7,1.0,4.0,3.0,2.0,3.0,3.0,RPL
+Iwan Sembiring,2026,2.0,3.0,4.0,2.3,3.0,3.3,2.0,1.0,3.7,RPL
+Andi Al-Faris,2026,3.0,2.0,4.0,3.0,3.0,4.0,2.3,3.7,1.0,Cyber Security
+Doni Situmorang,2026,3.0,2.0,3.3,1.0,3.0,2.7,4.0,3.0,2.7,AI Engineering
+Citra Sari,2026,3.3,3.0,3.7,2.3,3.3,1.0,3.0,3.3,3.0,AI Engineering
+Budi Mulyono,2026,1.0,2.0,2.0,3.3,3.0,4.0,3.7,3.7,3.3,Cyber Security
+Lani Sitepu,2026,2.7,3.0,4.0,3.7,2.3,3.3,2.7,3.3,3.0,RPL
+Maya Manurung,2026,3.3,3.7,4.0,3.3,3.7,3.0,4.0,3.7,3.7,AI Engineering
+Euis Aminah,2026,4.0,2.3,3.0,2.3,4.0,2.3,3.0,2.0,4.0,AI Engineering
+Bambang Aminah,2026,2.7,3.7,3.7,3.0,4.0,3.0,2.3,3.7,2.3,Cyber Security
+Made Mulyono,2026,3.3,3.7,1.0,3.7,4.0,2.7,3.7,3.7,3.3,Cyber Security
+Citra Kurniawan,2026,2.3,3.0,4.0,3.3,4.0,4.0,2.0,3.0,3.7,RPL
+Siska Wulandari,2026,2.7,2.7,2.3,3.7,3.3,3.3,3.0,4.0,2.7,Cyber Security
+Lani Aminah,2026,3.7,3.3,2.7,1.0,3.0,3.0,4.0,4.0,3.7,AI Engineering
+Dewi Manurung,2026,2.0,3.3,2.0,4.0,4.0,3.0,3.0,4.0,2.3,Cyber Security
+Joko Hardi,2026,3.7,2.3,2.7,2.3,3.3,2.3,4.0,3.0,2.3,AI Engineering
+Joko Utami,2026,3.3,3.7,1.0,2.7,3.3,1.0,4.0,3.3,3.3,AI Engineering
+Bambang Pohan,2026,2.7,4.0,3.7,1.0,2.7,3.0,3.7,4.0,3.3,RPL
+Zaki Sembiring,2026,2.0,3.0,3.7,3.3,3.0,3.7,3.3,2.7,3.3,RPL
+Rosa Lubis,2026,2.7,3.0,3.7,4.0,3.0,3.3,3.0,2.7,4.0,RPL
+Rosa Lestari,2026,3.7,3.3,2.0,4.0,3.0,4.0,3.3,3.7,1.0,AI Engineering
+Budi Mahendra,2026,3.3,3.0,3.3,2.3,3.0,3.7,2.7,2.7,3.0,RPL
+Nina Lubis,2026,3.3,4.0,3.7,1.0,3.3,4.0,2.0,2.3,3.0,RPL
+Iwan Chaniago,2026,3.7,2.0,2.7,4.0,2.3,2.0,2.7,3.0,3.0,Cyber Security
+Eko Chaniago,2026,4.0,3.0,4.0,3.3,3.7,3.3,3.0,3.3,3.3,Cyber Security
+Taufik Utami,2026,3.3,3.3,3.7,3.0,2.3,4.0,4.0,3.3,2.7,Cyber Security
+Bambang Ramadhan,2026,3.7,3.7,3.7,2.0,2.0,3.3,1.0,2.0,3.0,RPL
+Maya Siahaan,2026,3.3,3.3,1.0,3.3,3.0,2.3,3.0,2.3,3.0,AI Engineering
+Aris Pratama,2026,2.7,3.3,4.0,3.3,3.0,3.0,2.0,3.3,4.0,RPL
+Nina Zulkarnain,2026,2.3,3.0,3.3,3.7,3.3,3.3,3.0,3.0,2.3,Cyber Security
+Gani Siahaan,2026,3.0,2.3,1.0,3.3,4.0,2.0,3.0,2.7,2.0,AI Engineering
+Dadan Wulandari,2026,3.7,4.0,2.7,2.7,3.3,2.0,4.0,2.3,2.7,AI Engineering
+Aris Situmorang,2026,2.3,2.7,4.0,4.0,3.0,4.0,3.0,3.0,3.0,Cyber Security
+Joko Al-Faris,2026,2.0,3.3,4.0,2.3,4.0,3.3,3.7,2.7,3.0,RPL
+Budi Pratama,2026,3.7,3.0,3.0,4.0,3.7,2.0,3.0,2.7,3.3,AI Engineering
+Indah Pohan,2026,3.3,3.3,3.3,3.0,3.7,3.7,2.7,3.0,4.0,RPL
+Fajar Hardi,2026,2.3,4.0,3.0,2.0,2.7,4.0,2.7,4.0,3.7,RPL
+Hana Tanjung,2026,3.7,3.0,1.0,3.3,3.7,2.0,4.0,3.0,2.3,AI Engineering
+Citra Susanto,2026,3.7,3.3,4.0,3.3,4.0,3.7,2.0,2.3,3.7,RPL
+Ayu Harahap,2026,3.0,3.7,3.0,3.3,3.7,4.0,3.3,3.7,1.0,Cyber Security
+Ayu Setiawan,2026,3.7,4.0,2.7,3.7,2.7,2.3,3.7,3.7,3.3,Cyber Security
+Dadan Al-Faris,2026,2.0,1.0,3.7,3.7,2.7,3.3,2.3,4.0,4.0,Cyber Security
+Rizky Aminah,2026,3.7,4.0,3.7,1.0,3.3,3.0,2.3,2.0,3.0,RPL
+Nyoman Simanjuntak,2026,2.3,3.3,3.3,2.3,2.0,3.7,3.3,3.7,4.0,RPL
+Tania Zulkarnain,2026,2.0,3.7,3.7,2.3,2.0,3.3,3.0,2.0,3.7,RPL
+Gita Barus,2026,3.0,3.0,3.3,2.0,2.7,3.3,3.7,2.0,4.0,RPL
+Lani Saputra,2026,3.0,3.0,3.0,4.0,4.0,3.0,1.0,4.0,3.0,RPL
+Hana Utami,2026,3.0,2.7,4.0,2.7,3.7,2.3,3.3,2.3,4.0,AI Engineering
+Budi Pasaribu,2026,1.0,3.3,1.0,3.0,2.7,2.7,2.0,4.0,2.7,Cyber Security
+Budi Saputra,2026,3.7,3.7,1.0,3.0,3.3,2.3,3.7,3.3,1.0,AI Engineering
+Hana Zulkarnain,2026,3.0,3.7,3.7,2.7,4.0,3.7,3.7,2.3,2.3,AI Engineering
+Dewi Sembiring,2026,2.3,3.0,1.0,3.7,1.0,1.0,1.0,3.3,1.0,Cyber Security
+Bambang Situmorang,2026,3.0,3.3,3.0,2.7,3.3,3.0,3.7,3.7,3.7,RPL
+Nina Ginting,2026,3.7,2.7,2.7,3.0,3.0,3.3,3.0,1.0,3.0,AI Engineering
+Vina Manurung,2026,3.7,3.0,3.0,3.0,3.7,3.0,4.0,1.0,3.3,RPL
+Made Pratama,2026,3.0,3.7,3.3,3.7,2.3,4.0,2.3,3.0,4.0,RPL
+Gita Fitriani,2026,2.3,4.0,3.0,3.3,2.3,3.7,4.0,2.7,3.3,RPL
+Ayu Wulandari,2026,3.3,4.0,3.0,2.7,4.0,3.7,3.0,3.3,3.7,RPL
+Farhan Setiawan,2026,2.3,3.0,3.0,4.0,3.0,4.0,3.7,2.7,3.3,RPL
+Gani Al-Faris,2026,4.0,3.3,3.7,3.7,2.7,3.3,2.3,2.0,3.3,RPL
+Dedi Chaniago,2026,2.7,3.0,3.7,3.3,2.3,3.7,3.0,2.0,4.0,RPL
+Agus Susanto,2026,3.7,4.0,3.0,1.0,4.0,1.0,3.3,2.0,3.7,AI Engineering
+Hendra Lestari,2026,4.0,1.0,2.3,3.3,4.0,2.0,3.0,2.7,2.7,AI Engineering
+Nyoman Santoso,2026,1.0,3.0,3.0,2.7,1.0,4.0,3.3,4.0,3.0,RPL
+Dewi Barus,2026,2.7,3.3,4.0,3.7,2.3,4.0,3.3,3.7,3.0,Cyber Security
+Made Zulkarnain,2026,4.0,2.0,2.7,4.0,1.0,2.7,2.3,3.3,4.0,Cyber Security
+Dedi Pratama,2026,4.0,2.0,1.0,4.0,3.7,2.0,4.0,3.7,3.3,AI Engineering
+Euis Aminah,2026,3.0,2.7,2.3,3.3,3.0,1.0,3.0,3.0,1.0,Cyber Security
+Tania Ramadhan,2026,1.0,3.7,3.3,2.0,2.3,3.3,2.3,1.0,3.7,RPL
+Euis Lubis,2026,2.7,2.0,4.0,4.0,2.7,4.0,4.0,3.7,2.3,Cyber Security
+Fajar Nasution,2026,3.7,1.0,3.3,3.0,3.0,1.0,4.0,3.3,4.0,AI Engineering
+Hendra Chaniago,2026,3.0,4.0,3.3,3.3,2.0,4.0,4.0,3.3,3.7,RPL
+Taufik Barus,2026,4.0,3.0,4.0,4.0,3.3,3.7,3.3,4.0,3.3,RPL
+Zaki Hasibuan,2026,3.3,3.0,3.0,2.7,4.0,3.0,3.3,2.3,3.3,AI Engineering
+Rosa Wijaya,2026,3.0,3.7,3.0,3.0,3.0,3.0,3.0,2.7,3.3,AI Engineering
+Rosa Siahaan,2026,2.3,3.0,3.7,3.0,3.3,4.0,3.0,2.0,3.0,RPL
+Iwan Kurniawan,2026,1.0,4.0,3.3,1.0,3.7,4.0,4.0,1.0,3.3,RPL
+Budi Setiawan,2026,3.7,4.0,3.3,2.0,3.7,3.7,2.7,4.0,3.0,RPL
+Made Fitriani,2026,3.0,2.0,3.7,4.0,3.7,2.3,4.0,3.7,4.0,Cyber Security
+Dewi Harahap,2026,2.3,1.0,3.0,3.3,2.0,1.0,3.3,3.3,4.0,Cyber Security
+Iwan Zulkarnain,2026,3.3,2.0,2.0,3.0,3.7,2.3,3.7,3.0,2.0,Cyber Security
+Rizky Siahaan,2026,3.3,2.7,3.0,3.3,3.7,3.0,3.7,3.3,2.3,Cyber Security
+Laila Sari,2026,3.7,3.7,1.0,1.0,3.3,3.0,4.0,3.3,2.7,AI Engineering
+Bagas Pratama,2026,2.0,3.3,4.0,2.7,1.0,4.0,2.0,2.0,3.3,RPL
+Fajar Mulyono,2026,1.0,3.0,3.7,3.7,2.7,3.7,3.0,3.0,1.0,Cyber Security
+Siska Hardi,2026,3.7,2.3,4.0,4.0,2.7,1.0,2.3,3.0,1.0,Cyber Security
+Euis Kurniawan,2026,3.7,4.0,3.0,1.0,2.7,3.0,3.7,1.0,3.3,RPL
+Agus Siahaan,2026,3.0,3.0,2.3,3.3,3.7,3.3,3.7,2.7,3.3,AI Engineering
+Made Zulkarnain,2026,4.0,2.7,2.3,2.3,3.7,1.0,3.7,2.7,3.0,AI Engineering
+Ayu Santoso,2026,4.0,2.3,3.0,3.3,3.3,2.7,3.0,3.7,2.3,Cyber Security
+Nina Pratama,2026,1.0,3.7,3.7,1.0,3.7,4.0,2.3,2.7,4.0,RPL
+Dedi Wulandari,2026,3.0,2.0,3.3,3.3,3.0,2.0,4.0,4.0,2.3,Cyber Security
+Hana Sitepu,2026,4.0,4.0,3.7,3.7,4.0,2.0,4.0,2.7,4.0,AI Engineering
+Dewi Saputra,2026,2.0,2.0,2.3,4.0,2.7,4.0,2.7,3.3,2.7,Cyber Security
+Lani Pasaribu,2026,3.7,4.0,4.0,2.7,2.7,4.0,1.0,4.0,3.0,RPL
+Putu Ginting,2026,4.0,4.0,4.0,3.3,3.0,3.0,3.3,3.7,4.0,RPL
+Budi Nasution,2026,1.0,3.7,3.3,3.7,4.0,3.0,4.0,2.0,3.0,RPL
+Eko Siahaan,2026,3.7,3.3,3.7,2.7,1.0,3.7,3.7,3.7,4.0,RPL
+Putu Barus,2026,2.7,3.0,4.0,2.3,3.7,4.0,2.0,4.0,3.0,RPL
+Iwan Fitriani,2026,3.3,2.0,3.0,4.0,3.0,3.7,3.0,3.0,3.3,AI Engineering
+Dewi Ginting,2026,4.0,2.7,4.0,3.3,1.0,3.3,3.0,3.7,2.0,Cyber Security
+Rosa Sembiring,2026,3.3,2.0,3.0,1.0,4.0,3.0,3.3,2.3,2.7,AI Engineering
+Agus Susanto,2026,2.3,3.3,4.0,2.7,3.7,3.7,1.0,1.0,3.3,RPL
+Nyoman Lestari,2026,3.3,3.0,2.3,3.7,3.7,1.0,3.7,2.0,3.0,AI Engineering
+Gita Wulandari,2026,3.7,2.7,2.7,3.3,3.3,1.0,3.3,3.0,3.7,AI Engineering
+Iwan Chaniago,2026,2.3,3.7,4.0,2.3,3.7,3.0,2.3,3.0,3.0,RPL
+Indah Chaniago,2026,3.3,3.7,2.3,4.0,2.0,2.0,1.0,3.0,4.0,Cyber Security
+Dewi Ginting,2026,4.0,3.3,4.0,1.0,3.0,3.0,1.0,1.0,3.7,RPL
+Lani Santoso,2026,2.3,3.0,3.7,4.0,4.0,3.3,3.0,4.0,1.0,Cyber Security
+Agus Zulkarnain,2026,3.0,3.0,3.3,2.3,2.7,3.0,3.7,3.3,3.7,RPL
+Indah Manurung,2026,3.3,2.7,3.3,3.7,4.0,2.3,3.0,2.7,3.7,AI Engineering
+Vina Puspita,2026,3.7,4.0,2.0,3.3,3.0,3.7,3.0,2.3,2.0,AI Engineering
+Bagas Nasution,2026,3.7,3.3,3.3,3.0,3.3,3.7,2.7,4.0,3.0,RPL
+Putu Siahaan,2026,2.3,4.0,4.0,3.7,3.3,2.0,3.0,3.0,3.3,Cyber Security
+Gita Santoso,2026,3.0,1.0,3.0,3.3,4.0,3.0,4.0,1.0,3.3,AI Engineering
+Siska Nasution,2026,3.7,4.0,2.3,1.0,3.3,3.0,3.0,3.3,1.0,AI Engineering
+Lani Mulyono,2026,2.7,3.7,3.3,2.0,2.0,3.3,3.7,2.7,3.7,RPL
+Indah Saputra,2026,2.7,3.3,3.3,3.0,3.3,1.0,4.0,3.3,4.0,Cyber Security
+Nina Tanjung,2026,1.0,3.7,3.3,2.3,1.0,3.7,4.0,2.7,3.3,RPL
+Fajar Ramadhan,2026,3.7,2.7,3.7,2.0,4.0,1.0,4.0,2.3,4.0,AI Engineering
+Dewi Pratama,2026,4.0,2.0,2.0,3.0,3.7,3.7,3.7,3.7,2.7,AI Engineering
+Hendra Rahayu,2026,3.7,3.3,4.0,3.7,3.7,2.0,3.0,2.0,3.3,AI Engineering
+Gani Simanjuntak,2026,3.3,2.3,3.3,3.3,1.0,3.0,2.7,3.7,2.0,Cyber Security
+Euis Pasaribu,2026,4.0,1.0,1.0,3.7,2.7,4.0,2.7,3.3,2.0,Cyber Security
+Andi Sari,2026,3.0,4.0,3.3,3.3,3.0,3.0,4.0,3.0,4.0,RPL
+Citra Lestari,2026,3.3,2.7,4.0,3.0,3.0,2.0,4.0,1.0,2.0,AI Engineering
+Ayu Utami,2026,3.0,1.0,2.7,2.7,3.3,3.0,3.3,2.0,2.3,AI Engineering
+Budi Mulyono,2026,4.0,3.7,4.0,3.7,3.3,3.3,3.7,3.7,2.7,AI Engineering
+Eko Tanjung,2026,1.0,4.0,4.0,2.7,2.3,3.3,3.7,3.0,3.3,RPL
+Rizky Siregar,2026,3.7,3.0,3.0,1.0,3.7,3.3,3.7,2.7,3.3,RPL
+Rosa Mulyono,2026,3.3,3.0,3.0,2.7,3.3,3.3,3.3,2.3,3.0,AI Engineering
+Euis Siregar,2026,2.3,3.0,1.0,3.3,2.7,2.3,4.0,3.7,3.0,Cyber Security
+Iwan Fitriani,2026,2.0,3.7,3.3,1.0,2.7,4.0,2.0,2.0,4.0,RPL
+Dedi Siregar,2026,2.3,3.3,3.3,4.0,3.0,3.3,2.3,3.7,3.3,Cyber Security
+Maya Pohan,2026,2.0,3.3,3.7,3.3,2.3,2.7,2.7,3.3,2.3,Cyber Security
+Laila Kurniawan,2026,2.7,3.3,3.3,3.0,3.7,3.7,1.0,4.0,4.0,RPL
+Joko Chaniago,2026,2.7,1.0,1.0,3.3,2.0,2.3,3.7,4.0,3.0,Cyber Security
+Taufik Ramadhan,2026,2.7,3.7,3.7,3.3,2.0,2.3,2.3,3.3,2.7,Cyber Security
+Putu Harahap,2026,3.0,2.0,4.0,2.7,4.0,2.7,3.7,4.0,3.3,AI Engineering
+Doni Susanto,2026,2.7,4.0,3.7,4.0,3.3,3.3,3.0,3.0,3.0,RPL
+Made Hasibuan,2026,2.7,1.0,3.0,3.0,1.0,2.0,3.0,3.7,2.7,Cyber Security
+Rizky Saputra,2026,4.0,4.0,2.0,2.3,3.7,4.0,3.3,2.0,3.3,AI Engineering
+Andi Susanto,2026,3.3,3.0,2.3,1.0,4.0,3.0,3.0,2.3,2.0,AI Engineering
+Doni Puspita,2026,2.0,2.0,2.0,3.0,1.0,1.0,3.3,3.7,3.3,Cyber Security
+Hendra Chaniago,2026,2.7,3.7,2.0,3.0,2.7,2.0,2.7,3.3,2.0,Cyber Security
+Maya Ramadhan,2026,3.7,3.7,3.0,2.7,2.3,3.7,2.3,2.3,3.7,RPL
+Andi Lestari,2026,4.0,4.0,3.0,3.3,4.0,3.3,2.3,3.3,3.7,Cyber Security
+Joko Barus,2026,2.0,3.3,4.0,4.0,1.0,3.3,1.0,2.7,3.7,RPL
+Dadan Saputra,2026,3.7,3.3,2.7,3.3,3.0,2.0,3.0,2.3,2.3,AI Engineering
+Tania Aminah,2026,3.7,3.0,3.3,3.7,2.0,4.0,1.0,2.0,3.3,RPL
+Rosa Aminah,2026,3.7,2.7,2.7,2.7,3.3,2.0,3.0,2.0,2.3,AI Engineering
+Dadan Hardi,2026,4.0,3.7,4.0,3.0,4.0,3.3,3.7,4.0,3.0,AI Engineering
+Taufik Manurung,2026,4.0,1.0,2.3,2.7,3.7,4.0,3.0,3.7,2.0,AI Engineering
+Andi Mahendra,2026,3.0,4.0,3.0,3.7,2.7,3.3,2.3,1.0,4.0,RPL
+Lani Aminah,2026,2.7,1.0,2.0,3.7,1.0,3.7,3.3,3.0,3.0,Cyber Security
+Ayu Manurung,2026,4.0,4.0,3.3,3.7,3.0,4.0,3.3,3.3,3.3,RPL
+Dedi Simanjuntak,2026,3.0,3.3,3.0,4.0,2.7,3.0,4.0,2.0,3.0,RPL
+Joko Mulyono,2026,3.0,3.7,4.0,1.0,3.3,3.0,2.0,3.3,3.7,RPL
+Bambang Ramadhan,2026,3.0,3.3,3.7,3.3,2.3,4.0,4.0,1.0,3.7,RPL
+Andi Siregar,2026,3.3,2.3,2.7,4.0,3.3,2.7,3.3,2.0,3.3,AI Engineering
+Gani Pasaribu,2026,3.7,3.0,3.3,4.0,3.0,3.0,2.7,2.0,3.0,RPL
+Eko Santoso,2026,2.0,1.0,4.0,4.0,2.7,3.7,3.7,3.0,3.0,Cyber Security
+Zaki Setiawan,2026,3.0,3.3,2.7,3.0,1.0,2.0,3.0,3.7,1.0,Cyber Security
+Euis Utami,2026,2.3,3.7,3.3,2.3,2.7,3.0,2.3,3.3,3.3,RPL
+Bambang Mahendra,2026,3.3,3.3,3.7,2.3,2.0,4.0,1.0,4.0,3.0,RPL
+Bagas Siahaan,2026,2.0,2.3,3.7,3.3,1.0,2.7,4.0,3.0,4.0,Cyber Security
+Taufik Chaniago,2026,3.0,3.0,3.7,3.3,2.7,2.0,2.3,3.0,2.3,Cyber Security

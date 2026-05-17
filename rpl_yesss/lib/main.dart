@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/auth/login_screen.dart';
+import 'screens/auth/splash_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +11,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'SPK KNN',
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      theme: ThemeData(
+        useMaterial3: true,
+        fontFamily: 'Segoe UI',
+      ),
+      home: const SplashScreen(),
     );
   }
 }
