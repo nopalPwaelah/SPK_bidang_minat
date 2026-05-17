@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import '../../services/api_service.dart';
 import '../sidebar/user_sidebar.dart';
 import 'input_nilai_screen.dart';
 import 'hasil_screen.dart';
 
 class UserDashboard extends StatelessWidget {
-  const UserDashboard({super.key});
+  final String? username;
+
+  const UserDashboard({super.key, this.username});
 
   static const _monthNames = [
     'Jan',
@@ -31,6 +34,15 @@ class UserDashboard extends StatelessWidget {
     final minute = now.minute.toString().padLeft(2, '0');
     final period = now.hour < 12 ? 'AM' : 'PM';
     return '$hour:$minute $period';
+  }
+
+  String get _displayName {
+    final name = username?.trim().isNotEmpty == true
+        ? username!.trim()
+        : ApiService.currentUsername?.trim().isNotEmpty == true
+            ? ApiService.currentUsername!.trim()
+            : 'Mahasiswa';
+    return name;
   }
 
   @override
@@ -97,22 +109,28 @@ class UserDashboard extends StatelessWidget {
                       borderRadius: BorderRadius.circular(16),
                     ),
                     child: Row(
-                      children: const [
+                      children: [
                         CircleAvatar(
                           radius: 16,
-                          backgroundColor: Color(0xFF2D60FF),
+                          backgroundColor: const Color(0xFF2D60FF),
                           child: Text(
-                            'NA',
-                            style: TextStyle(
+                            _displayName
+                                .split(' ')
+                                .where((part) => part.isNotEmpty)
+                                .map((part) => part[0])
+                                .take(2)
+                                .join()
+                                .toUpperCase(),
+                            style: const TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
                         ),
-                        SizedBox(width: 8),
+                        const SizedBox(width: 8),
                         Text(
-                          'Naufal Akbar',
-                          style: TextStyle(
+                          _displayName,
+                          style: const TextStyle(
                             fontWeight: FontWeight.w600,
                           ),
                         ),
@@ -150,25 +168,25 @@ class UserDashboard extends StatelessWidget {
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
-                          Text(
+                        children: [
+                          const Text(
                             'Selamat Datang!',
                             style: TextStyle(
                               color: Colors.white70,
                               fontSize: 16,
                             ),
                           ),
-                          SizedBox(height: 8),
+                          const SizedBox(height: 8),
                           Text(
-                            'Naufal Akbar Putra',
-                            style: TextStyle(
+                            _displayName,
+                            style: const TextStyle(
                               color: Colors.white,
                               fontSize: 22,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(height: 5),
-                          Text(
+                          const SizedBox(height: 5),
+                          const Text(
                             'NIM:250512....',
                             style: TextStyle(
                               color: Colors.white70,

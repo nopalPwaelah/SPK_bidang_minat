@@ -5,35 +5,25 @@ import 'package:http/http.dart' as http;
 import '../core/config/api_config.dart';
 
 class ApiService {
-
-  static String get baseUrl =>
-      ApiConfig.baseUrl;
+  static String get baseUrl => ApiConfig.baseUrl;
 
   static String? token;
+  static String? currentUsername;
 
   // =====================================
   // HEADER
   // =====================================
 
   static Map<String, String> get headers => {
-
-        "Content-Type":
-            "application/json",
-
-        if (token != null)
-
-          "Authorization":
-              "Bearer $token",
+        "Content-Type": "application/json",
+        if (token != null) "Authorization": "Bearer $token",
       };
 
   // =====================================
   // HANDLE RESPONSE
   // =====================================
 
-  static dynamic handleResponse(
-      http.Response res
-  ) {
-
+  static dynamic handleResponse(http.Response res) {
     print("URL: ${res.request?.url}");
 
     print("STATUS: ${res.statusCode}");
@@ -43,49 +33,28 @@ class ApiService {
     dynamic data = {};
 
     if (res.body.isNotEmpty) {
-
       data = jsonDecode(res.body);
     }
 
-    if (
-      res.statusCode >= 200 &&
-      res.statusCode < 300
-    ) {
-
+    if (res.statusCode >= 200 && res.statusCode < 300) {
       return data;
     }
 
-    throw Exception(
-      data["detail"] ??
-      "Server error"
-    );
+    throw Exception(data["detail"] ?? "Server error");
   }
 
   // =====================================
   // SAFE REQUEST
   // =====================================
 
-  static Future<http.Response>
-  safeRequest(
-
-      Future<http.Response> request
-
-  ) async {
-
+  static Future<http.Response> safeRequest(
+      Future<http.Response> request) async {
     try {
-
       return await request.timeout(
-
-        const Duration(
-          seconds: 15
-        ),
+        const Duration(seconds: 15),
       );
-
     } catch (e) {
-
-      throw Exception(
-        "Tidak bisa konek ke server: $e"
-      );
+      throw Exception("Tidak bisa konek ke server: $e");
     }
   }
 
@@ -93,45 +62,23 @@ class ApiService {
   // LOGIN
   // =====================================
 
-  static Future login(
-
-      String email,
-      String password
-
-  ) async {
-
+  static Future login(String email, String password) async {
     final res = await safeRequest(
-
       http.post(
-
-        Uri.parse(
-          "$baseUrl/auth/login"
-        ),
-
-        headers: {
-
-          "Content-Type":
-              "application/json"
-        },
-
+        Uri.parse("$baseUrl/auth/login"),
+        headers: {"Content-Type": "application/json"},
         body: jsonEncode({
-
           "email": email,
-
           "password": password,
         }),
       ),
     );
 
-    final data =
-        handleResponse(res);
+    final data = handleResponse(res);
 
-    if (
-      data["access_token"] != null
-    ) {
-
-      token =
-          data["access_token"];
+    if (data["access_token"] != null) {
+      token = data["access_token"];
+      currentUsername = data["username"]?.toString();
     }
 
     return data;
@@ -141,34 +88,14 @@ class ApiService {
   // REGISTER
   // =====================================
 
-  static Future register(
-
-      String username,
-      String email,
-      String password
-
-  ) async {
-
+  static Future register(String username, String email, String password) async {
     final res = await safeRequest(
-
       http.post(
-
-        Uri.parse(
-          "$baseUrl/auth/register"
-        ),
-
-        headers: {
-
-          "Content-Type":
-              "application/json"
-        },
-
+        Uri.parse("$baseUrl/auth/register"),
+        headers: {"Content-Type": "application/json"},
         body: jsonEncode({
-
           "username": username,
-
           "email": email,
-
           "password": password,
         }),
       ),
@@ -181,17 +108,10 @@ class ApiService {
   // USERS
   // =====================================
 
-  static Future<List>
-  getUsers() async {
-
+  static Future<List> getUsers() async {
     final res = await safeRequest(
-
       http.get(
-
-        Uri.parse(
-          "$baseUrl/users"
-        ),
-
+        Uri.parse("$baseUrl/users"),
         headers: headers,
       ),
     );
@@ -199,18 +119,10 @@ class ApiService {
     return handleResponse(res);
   }
 
-  static Future deleteUser(
-      int id
-  ) async {
-
+  static Future deleteUser(int id) async {
     final res = await safeRequest(
-
       http.delete(
-
-        Uri.parse(
-          "$baseUrl/users/$id"
-        ),
-
+        Uri.parse("$baseUrl/users/$id"),
         headers: headers,
       ),
     );
@@ -222,17 +134,10 @@ class ApiService {
   // TRAINING DATA
   // =====================================
 
-  static Future<List>
-  getTrainingData() async {
-
+  static Future<List> getTrainingData() async {
     final res = await safeRequest(
-
       http.get(
-
-        Uri.parse(
-          "$baseUrl/training"
-        ),
-
+        Uri.parse("$baseUrl/training"),
         headers: headers,
       ),
     );
@@ -240,20 +145,11 @@ class ApiService {
     return handleResponse(res);
   }
 
-  static Future addTraining(
-      Map<String, dynamic> data
-  ) async {
-
+  static Future addTraining(Map<String, dynamic> data) async {
     final res = await safeRequest(
-
       http.post(
-
-        Uri.parse(
-          "$baseUrl/training"
-        ),
-
+        Uri.parse("$baseUrl/training"),
         headers: headers,
-
         body: jsonEncode(data),
       ),
     );
@@ -261,24 +157,11 @@ class ApiService {
     return handleResponse(res);
   }
 
-  static Future updateTraining(
-
-      int id,
-
-      Map<String, dynamic> data
-
-  ) async {
-
+  static Future updateTraining(int id, Map<String, dynamic> data) async {
     final res = await safeRequest(
-
       http.put(
-
-        Uri.parse(
-          "$baseUrl/training/$id"
-        ),
-
+        Uri.parse("$baseUrl/training/$id"),
         headers: headers,
-
         body: jsonEncode(data),
       ),
     );
@@ -286,18 +169,10 @@ class ApiService {
     return handleResponse(res);
   }
 
-  static Future deleteTraining(
-      int id
-  ) async {
-
+  static Future deleteTraining(int id) async {
     final res = await safeRequest(
-
       http.delete(
-
-        Uri.parse(
-          "$baseUrl/training/$id"
-        ),
-
+        Uri.parse("$baseUrl/training/$id"),
         headers: headers,
       ),
     );
@@ -309,17 +184,10 @@ class ApiService {
   // STATISTICS
   // =====================================
 
-  static Future getStatistics()
-  async {
-
+  static Future getStatistics() async {
     final res = await safeRequest(
-
       http.get(
-
-        Uri.parse(
-          "$baseUrl/training/stats/summary"
-        ),
-
+        Uri.parse("$baseUrl/training/stats/summary"),
         headers: headers,
       ),
     );
@@ -327,18 +195,10 @@ class ApiService {
     return handleResponse(res);
   }
 
-  static Future
-  getYearlyStatistics()
-  async {
-
+  static Future getYearlyStatistics() async {
     final res = await safeRequest(
-
       http.get(
-
-        Uri.parse(
-          "$baseUrl/training/stats/yearly"
-        ),
-
+        Uri.parse("$baseUrl/training/stats/yearly"),
         headers: headers,
       ),
     );
@@ -350,22 +210,11 @@ class ApiService {
   // KNN PREDICT
   // =====================================
 
-  static Future submitNilai(
-
-      Map<String, dynamic> data
-
-  ) async {
-
+  static Future submitNilai(Map<String, dynamic> data) async {
     final res = await safeRequest(
-
       http.post(
-
-        Uri.parse(
-          "$baseUrl/rekomendasi/predict"
-        ),
-
+        Uri.parse("$baseUrl/rekomendasi/predict"),
         headers: headers,
-
         body: jsonEncode(data),
       ),
     );
@@ -377,18 +226,10 @@ class ApiService {
   // HISTORY
   // =====================================
 
-  static Future<List>
-  getPredictionHistory()
-  async {
-
+  static Future<List> getPredictionHistory() async {
     final res = await safeRequest(
-
       http.get(
-
-        Uri.parse(
-          "$baseUrl/rekomendasi/history"
-        ),
-
+        Uri.parse("$baseUrl/rekomendasi/history"),
         headers: headers,
       ),
     );
@@ -396,18 +237,10 @@ class ApiService {
     return handleResponse(res);
   }
 
-  static Future deleteHistory(
-      int id
-  ) async {
-
+  static Future deleteHistory(int id) async {
     final res = await safeRequest(
-
       http.delete(
-
-        Uri.parse(
-          "$baseUrl/rekomendasi/history/$id"
-        ),
-
+        Uri.parse("$baseUrl/rekomendasi/history/$id"),
         headers: headers,
       ),
     );
@@ -415,18 +248,10 @@ class ApiService {
     return handleResponse(res);
   }
 
-  static Future
-  getPredictionSummary()
-  async {
-
+  static Future getPredictionSummary() async {
     final res = await safeRequest(
-
       http.get(
-
-        Uri.parse(
-          "$baseUrl/rekomendasi/history/summary"
-        ),
-
+        Uri.parse("$baseUrl/rekomendasi/history/summary"),
         headers: headers,
       ),
     );
@@ -439,15 +264,9 @@ class ApiService {
   // =====================================
 
   static Future getK() async {
-
     final res = await safeRequest(
-
       http.get(
-
-        Uri.parse(
-          "$baseUrl/knn-settings/k"
-        ),
-
+        Uri.parse("$baseUrl/knn-settings/k"),
         headers: headers,
       ),
     );
@@ -455,25 +274,12 @@ class ApiService {
     return handleResponse(res);
   }
 
-  static Future setK(
-      int nilaiK
-  ) async {
-
+  static Future setK(int nilaiK) async {
     final res = await safeRequest(
-
       http.put(
-
-        Uri.parse(
-          "$baseUrl/knn-settings/k"
-        ),
-
+        Uri.parse("$baseUrl/knn-settings/k"),
         headers: headers,
-
-        body: jsonEncode({
-
-          "nilai_k":
-              nilaiK
-        }),
+        body: jsonEncode({"nilai_k": nilaiK}),
       ),
     );
 
@@ -484,18 +290,10 @@ class ApiService {
   // KNN CONFIGURATION
   // =====================================
 
-  static Future
-  getKNNConfiguration()
-  async {
-
+  static Future getKNNConfiguration() async {
     final res = await safeRequest(
-
       http.get(
-
-        Uri.parse(
-          "$baseUrl/knn-settings/configuration"
-        ),
-
+        Uri.parse("$baseUrl/knn-settings/configuration"),
         headers: headers,
       ),
     );
@@ -503,24 +301,11 @@ class ApiService {
     return handleResponse(res);
   }
 
-  static Future
-  updateKNNConfiguration(
-
-      Map<String, dynamic>
-      config
-
-  ) async {
-
+  static Future updateKNNConfiguration(Map<String, dynamic> config) async {
     final res = await safeRequest(
-
       http.put(
-
-        Uri.parse(
-          "$baseUrl/knn-settings/configuration"
-        ),
-
+        Uri.parse("$baseUrl/knn-settings/configuration"),
         headers: headers,
-
         body: jsonEncode(config),
       ),
     );
@@ -528,18 +313,10 @@ class ApiService {
     return handleResponse(res);
   }
 
-  static Future
-  getKNNMetrics()
-  async {
-
+  static Future getKNNMetrics() async {
     final res = await safeRequest(
-
       http.get(
-
-        Uri.parse(
-          "$baseUrl/knn-settings/metrics"
-        ),
-
+        Uri.parse("$baseUrl/knn-settings/metrics"),
         headers: headers,
       ),
     );
@@ -548,34 +325,24 @@ class ApiService {
   }
 
   static Future addUser(
-  String username,
-  String email,
-  String password,
-  String role,
-) async {
+    String username,
+    String email,
+    String password,
+    String role,
+  ) async {
+    final res = await safeRequest(
+      http.post(
+        Uri.parse("$baseUrl/users"),
+        headers: headers,
+        body: jsonEncode({
+          "username": username,
+          "email": email,
+          "password": password,
+          "role": role,
+        }),
+      ),
+    );
 
-  final res = await safeRequest(
-
-    http.post(
-
-      Uri.parse("$baseUrl/users"),
-
-      headers: headers,
-
-      body: jsonEncode({
-
-        "username": username,
-
-        "email": email,
-
-        "password": password,
-
-        "role": role,
-      }),
-    ),
-  );
-
-  return handleResponse(res);
+    return handleResponse(res);
+  }
 }
-}
-

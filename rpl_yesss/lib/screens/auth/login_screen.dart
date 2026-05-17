@@ -12,7 +12,6 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-
   final email = TextEditingController();
   final password = TextEditingController();
 
@@ -43,7 +42,6 @@ class _LoginScreenState extends State<LoginScreen> {
 
       // ✅ CEK TOKEN
       if (res["access_token"] != null) {
-
         // 🔥 SIMPAN TOKEN
         ApiService.token = res["access_token"];
 
@@ -63,29 +61,27 @@ class _LoginScreenState extends State<LoginScreen> {
           // USER
           Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (_) => const UserDashboard()),
+            MaterialPageRoute(
+              builder: (_) => UserDashboard(
+                username: res["username"]?.toString() ?? email.text,
+              ),
+            ),
           );
         }
-
       } else {
         // ❌ LOGIN GAGAL
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(
-              res["detail"] ?? res["error"] ?? "Login gagal"
-            ),
+            content: Text(res["detail"] ?? res["error"] ?? "Login gagal"),
           ),
         );
       }
-
     } catch (e) {
       setState(() => isLoading = false);
 
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text(
-            e.toString().replaceAll("Exception: ", "")
-          ),
+          content: Text(e.toString().replaceAll("Exception: ", "")),
         ),
       );
     }
@@ -100,7 +96,6 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-
             // EMAIL
             TextField(
               controller: email,

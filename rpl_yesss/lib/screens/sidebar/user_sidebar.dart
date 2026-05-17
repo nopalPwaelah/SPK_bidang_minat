@@ -23,47 +23,45 @@ class UserSidebar extends StatelessWidget {
     return Drawer(
       child: Column(
         children: [
-          const UserAccountsDrawerHeader(
-            accountName: Text("Mahasiswa"),
-            accountEmail: Text("user@gmail.com"),
-            currentAccountPicture: CircleAvatar(
+          UserAccountsDrawerHeader(
+            accountName: Text(ApiService.currentUsername ?? "Mahasiswa"),
+            accountEmail: Text(ApiService.currentUsername != null
+                ? "Terdaftar"
+                : "user@gmail.com"),
+            currentAccountPicture: const CircleAvatar(
               child: Icon(Icons.person),
             ),
           ),
-
           ListTile(
             leading: const Icon(Icons.dashboard),
             title: const Text("Dashboard"),
-            onTap: () => navigate(context, const UserDashboard()),
+            onTap: () => navigate(
+              context,
+              UserDashboard(username: ApiService.currentUsername),
+            ),
           ),
-
           ListTile(
             leading: const Icon(Icons.edit),
             title: const Text("Input Nilai"),
             onTap: () => navigate(context, const InputNilaiScreen()),
           ),
-
           ListTile(
             leading: const Icon(Icons.analytics),
             title: const Text("Hasil Rekomendasi"),
             onTap: () => navigate(context, const HasilScreen()),
           ),
-
           ListTile(
             leading: const Icon(Icons.history),
             title: const Text("Riwayat"),
             onTap: () => navigate(context, const RiwayatScreen()),
           ),
-
           ListTile(
             leading: const Icon(Icons.message),
             title: const Text("Pesan Dosen"),
             onTap: () => navigate(context, const PesanDosenScreen()),
           ),
-
           const Spacer(),
           const Divider(),
-
           ListTile(
             leading: const Icon(Icons.logout),
             title: const Text("Logout"),
