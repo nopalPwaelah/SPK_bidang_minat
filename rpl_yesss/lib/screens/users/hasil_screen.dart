@@ -1,16 +1,36 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import '../../core/providers/theme_provider.dart';
 import '../sidebar/user_sidebar.dart';
 
-class HasilScreen extends StatelessWidget {
+class HasilScreen extends StatefulWidget {
   final Map? data;
 
   const HasilScreen({super.key, this.data});
 
   @override
+  State<HasilScreen> createState() => _HasilScreenState();
+}
+
+class _HasilScreenState extends State<HasilScreen> {
+  bool isSaved = false;
+
+  void saveResult() {
+    setState(() => isSaved = true);
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Text("Hasil tersimpan di riwayat"),
+        duration: Duration(seconds: 2),
+      ),
+    );
+  }
+
+  @override
   Widget build(BuildContext context) {
-    final hasilPrediksi = data?['hasil_prediksi'] ?? data?['hasil'] ?? "-";
-    final nama = data?['nama'] ?? "-";
-    final nilaiK = data?['nilai_k'] ?? 3;
+    final isDarkMode = Provider.of<ThemeProvider>(context).isDarkMode;
+    final hasilPrediksi = widget.data?['hasil_prediksi'] ?? widget.data?['hasil'] ?? "-";
+    final nama = widget.data?['nama'] ?? "-";
+    final nilaiK = widget.data?['nilai_k'] ?? 3;
 
     return Scaffold(
       extendBodyBehindAppBar: true,
@@ -23,6 +43,14 @@ class HasilScreen extends StatelessWidget {
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
         ),
         centerTitle: true,
+        actions: [
+          IconButton(
+            icon: Icon(isDarkMode ? Icons.light_mode : Icons.dark_mode),
+            onPressed: () =>
+                Provider.of<ThemeProvider>(context, listen: false)
+                    .toggleTheme(),
+          ),
+        ],
       ),
       drawer: const UserSidebar(),
       body: Stack(
@@ -101,6 +129,7 @@ class HasilScreen extends StatelessWidget {
                 const SizedBox(height: 12),
                 // Nama
                 _buildDetailCard(
+                  context: context,
                   icon: Icons.person,
                   label: "Nama",
                   value: nama,
@@ -108,13 +137,14 @@ class HasilScreen extends StatelessWidget {
                 const SizedBox(height: 10),
                 // K Value
                 _buildDetailCard(
+                  context: context,
                   icon: Icons.settings,
                   label: "Nilai K (KNN)",
                   value: nilaiK.toString(),
                 ),
                 const SizedBox(height: 24),
                 // Nilai Input (jika ada)
-                if (data?.containsKey('matematika') ?? false)
+                if (widget.data?.containsKey('matematika') ?? false)
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -125,7 +155,7 @@ class HasilScreen extends StatelessWidget {
                             ),
                       ),
                       const SizedBox(height: 12),
-                      _buildValueGrid(data!),
+                      _buildValueGrid(widget.data!),
                       const SizedBox(height: 24),
                     ],
                   ),
@@ -141,6 +171,7 @@ class HasilScreen extends StatelessWidget {
                         label: const Text("Kembali"),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xFF6366F1),
+                          foregroundColor: Colors.white,
                           padding: const EdgeInsets.symmetric(vertical: 12),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
@@ -151,18 +182,12 @@ class HasilScreen extends StatelessWidget {
                     const SizedBox(width: 12),
                     Expanded(
                       child: ElevatedButton.icon(
-                        onPressed: () {
-                          // TODO: Share result or save
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                              content: Text("Hasil tersimpan di riwayat"),
-                            ),
-                          );
-                        },
-                        icon: const Icon(Icons.save),
-                        label: const Text("Simpan"),
+                        onPressed: isSaved ? null : saveResult,
+                        icon: Icon(isSaved ? Icons.check : Icons.save),
+                        label: Text(isSaved ? "Tersimpan" : "Simpan"),
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(0xFF10B981),
+                          backgroundColor: isSaved ? Colors.grey : const Color(0xFF10B981),
+                          foregroundColor: Colors.white,
                           padding: const EdgeInsets.symmetric(vertical: 12),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
@@ -181,10 +206,13 @@ class HasilScreen extends StatelessWidget {
   }
 
   Widget _buildDetailCard({
+    required BuildContext context,
     required IconData icon,
     required String label,
     required String value,
   }) {
+    final textTheme = Theme.of(context).textTheme;
+
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -205,18 +233,14 @@ class HasilScreen extends StatelessWidget {
                 children: [
                   Text(
                     label,
-                    style: const TextStyle(
-                      color: Colors.black54,
-                      fontSize: 12,
+                    style: textTheme.bodySmall?.copyWith(
                       fontWeight: FontWeight.w500,
                     ),
                   ),
                   const SizedBox(height: 4),
                   Text(
                     value,
-                    style: const TextStyle(
-                      color: Colors.black87,
-                      fontSize: 16,
+                    style: textTheme.bodyLarge?.copyWith(
                       fontWeight: FontWeight.bold,
                     ),
                   ),

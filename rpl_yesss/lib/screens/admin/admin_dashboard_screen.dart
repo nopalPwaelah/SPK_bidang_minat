@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 // IMPORT SCREEN
 import 'data_training_screen.dart';
@@ -7,6 +8,7 @@ import 'set_k_screen.dart';
 import 'statistic_screen.dart';
 import '../sidebar/admin_sidebar.dart';
 import '../../services/api_service.dart';
+import '../../core/providers/theme_provider.dart';
 import '../auth/login_screen.dart';
 
 class AdminDashboard extends StatefulWidget {
@@ -76,6 +78,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
 
   @override
   Widget build(BuildContext context) {
+    final isDarkMode = Provider.of<ThemeProvider>(context).isDarkMode;
     final now = DateTime.now();
 
     return Scaffold(
@@ -83,6 +86,12 @@ class _AdminDashboardState extends State<AdminDashboard> {
         title: const Text("Dashboard Admin"),
         centerTitle: true,
         actions: [
+          IconButton(
+            icon: Icon(isDarkMode ? Icons.light_mode : Icons.dark_mode),
+            onPressed: () =>
+                Provider.of<ThemeProvider>(context, listen: false)
+                    .toggleTheme(),
+          ),
           IconButton(
             icon: const Icon(Icons.logout),
             onPressed: () {

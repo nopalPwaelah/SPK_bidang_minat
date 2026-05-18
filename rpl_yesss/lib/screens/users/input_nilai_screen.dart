@@ -1,9 +1,8 @@
 ﻿import 'package:flutter/material.dart';
-
+import 'package:provider/provider.dart';
 import '../../services/api_service.dart';
-
+import '../../core/providers/theme_provider.dart';
 import '../sidebar/user_sidebar.dart';
-
 import 'hasil_screen.dart';
 
 class InputNilaiScreen extends StatefulWidget {
@@ -118,6 +117,8 @@ class _InputNilaiScreenState extends State<InputNilaiScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDarkMode = Provider.of<ThemeProvider>(context).isDarkMode;
+
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -129,6 +130,14 @@ class _InputNilaiScreenState extends State<InputNilaiScreen> {
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
+        actions: [
+          IconButton(
+            icon: Icon(isDarkMode ? Icons.light_mode : Icons.dark_mode),
+            onPressed: () =>
+                Provider.of<ThemeProvider>(context, listen: false)
+                    .toggleTheme(),
+          ),
+        ],
       ),
       drawer: const UserSidebar(),
       body: Stack(
@@ -328,6 +337,21 @@ class _InputNilaiScreenState extends State<InputNilaiScreen> {
         ],
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    namaController.dispose();
+    matematikaController.dispose();
+    pemrogramanController.dispose();
+    basisDataController.dispose();
+    jaringanController.dispose();
+    aiController.dispose();
+    strukturDataController.dispose();
+    statistikaController.dispose();
+    osController.dispose();
+    pboController.dispose();
+    super.dispose();
   }
 }
 

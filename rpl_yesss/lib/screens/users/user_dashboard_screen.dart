@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import '../../services/api_service.dart';
+import '../../core/providers/theme_provider.dart';
 import '../sidebar/user_sidebar.dart';
 import 'input_nilai_screen.dart';
 import 'hasil_screen.dart';
@@ -47,6 +49,7 @@ class UserDashboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDarkMode = Provider.of<ThemeProvider>(context).isDarkMode;
     final now = DateTime.now();
     final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -66,25 +69,35 @@ class UserDashboard extends StatelessWidget {
                     onPressed: () => scaffoldKey.currentState?.openDrawer(),
                     icon: const Icon(Icons.menu, size: 28),
                   ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.end,
+                  Row(
                     children: [
-                      Text(
-                        _formattedDate(now),
-                        style: const TextStyle(
-                          color: Colors.black54,
-                          fontSize: 12,
-                          fontWeight: FontWeight.w500,
-                        ),
+                      IconButton(
+                        icon: Icon(isDarkMode ? Icons.light_mode : Icons.dark_mode),
+                        onPressed: () =>
+                            Provider.of<ThemeProvider>(context, listen: false)
+                                .toggleTheme(),
                       ),
-                      const SizedBox(height: 2),
-                      Text(
-                        _formattedTime(now),
-                        style: const TextStyle(
-                          color: Colors.black54,
-                          fontSize: 12,
-                          fontWeight: FontWeight.w500,
-                        ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Text(
+                            _formattedDate(now),
+                            style: const TextStyle(
+                              color: Colors.black54,
+                              fontSize: 12,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          const SizedBox(height: 2),
+                          Text(
+                            _formattedTime(now),
+                            style: const TextStyle(
+                              color: Colors.black54,
+                              fontSize: 12,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),

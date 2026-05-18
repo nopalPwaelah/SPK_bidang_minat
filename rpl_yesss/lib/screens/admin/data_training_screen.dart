@@ -1,20 +1,14 @@
 import 'package:flutter/material.dart';
-
+import 'package:provider/provider.dart';
 import '../../services/api_service.dart';
-
+import '../../core/providers/theme_provider.dart';
 import '../sidebar/admin_sidebar.dart';
 
-class DataTrainingScreen
-    extends StatefulWidget {
-
-  const DataTrainingScreen({
-    super.key
-  });
+class DataTrainingScreen extends StatefulWidget {
+  const DataTrainingScreen({super.key});
 
   @override
-  State<DataTrainingScreen>
-  createState() =>
-      _DataTrainingScreenState();
+  State<DataTrainingScreen> createState() => _DataTrainingScreenState();
 }
 
 class _DataTrainingScreenState
@@ -488,93 +482,177 @@ class _DataTrainingScreenState
 
   @override
   Widget build(BuildContext context) {
+    final isDarkMode = Provider.of<ThemeProvider>(context).isDarkMode;
 
     return Scaffold(
-
       appBar: AppBar(
-        title:
-            const Text(
-                "Data Training"),
+        title: const Text("Data Training"),
+        actions: [
+          IconButton(
+            icon: Icon(isDarkMode ? Icons.light_mode : Icons.dark_mode),
+            onPressed: () =>
+                Provider.of<ThemeProvider>(context, listen: false)
+                    .toggleTheme(),
+          ),
+        ],
       ),
-
-      drawer:
-          const AdminSidebar(),
-
-      floatingActionButton:
-          FloatingActionButton(
-
+      drawer: const AdminSidebar(),
+      floatingActionButton: FloatingActionButton(
         onPressed: openAddForm,
-
-        child:
-            const Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
-
       body: isLoading
-
-          ? const Center(
-              child:
-                  CircularProgressIndicator(),
-            )
-
-          : ListView.builder(
-
-              itemCount:
-                  data.length,
-
-              itemBuilder:
-                  (context, index) {
-
-                final item =
-                    data[index];
-
-                return Card(
-
-                  margin:
-                      const EdgeInsets
-                          .all(10),
-
-                  child: ListTile(
-
-                    title: Text(
-                        item["nama"]),
-
-                    subtitle: Text(
-                        item[
-                            "minat_jurusan"]),
-
-                    trailing: Row(
-
-                      mainAxisSize:
-                          MainAxisSize
-                              .min,
-
-                      children: [
-
-                        IconButton(
-
-                          icon: const Icon(
-                              Icons.edit),
-
-                          onPressed: () =>
-                              openEditForm(
-                                  item),
+          ? const Center(child: CircularProgressIndicator())
+          : data.isEmpty
+              ? Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.inbox,
+                        size: 64,
+                        color: Colors.grey[400],
+                      ),
+                      const SizedBox(height: 16),
+                      Text(
+                        "Tidak ada data",
+                        style: Theme.of(context).textTheme.titleLarge,
+                      ),
+                    ],
+                  ),
+                )
+              : SingleChildScrollView(
+                  padding: const EdgeInsets.all(16),
+                  child: Card(
+                    elevation: 4,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: DataTable(
+                        columns: const [
+                          DataColumn(label: Text('NO')),
+                          DataColumn(label: Text('NAMA')),
+                          DataColumn(label: Text('TAHUN')),
+                          DataColumn(label: Text('IPK')),
+                          DataColumn(label: Text('SPESIALISASI')),
+                          DataColumn(label: Text('AKSI')),
+                        ],
+                        rows: List.generate(
+                          data.length,
+                          (index) {
+                            final item = data[index];
+                            return DataRow(
+                              cells: [
+                                DataCell(Text('${index + 1}')),
+                                DataCell(Text(item['nama'] ?? '-')),
+                                DataCell(
+                                    Text(item['tahun_data']?.toString() ?? '-')),
+                                DataCell(
+                                  Text(
+                                    item['ipk']?.toStringAsFixed(2) ?? '-',
+                                  ),
+                                ),
+                                DataCell(
+                                  Container(
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 8, vertical: 4),
+                                    decoration: BoxDecoration(
+                                      color: _getColorForSpecialization(
+                                          item['minat_jurusan']),
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
+                                    child: Text(
+                                      item['minat_jurusan'] ?? '-',
+                                      style: const TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                DataCell(
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      IconButton(
+                                        icon: const Icon(Icons.edit,
+                                            size: 18),
+                                        onPressed: () => openEditForm(item),
+                                        tooltip: 'Edit',
+                                      ),
+                                      IconButton(
+                                        icon: const Icon(Icons.delete,
+                                            size: 18, color: Colors.red),
+                                        onPressed: () => _showDeleteDialog(
+                                            context, item['id']),
+                                        tooltip: 'Hapus',
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            );
+                          },
                         ),
-
-                        IconButton(
-
-                          icon: const Icon(
-                              Icons.delete),
-
-                          onPressed: () =>
-                              deleteData(
-                                  item["id"]),
-                        ),
-                      ],
+                      ),
                     ),
                   ),
-                );
-              },
-            ),
+                ),
     );
+  }
+
+  Color _getColorForSpecialization(String? spec) {
+    switch (spec) {
+      case 'RPL':
+        return const Color(0xFF10B981);
+      case 'AI Engineering':
+        return const Color(0xFF3B82F6);
+      case 'Cyber Security':
+        return const Color(0xFFEF4444);
+      default:
+        return const Color(0xFF6B7280);
+    }
+  }
+
+  void _showDeleteDialog(BuildContext context, int id) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Hapus Data'),
+        content: const Text('Apakah Anda yakin ingin menghapus data ini?'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Batal'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              deleteData(id);
+              Navigator.pop(context);
+            },
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+            child: const Text('Hapus'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  @override
+  void dispose() {
+    namaController.dispose();
+    matematikaController.dispose();
+    pemrogramanController.dispose();
+    basisDataController.dispose();
+    jaringanController.dispose();
+    aiController.dispose();
+    strukturDataController.dispose();
+    statistikaController.dispose();
+    osController.dispose();
+    pboController.dispose();
+    super.dispose();
   }
 }
