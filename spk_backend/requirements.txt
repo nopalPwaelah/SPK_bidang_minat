@@ -8,3 +8,4 @@ email-validator
 scikit-learn
 numpy
 pandas
+PyMySQL==1.1.1
