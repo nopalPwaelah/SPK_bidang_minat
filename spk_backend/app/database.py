@@ -2,16 +2,28 @@ import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
-MYSQL_HOST = os.getenv("MYSQLHOST")
-MYSQL_PORT = os.getenv("MYSQLPORT", "3306")
-MYSQL_USER = os.getenv("MYSQLUSER")
-MYSQL_PASSWORD = os.getenv("MYSQLPASSWORD")
-MYSQL_DATABASE = os.getenv("MYSQL_DATABASE", "spk_knn")
+DATABASE_URL = os.getenv("DATABASE_URL")
 
-DATABASE_URL = f"mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DATABASE}"
+if not DATABASE_URL:
+    raise Exception("DATABASE_URL tidak ditemukan")
 
-print(f"DATABASE_URL = {DATABASE_URL}")
+# ubah mysql:// → mysql+pymysql://
+DATABASE_URL = DATABASE_URL.replace(
+    "mysql://",
+    "mysql+pymysql://"
+)
 
-engine = create_engine(DATABASE_URL)
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+print("DATABASE_URL =", DATABASE_URL)
+
+engine = create_engine(
+    DATABASE_URL,
+    pool_pre_ping=True
+)
+
+SessionLocal = sessionmaker(
+    autocommit=False,
+    autoflush=False,
+    bind=engine
+)
+
 Base = declarative_base()
