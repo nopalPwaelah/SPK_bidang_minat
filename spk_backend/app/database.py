@@ -6,12 +6,15 @@ DATABASE_URL = os.getenv("DATABASE_URL")
 
 print("DATABASE_URL =", DATABASE_URL)
 
+if not DATABASE_URL:
+    raise Exception("DATABASE_URL tidak ditemukan di Environment Variables")
+
 engine = create_engine(DATABASE_URL)
 
 SessionLocal = sessionmaker(
     autocommit=False,
     autoflush=False,
-    bind=engine
+    bind=engine,
 )
 
 Base = declarative_base()
