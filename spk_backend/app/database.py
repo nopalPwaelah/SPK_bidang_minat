@@ -2,26 +2,15 @@ import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
-DATABASE_URL = (
-    f"mysql+pymysql://{os.getenv('MYSQLUSER')}:"
-    f"{os.getenv('MYSQLPASSWORD')}@"
-    f"{os.getenv('MYSQLHOST')}:"
-    f"{os.getenv('MYSQLPORT')}/"
-    f"{os.getenv('MYSQLDATABASE')}"
-)
+DATABASE_URL = os.getenv("DATABASE_URL")
 
-if "None" in DATABASE_URL:
-    raise Exception("Env MySQL Railway belum lengkap")
+if not DATABASE_URL:
+    raise Exception("DATABASE_URL belum diset")
 
 engine = create_engine(
-    DATABASE_URL,
+    DATABASE_URL.replace("mysql://", "mysql+pymysql://"),
     pool_pre_ping=True
 )
 
-SessionLocal = sessionmaker(
-    autocommit=False,
-    autoflush=False,
-    bind=engine
-)
-
+SessionLocal = sessionmaker(bind=engine)
 Base = declarative_base()
