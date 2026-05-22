@@ -4,18 +4,16 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 
 DATABASE_URL = os.getenv("DATABASE_URL")
 
-print("DATABASE_URL =", DATABASE_URL)
-
 if not DATABASE_URL:
-    raise Exception("DATABASE_URL tidak ditemukan di Environment Variables")
+    raise Exception("DATABASE_URL tidak ditemukan")
 
-# Railway → SQLAlchemy → pakai PyMySQL
-if DATABASE_URL.startswith("mysql://"):
-    DATABASE_URL = DATABASE_URL.replace(
-        "mysql://",
-        "mysql+pymysql://",
-        1
-    )
+# ubah mysql:// → mysql+pymysql://
+DATABASE_URL = DATABASE_URL.replace(
+    "mysql://",
+    "mysql+pymysql://"
+)
+
+print("DATABASE_URL =", DATABASE_URL)
 
 engine = create_engine(
     DATABASE_URL,
@@ -25,7 +23,7 @@ engine = create_engine(
 SessionLocal = sessionmaker(
     autocommit=False,
     autoflush=False,
-    bind=engine,
+    bind=engine
 )
 
 Base = declarative_base()
