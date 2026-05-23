@@ -98,6 +98,15 @@ class _DataTrainingScreenState
       setState(() {
         isLoading = false;
       });
+      
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text("Error: $e"),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
     }
   }
 

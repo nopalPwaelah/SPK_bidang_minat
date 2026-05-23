@@ -49,13 +49,25 @@ class ApiService {
 
   static Future<http.Response> safeRequest(
       Future<http.Response> request) async {
-    try {
-      return await request.timeout(
-        const Duration(seconds: 15),
-      );
-    } catch (e) {
-      throw Exception("Tidak bisa konek ke server: $e");
+    int retries = 0;
+    const maxRetries = 3;
+    
+    while (retries < maxRetries) {
+      try {
+        return await request.timeout(
+          const Duration(seconds: 30),
+        );
+      } catch (e) {
+        retries++;
+        if (retries >= maxRetries) {
+          throw Exception("Tidak bisa konek ke server setelah $maxRetries percobaan: $e");
+        }
+        // Wait before retry
+        await Future.delayed(Duration(seconds: retries));
+      }
     }
+    
+    throw Exception("Tidak bisa konek ke server: request failed");
   }
 
   // =====================================
@@ -111,7 +123,7 @@ class ApiService {
   static Future<List> getUsers() async {
     final res = await safeRequest(
       http.get(
-        Uri.parse("$baseUrl/users"),
+        Uri.parse("$baseUrl/users/"),
         headers: headers,
       ),
     );
@@ -137,7 +149,7 @@ class ApiService {
   static Future<List> getTrainingData() async {
     final res = await safeRequest(
       http.get(
-        Uri.parse("$baseUrl/training"),
+        Uri.parse("$baseUrl/training/"),
         headers: headers,
       ),
     );
@@ -148,7 +160,7 @@ class ApiService {
   static Future addTraining(Map<String, dynamic> data) async {
     final res = await safeRequest(
       http.post(
-        Uri.parse("$baseUrl/training"),
+        Uri.parse("$baseUrl/training/"),
         headers: headers,
         body: jsonEncode(data),
       ),
@@ -332,7 +344,7 @@ class ApiService {
   ) async {
     final res = await safeRequest(
       http.post(
-        Uri.parse("$baseUrl/users"),
+        Uri.parse("$baseUrl/users/"),
         headers: headers,
         body: jsonEncode({
           "username": username,

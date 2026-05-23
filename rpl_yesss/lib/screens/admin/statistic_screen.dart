@@ -55,6 +55,16 @@ class _StatisticScreenState extends State<StatisticScreen> {
     } catch (e) {
       print("Error loading statistics: $e");
       setState(() => isLoading = false);
+      
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text("Error: $e"),
+            backgroundColor: Colors.red,
+            duration: const Duration(seconds: 5),
+          ),
+        );
+      }
     }
   }
 

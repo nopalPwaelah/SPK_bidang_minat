@@ -55,6 +55,8 @@ class TrainingSchema(BaseModel):
 
     minat_jurusan: str
 
+    tahun_data: Optional[int] = None
+
 
 class TrainingResponse(BaseModel):
 

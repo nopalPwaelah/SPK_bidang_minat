@@ -21,7 +21,7 @@ def get_db():
         db.close()
 
 def _role_name(role_id: int) -> str:
-    if role_id == 2:
+    if role_id == 1:
         return "admin"
     return "mahasiswa"
 
@@ -48,7 +48,7 @@ def create_user(data: UserRequest, db: Session = Depends(get_db)):
         username=data.username,
         email=data.email,
         password=data.password,
-        role_id=1 if data.role == "mahasiswa" else 2,
+        role_id=1 if data.role == "admin" else 2,
     )
     db.add(new_user)
     db.commit()
